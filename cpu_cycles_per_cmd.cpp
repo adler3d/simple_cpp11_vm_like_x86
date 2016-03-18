@@ -208,11 +208,6 @@ struct t_machine;
       return value;
     }
   };
-  
-  struct i_instruction
-  {
-    virtual void operator()(t_machine&machine,const t_cmd&cmd)const {}
-  };
 
 struct t_machine
 {
@@ -360,13 +355,1138 @@ struct t_machine
   }
   void nop() {}
   void label() {}
-  static vector<i_instruction*>&get_all_instructions();
   void exec(const t_cmd&cmd)
   {
-    static auto&funcs=get_all_instructions();
-    QapAssert(qap_check_id(funcs,cmd.id));
-    (*(funcs[cmd.id]))(*this,cmd);
-    int gg=1;
+    static const t_raw_const raw;
+    auto&dest=cmd.dest;
+    auto&src=cmd.a;
+    auto&a=cmd.a;
+    auto&b=cmd.b;
+    int cur_id=0;
+    const int base_counter=0+1;
+    switch (cmd.id)
+    {
+    case 1-base_counter:
+    {
+      jz(reg[dest],reg[src]);
+      break;
+    };
+    case 2-base_counter:
+    {
+      jz(reg[dest],mem[src]);
+      break;
+    };
+    case 3-base_counter:
+    {
+      jz(reg[dest],raw[src]);
+      break;
+    };
+    case 4-base_counter:
+    {
+      jz(mem[dest],reg[src]);
+      break;
+    };
+    case 5-base_counter:
+    {
+      jz(mem[dest],mem[src]);
+      break;
+    };
+    case 6-base_counter:
+    {
+      jz(mem[dest],raw[src]);
+      break;
+    };
+    case 7-base_counter:
+    {
+      jz(raw[dest],reg[src]);
+      break;
+    };
+    case 8-base_counter:
+    {
+      jz(raw[dest],mem[src]);
+      break;
+    };
+    case 9-base_counter:
+    {
+      jz(raw[dest],raw[src]);
+      break;
+    };
+    case 10-base_counter:
+    {
+      jnz(reg[dest],reg[src]);
+      break;
+    };
+    case 11-base_counter:
+    {
+      jnz(reg[dest],mem[src]);
+      break;
+    };
+    case 12-base_counter:
+    {
+      jnz(reg[dest],raw[src]);
+      break;
+    };
+    case 13-base_counter:
+    {
+      jnz(mem[dest],reg[src]);
+      break;
+    };
+    case 14-base_counter:
+    {
+      jnz(mem[dest],mem[src]);
+      break;
+    };
+    case 15-base_counter:
+    {
+      jnz(mem[dest],raw[src]);
+      break;
+    };
+    case 16-base_counter:
+    {
+      jnz(raw[dest],reg[src]);
+      break;
+    };
+    case 17-base_counter:
+    {
+      jnz(raw[dest],mem[src]);
+      break;
+    };
+    case 18-base_counter:
+    {
+      jnz(raw[dest],raw[src]);
+      break;
+    };
+    case 19-base_counter:
+    {
+      mov(reg[dest],reg[src]);
+      break;
+    };
+    case 20-base_counter:
+    {
+      mov(reg[dest],mem[src]);
+      break;
+    };
+    case 21-base_counter:
+    {
+      mov(reg[dest],raw[src]);
+      break;
+    };
+    case 22-base_counter:
+    {
+      mov(mem[dest],reg[src]);
+      break;
+    };
+    case 23-base_counter:
+    {
+      mov(mem[dest],mem[src]);
+      break;
+    };
+    case 24-base_counter:
+    {
+      mov(mem[dest],raw[src]);
+      break;
+    };
+    case 25-base_counter:
+    {
+      mov(raw[dest],reg[src]);
+      break;
+    };
+    case 26-base_counter:
+    {
+      mov(raw[dest],mem[src]);
+      break;
+    };
+    case 27-base_counter:
+    {
+      mov(raw[dest],raw[src]);
+      break;
+    };
+    case 28-base_counter:
+    {
+      not_sukagcc(reg[dest],reg[src]);
+      break;
+    };
+    case 29-base_counter:
+    {
+      not_sukagcc(reg[dest],mem[src]);
+      break;
+    };
+    case 30-base_counter:
+    {
+      not_sukagcc(reg[dest],raw[src]);
+      break;
+    };
+    case 31-base_counter:
+    {
+      not_sukagcc(mem[dest],reg[src]);
+      break;
+    };
+    case 32-base_counter:
+    {
+      not_sukagcc(mem[dest],mem[src]);
+      break;
+    };
+    case 33-base_counter:
+    {
+      not_sukagcc(mem[dest],raw[src]);
+      break;
+    };
+    case 34-base_counter:
+    {
+      not_sukagcc(raw[dest],reg[src]);
+      break;
+    };
+    case 35-base_counter:
+    {
+      not_sukagcc(raw[dest],mem[src]);
+      break;
+    };
+    case 36-base_counter:
+    {
+      not_sukagcc(raw[dest],raw[src]);
+      break;
+    };
+    case 37-base_counter:
+    {
+      inv(reg[dest],reg[src]);
+      break;
+    };
+    case 38-base_counter:
+    {
+      inv(reg[dest],mem[src]);
+      break;
+    };
+    case 39-base_counter:
+    {
+      inv(reg[dest],raw[src]);
+      break;
+    };
+    case 40-base_counter:
+    {
+      inv(mem[dest],reg[src]);
+      break;
+    };
+    case 41-base_counter:
+    {
+      inv(mem[dest],mem[src]);
+      break;
+    };
+    case 42-base_counter:
+    {
+      inv(mem[dest],raw[src]);
+      break;
+    };
+    case 43-base_counter:
+    {
+      inv(raw[dest],reg[src]);
+      break;
+    };
+    case 44-base_counter:
+    {
+      inv(raw[dest],mem[src]);
+      break;
+    };
+    case 45-base_counter:
+    {
+      inv(raw[dest],raw[src]);
+      break;
+    };
+    case 46-base_counter:
+    {
+      add(reg[dest],reg[a],reg[b]);
+      break;
+    };
+    case 47-base_counter:
+    {
+      add(reg[dest],reg[a],mem[b]);
+      break;
+    };
+    case 48-base_counter:
+    {
+      add(reg[dest],reg[a],raw[b]);
+      break;
+    };
+    case 49-base_counter:
+    {
+      add(reg[dest],mem[a],reg[b]);
+      break;
+    };
+    case 50-base_counter:
+    {
+      add(reg[dest],mem[a],mem[b]);
+      break;
+    };
+    case 51-base_counter:
+    {
+      add(reg[dest],mem[a],raw[b]);
+      break;
+    };
+    case 52-base_counter:
+    {
+      add(mem[dest],reg[a],reg[b]);
+      break;
+    };
+    case 53-base_counter:
+    {
+      add(mem[dest],reg[a],mem[b]);
+      break;
+    };
+    case 54-base_counter:
+    {
+      add(mem[dest],reg[a],raw[b]);
+      break;
+    };
+    case 55-base_counter:
+    {
+      add(mem[dest],mem[a],reg[b]);
+      break;
+    };
+    case 56-base_counter:
+    {
+      add(mem[dest],mem[a],mem[b]);
+      break;
+    };
+    case 57-base_counter:
+    {
+      add(mem[dest],mem[a],raw[b]);
+      break;
+    };
+    case 58-base_counter:
+    {
+      sub(reg[dest],reg[a],reg[b]);
+      break;
+    };
+    case 59-base_counter:
+    {
+      sub(reg[dest],reg[a],mem[b]);
+      break;
+    };
+    case 60-base_counter:
+    {
+      sub(reg[dest],reg[a],raw[b]);
+      break;
+    };
+    case 61-base_counter:
+    {
+      sub(reg[dest],mem[a],reg[b]);
+      break;
+    };
+    case 62-base_counter:
+    {
+      sub(reg[dest],mem[a],mem[b]);
+      break;
+    };
+    case 63-base_counter:
+    {
+      sub(reg[dest],mem[a],raw[b]);
+      break;
+    };
+    case 64-base_counter:
+    {
+      sub(mem[dest],reg[a],reg[b]);
+      break;
+    };
+    case 65-base_counter:
+    {
+      sub(mem[dest],reg[a],mem[b]);
+      break;
+    };
+    case 66-base_counter:
+    {
+      sub(mem[dest],reg[a],raw[b]);
+      break;
+    };
+    case 67-base_counter:
+    {
+      sub(mem[dest],mem[a],reg[b]);
+      break;
+    };
+    case 68-base_counter:
+    {
+      sub(mem[dest],mem[a],mem[b]);
+      break;
+    };
+    case 69-base_counter:
+    {
+      sub(mem[dest],mem[a],raw[b]);
+      break;
+    };
+    case 70-base_counter:
+    {
+      mul(reg[dest],reg[a],reg[b]);
+      break;
+    };
+    case 71-base_counter:
+    {
+      mul(reg[dest],reg[a],mem[b]);
+      break;
+    };
+    case 72-base_counter:
+    {
+      mul(reg[dest],reg[a],raw[b]);
+      break;
+    };
+    case 73-base_counter:
+    {
+      mul(reg[dest],mem[a],reg[b]);
+      break;
+    };
+    case 74-base_counter:
+    {
+      mul(reg[dest],mem[a],mem[b]);
+      break;
+    };
+    case 75-base_counter:
+    {
+      mul(reg[dest],mem[a],raw[b]);
+      break;
+    };
+    case 76-base_counter:
+    {
+      mul(mem[dest],reg[a],reg[b]);
+      break;
+    };
+    case 77-base_counter:
+    {
+      mul(mem[dest],reg[a],mem[b]);
+      break;
+    };
+    case 78-base_counter:
+    {
+      mul(mem[dest],reg[a],raw[b]);
+      break;
+    };
+    case 79-base_counter:
+    {
+      mul(mem[dest],mem[a],reg[b]);
+      break;
+    };
+    case 80-base_counter:
+    {
+      mul(mem[dest],mem[a],mem[b]);
+      break;
+    };
+    case 81-base_counter:
+    {
+      mul(mem[dest],mem[a],raw[b]);
+      break;
+    };
+    case 82-base_counter:
+    {
+      div(reg[dest],reg[a],reg[b]);
+      break;
+    };
+    case 83-base_counter:
+    {
+      div(reg[dest],reg[a],mem[b]);
+      break;
+    };
+    case 84-base_counter:
+    {
+      div(reg[dest],reg[a],raw[b]);
+      break;
+    };
+    case 85-base_counter:
+    {
+      div(reg[dest],mem[a],reg[b]);
+      break;
+    };
+    case 86-base_counter:
+    {
+      div(reg[dest],mem[a],mem[b]);
+      break;
+    };
+    case 87-base_counter:
+    {
+      div(reg[dest],mem[a],raw[b]);
+      break;
+    };
+    case 88-base_counter:
+    {
+      div(mem[dest],reg[a],reg[b]);
+      break;
+    };
+    case 89-base_counter:
+    {
+      div(mem[dest],reg[a],mem[b]);
+      break;
+    };
+    case 90-base_counter:
+    {
+      div(mem[dest],reg[a],raw[b]);
+      break;
+    };
+    case 91-base_counter:
+    {
+      div(mem[dest],mem[a],reg[b]);
+      break;
+    };
+    case 92-base_counter:
+    {
+      div(mem[dest],mem[a],mem[b]);
+      break;
+    };
+    case 93-base_counter:
+    {
+      div(mem[dest],mem[a],raw[b]);
+      break;
+    };
+    case 94-base_counter:
+    {
+      mod(reg[dest],reg[a],reg[b]);
+      break;
+    };
+    case 95-base_counter:
+    {
+      mod(reg[dest],reg[a],mem[b]);
+      break;
+    };
+    case 96-base_counter:
+    {
+      mod(reg[dest],reg[a],raw[b]);
+      break;
+    };
+    case 97-base_counter:
+    {
+      mod(reg[dest],mem[a],reg[b]);
+      break;
+    };
+    case 98-base_counter:
+    {
+      mod(reg[dest],mem[a],mem[b]);
+      break;
+    };
+    case 99-base_counter:
+    {
+      mod(reg[dest],mem[a],raw[b]);
+      break;
+    };
+    case 100-base_counter:
+    {
+      mod(mem[dest],reg[a],reg[b]);
+      break;
+    };
+    case 101-base_counter:
+    {
+      mod(mem[dest],reg[a],mem[b]);
+      break;
+    };
+    case 102-base_counter:
+    {
+      mod(mem[dest],reg[a],raw[b]);
+      break;
+    };
+    case 103-base_counter:
+    {
+      mod(mem[dest],mem[a],reg[b]);
+      break;
+    };
+    case 104-base_counter:
+    {
+      mod(mem[dest],mem[a],mem[b]);
+      break;
+    };
+    case 105-base_counter:
+    {
+      mod(mem[dest],mem[a],raw[b]);
+      break;
+    };
+    case 106-base_counter:
+    {
+      eq(reg[dest],reg[a],reg[b]);
+      break;
+    };
+    case 107-base_counter:
+    {
+      eq(reg[dest],reg[a],mem[b]);
+      break;
+    };
+    case 108-base_counter:
+    {
+      eq(reg[dest],reg[a],raw[b]);
+      break;
+    };
+    case 109-base_counter:
+    {
+      eq(reg[dest],mem[a],reg[b]);
+      break;
+    };
+    case 110-base_counter:
+    {
+      eq(reg[dest],mem[a],mem[b]);
+      break;
+    };
+    case 111-base_counter:
+    {
+      eq(reg[dest],mem[a],raw[b]);
+      break;
+    };
+    case 112-base_counter:
+    {
+      eq(mem[dest],reg[a],reg[b]);
+      break;
+    };
+    case 113-base_counter:
+    {
+      eq(mem[dest],reg[a],mem[b]);
+      break;
+    };
+    case 114-base_counter:
+    {
+      eq(mem[dest],reg[a],raw[b]);
+      break;
+    };
+    case 115-base_counter:
+    {
+      eq(mem[dest],mem[a],reg[b]);
+      break;
+    };
+    case 116-base_counter:
+    {
+      eq(mem[dest],mem[a],mem[b]);
+      break;
+    };
+    case 117-base_counter:
+    {
+      eq(mem[dest],mem[a],raw[b]);
+      break;
+    };
+    case 118-base_counter:
+    {
+      neq(reg[dest],reg[a],reg[b]);
+      break;
+    };
+    case 119-base_counter:
+    {
+      neq(reg[dest],reg[a],mem[b]);
+      break;
+    };
+    case 120-base_counter:
+    {
+      neq(reg[dest],reg[a],raw[b]);
+      break;
+    };
+    case 121-base_counter:
+    {
+      neq(reg[dest],mem[a],reg[b]);
+      break;
+    };
+    case 122-base_counter:
+    {
+      neq(reg[dest],mem[a],mem[b]);
+      break;
+    };
+    case 123-base_counter:
+    {
+      neq(reg[dest],mem[a],raw[b]);
+      break;
+    };
+    case 124-base_counter:
+    {
+      neq(mem[dest],reg[a],reg[b]);
+      break;
+    };
+    case 125-base_counter:
+    {
+      neq(mem[dest],reg[a],mem[b]);
+      break;
+    };
+    case 126-base_counter:
+    {
+      neq(mem[dest],reg[a],raw[b]);
+      break;
+    };
+    case 127-base_counter:
+    {
+      neq(mem[dest],mem[a],reg[b]);
+      break;
+    };
+    case 128-base_counter:
+    {
+      neq(mem[dest],mem[a],mem[b]);
+      break;
+    };
+    case 129-base_counter:
+    {
+      neq(mem[dest],mem[a],raw[b]);
+      break;
+    };
+    case 130-base_counter:
+    {
+      less(reg[dest],reg[a],reg[b]);
+      break;
+    };
+    case 131-base_counter:
+    {
+      less(reg[dest],reg[a],mem[b]);
+      break;
+    };
+    case 132-base_counter:
+    {
+      less(reg[dest],reg[a],raw[b]);
+      break;
+    };
+    case 133-base_counter:
+    {
+      less(reg[dest],mem[a],reg[b]);
+      break;
+    };
+    case 134-base_counter:
+    {
+      less(reg[dest],mem[a],mem[b]);
+      break;
+    };
+    case 135-base_counter:
+    {
+      less(reg[dest],mem[a],raw[b]);
+      break;
+    };
+    case 136-base_counter:
+    {
+      less(mem[dest],reg[a],reg[b]);
+      break;
+    };
+    case 137-base_counter:
+    {
+      less(mem[dest],reg[a],mem[b]);
+      break;
+    };
+    case 138-base_counter:
+    {
+      less(mem[dest],reg[a],raw[b]);
+      break;
+    };
+    case 139-base_counter:
+    {
+      less(mem[dest],mem[a],reg[b]);
+      break;
+    };
+    case 140-base_counter:
+    {
+      less(mem[dest],mem[a],mem[b]);
+      break;
+    };
+    case 141-base_counter:
+    {
+      less(mem[dest],mem[a],raw[b]);
+      break;
+    };
+    case 142-base_counter:
+    {
+      more(reg[dest],reg[a],reg[b]);
+      break;
+    };
+    case 143-base_counter:
+    {
+      more(reg[dest],reg[a],mem[b]);
+      break;
+    };
+    case 144-base_counter:
+    {
+      more(reg[dest],reg[a],raw[b]);
+      break;
+    };
+    case 145-base_counter:
+    {
+      more(reg[dest],mem[a],reg[b]);
+      break;
+    };
+    case 146-base_counter:
+    {
+      more(reg[dest],mem[a],mem[b]);
+      break;
+    };
+    case 147-base_counter:
+    {
+      more(reg[dest],mem[a],raw[b]);
+      break;
+    };
+    case 148-base_counter:
+    {
+      more(mem[dest],reg[a],reg[b]);
+      break;
+    };
+    case 149-base_counter:
+    {
+      more(mem[dest],reg[a],mem[b]);
+      break;
+    };
+    case 150-base_counter:
+    {
+      more(mem[dest],reg[a],raw[b]);
+      break;
+    };
+    case 151-base_counter:
+    {
+      more(mem[dest],mem[a],reg[b]);
+      break;
+    };
+    case 152-base_counter:
+    {
+      more(mem[dest],mem[a],mem[b]);
+      break;
+    };
+    case 153-base_counter:
+    {
+      more(mem[dest],mem[a],raw[b]);
+      break;
+    };
+    case 154-base_counter:
+    {
+      or_sukagcc(reg[dest],reg[a],reg[b]);
+      break;
+    };
+    case 155-base_counter:
+    {
+      or_sukagcc(reg[dest],reg[a],mem[b]);
+      break;
+    };
+    case 156-base_counter:
+    {
+      or_sukagcc(reg[dest],reg[a],raw[b]);
+      break;
+    };
+    case 157-base_counter:
+    {
+      or_sukagcc(reg[dest],mem[a],reg[b]);
+      break;
+    };
+    case 158-base_counter:
+    {
+      or_sukagcc(reg[dest],mem[a],mem[b]);
+      break;
+    };
+    case 159-base_counter:
+    {
+      or_sukagcc(reg[dest],mem[a],raw[b]);
+      break;
+    };
+    case 160-base_counter:
+    {
+      or_sukagcc(mem[dest],reg[a],reg[b]);
+      break;
+    };
+    case 161-base_counter:
+    {
+      or_sukagcc(mem[dest],reg[a],mem[b]);
+      break;
+    };
+    case 162-base_counter:
+    {
+      or_sukagcc(mem[dest],reg[a],raw[b]);
+      break;
+    };
+    case 163-base_counter:
+    {
+      or_sukagcc(mem[dest],mem[a],reg[b]);
+      break;
+    };
+    case 164-base_counter:
+    {
+      or_sukagcc(mem[dest],mem[a],mem[b]);
+      break;
+    };
+    case 165-base_counter:
+    {
+      or_sukagcc(mem[dest],mem[a],raw[b]);
+      break;
+    };
+    case 166-base_counter:
+    {
+      and_sukagcc(reg[dest],reg[a],reg[b]);
+      break;
+    };
+    case 167-base_counter:
+    {
+      and_sukagcc(reg[dest],reg[a],mem[b]);
+      break;
+    };
+    case 168-base_counter:
+    {
+      and_sukagcc(reg[dest],reg[a],raw[b]);
+      break;
+    };
+    case 169-base_counter:
+    {
+      and_sukagcc(reg[dest],mem[a],reg[b]);
+      break;
+    };
+    case 170-base_counter:
+    {
+      and_sukagcc(reg[dest],mem[a],mem[b]);
+      break;
+    };
+    case 171-base_counter:
+    {
+      and_sukagcc(reg[dest],mem[a],raw[b]);
+      break;
+    };
+    case 172-base_counter:
+    {
+      and_sukagcc(mem[dest],reg[a],reg[b]);
+      break;
+    };
+    case 173-base_counter:
+    {
+      and_sukagcc(mem[dest],reg[a],mem[b]);
+      break;
+    };
+    case 174-base_counter:
+    {
+      and_sukagcc(mem[dest],reg[a],raw[b]);
+      break;
+    };
+    case 175-base_counter:
+    {
+      and_sukagcc(mem[dest],mem[a],reg[b]);
+      break;
+    };
+    case 176-base_counter:
+    {
+      and_sukagcc(mem[dest],mem[a],mem[b]);
+      break;
+    };
+    case 177-base_counter:
+    {
+      and_sukagcc(mem[dest],mem[a],raw[b]);
+      break;
+    };
+    case 178-base_counter:
+    {
+      shr(reg[dest],reg[a],reg[b]);
+      break;
+    };
+    case 179-base_counter:
+    {
+      shr(reg[dest],reg[a],mem[b]);
+      break;
+    };
+    case 180-base_counter:
+    {
+      shr(reg[dest],reg[a],raw[b]);
+      break;
+    };
+    case 181-base_counter:
+    {
+      shr(reg[dest],mem[a],reg[b]);
+      break;
+    };
+    case 182-base_counter:
+    {
+      shr(reg[dest],mem[a],mem[b]);
+      break;
+    };
+    case 183-base_counter:
+    {
+      shr(reg[dest],mem[a],raw[b]);
+      break;
+    };
+    case 184-base_counter:
+    {
+      shr(mem[dest],reg[a],reg[b]);
+      break;
+    };
+    case 185-base_counter:
+    {
+      shr(mem[dest],reg[a],mem[b]);
+      break;
+    };
+    case 186-base_counter:
+    {
+      shr(mem[dest],reg[a],raw[b]);
+      break;
+    };
+    case 187-base_counter:
+    {
+      shr(mem[dest],mem[a],reg[b]);
+      break;
+    };
+    case 188-base_counter:
+    {
+      shr(mem[dest],mem[a],mem[b]);
+      break;
+    };
+    case 189-base_counter:
+    {
+      shr(mem[dest],mem[a],raw[b]);
+      break;
+    };
+    case 190-base_counter:
+    {
+      shl(reg[dest],reg[a],reg[b]);
+      break;
+    };
+    case 191-base_counter:
+    {
+      shl(reg[dest],reg[a],mem[b]);
+      break;
+    };
+    case 192-base_counter:
+    {
+      shl(reg[dest],reg[a],raw[b]);
+      break;
+    };
+    case 193-base_counter:
+    {
+      shl(reg[dest],mem[a],reg[b]);
+      break;
+    };
+    case 194-base_counter:
+    {
+      shl(reg[dest],mem[a],mem[b]);
+      break;
+    };
+    case 195-base_counter:
+    {
+      shl(reg[dest],mem[a],raw[b]);
+      break;
+    };
+    case 196-base_counter:
+    {
+      shl(mem[dest],reg[a],reg[b]);
+      break;
+    };
+    case 197-base_counter:
+    {
+      shl(mem[dest],reg[a],mem[b]);
+      break;
+    };
+    case 198-base_counter:
+    {
+      shl(mem[dest],reg[a],raw[b]);
+      break;
+    };
+    case 199-base_counter:
+    {
+      shl(mem[dest],mem[a],reg[b]);
+      break;
+    };
+    case 200-base_counter:
+    {
+      shl(mem[dest],mem[a],mem[b]);
+      break;
+    };
+    case 201-base_counter:
+    {
+      shl(mem[dest],mem[a],raw[b]);
+      break;
+    };
+    case 202-base_counter:
+    {
+      jmp(reg[dest]);
+      break;
+    };
+    case 203-base_counter:
+    {
+      jmp(mem[dest]);
+      break;
+    };
+    case 204-base_counter:
+    {
+      jmp(raw[dest]);
+      break;
+    };
+    case 205-base_counter:
+    {
+      call(reg[dest]);
+      break;
+    };
+    case 206-base_counter:
+    {
+      call(mem[dest]);
+      break;
+    };
+    case 207-base_counter:
+    {
+      call(raw[dest]);
+      break;
+    };
+    case 208-base_counter:
+    {
+      push(reg[dest]);
+      break;
+    };
+    case 209-base_counter:
+    {
+      push(mem[dest]);
+      break;
+    };
+    case 210-base_counter:
+    {
+      push(raw[dest]);
+      break;
+    };
+    case 211-base_counter:
+    {
+      pop(reg[dest]);
+      break;
+    };
+    case 212-base_counter:
+    {
+      pop(mem[dest]);
+      break;
+    };
+    case 213-base_counter:
+    {
+      inc(reg[dest]);
+      break;
+    };
+    case 214-base_counter:
+    {
+      inc(mem[dest]);
+      break;
+    };
+    case 215-base_counter:
+    {
+      dec(reg[dest]);
+      break;
+    };
+    case 216-base_counter:
+    {
+      dec(mem[dest]);
+      break;
+    };
+    case 217-base_counter:
+    {
+      ret();
+      break;
+    };
+    case 218-base_counter:
+    {
+      nop();
+      break;
+    };
+    case 219-base_counter:
+    {
+      label();
+      break;
+    };
+    case 220-base_counter:
+    {
+      mov(mem[reg[dest]],reg[src]);
+      break;
+    };
+    case 221-base_counter:
+    {
+      mov(mem[reg[dest]],mem[src]);
+      break;
+    };
+    case 222-base_counter:
+    {
+      mov(mem[reg[dest]],raw[src]);
+      break;
+    };
+    case 223-base_counter:
+    {
+      mov(reg[dest],mem[reg[src]]);
+      break;
+    };
+    case 224-base_counter:
+    {
+      mov(mem[dest],mem[reg[src]]);
+      break;
+    };
+    }
   }
   void sim_n(int n)
   {
@@ -398,1371 +1518,6 @@ struct t_machine
     arr.push_back(t_cmd(20,8,1,0));
   }
 };
-
-  namespace t_instructions
-  {
-    static const int beg_counter=0;
-template<int NUMBER>struct t_instruction:i_instruction {};
-template<>struct t_instruction<1>$x$()jz(reg[dest],reg[src]);
-      };
-    };
-template<>struct t_instruction<2>$x$()jz(reg[dest],mem[src]);
-      };
-    };
-template<>struct t_instruction<3>$x$()jz(reg[dest],raw[src]);
-      };
-    };
-template<>struct t_instruction<4>$x$()jz(mem[dest],reg[src]);
-      };
-    };
-template<>struct t_instruction<5>$x$()jz(mem[dest],mem[src]);
-      };
-    };
-template<>struct t_instruction<6>$x$()jz(mem[dest],raw[src]);
-      };
-    };
-template<>struct t_instruction<7>$x$()jz(raw[dest],reg[src]);
-      };
-    };
-template<>struct t_instruction<8>$x$()jz(raw[dest],mem[src]);
-      };
-    };
-template<>struct t_instruction<9>$x$()jz(raw[dest],raw[src]);
-      };
-    };
-template<>struct t_instruction<10>$x$()jnz(reg[dest],reg[src]);
-      };
-    };
-template<>struct t_instruction<11>$x$()jnz(reg[dest],mem[src]);
-      };
-    };
-template<>struct t_instruction<12>$x$()jnz(reg[dest],raw[src]);
-      };
-    };
-template<>struct t_instruction<13>$x$()jnz(mem[dest],reg[src]);
-      };
-    };
-template<>struct t_instruction<14>$x$()jnz(mem[dest],mem[src]);
-      };
-    };
-template<>struct t_instruction<15>$x$()jnz(mem[dest],raw[src]);
-      };
-    };
-template<>struct t_instruction<16>$x$()jnz(raw[dest],reg[src]);
-      };
-    };
-template<>struct t_instruction<17>$x$()jnz(raw[dest],mem[src]);
-      };
-    };
-template<>struct t_instruction<18>$x$()jnz(raw[dest],raw[src]);
-      };
-    };
-template<>struct t_instruction<19>$x$()mov(reg[dest],reg[src]);
-      };
-    };
-template<>struct t_instruction<20>$x$()mov(reg[dest],mem[src]);
-      };
-    };
-template<>struct t_instruction<21>$x$()mov(reg[dest],raw[src]);
-      };
-    };
-template<>struct t_instruction<22>$x$()mov(mem[dest],reg[src]);
-      };
-    };
-template<>struct t_instruction<23>$x$()mov(mem[dest],mem[src]);
-      };
-    };
-template<>struct t_instruction<24>$x$()mov(mem[dest],raw[src]);
-      };
-    };
-template<>struct t_instruction<25>$x$()mov(raw[dest],reg[src]);
-      };
-    };
-template<>struct t_instruction<26>$x$()mov(raw[dest],mem[src]);
-      };
-    };
-template<>struct t_instruction<27>$x$()mov(raw[dest],raw[src]);
-      };
-    };
-template<>struct t_instruction<28>$x$()not_sukagcc(reg[dest],reg[src]);
-      };
-    };
-template<>struct t_instruction<29>$x$()not_sukagcc(reg[dest],mem[src]);
-      };
-    };
-template<>struct t_instruction<30>$x$()not_sukagcc(reg[dest],raw[src]);
-      };
-    };
-template<>struct t_instruction<31>$x$()not_sukagcc(mem[dest],reg[src]);
-      };
-    };
-template<>struct t_instruction<32>$x$()not_sukagcc(mem[dest],mem[src]);
-      };
-    };
-template<>struct t_instruction<33>$x$()not_sukagcc(mem[dest],raw[src]);
-      };
-    };
-template<>struct t_instruction<34>$x$()not_sukagcc(raw[dest],reg[src]);
-      };
-    };
-template<>struct t_instruction<35>$x$()not_sukagcc(raw[dest],mem[src]);
-      };
-    };
-template<>struct t_instruction<36>$x$()not_sukagcc(raw[dest],raw[src]);
-      };
-    };
-template<>struct t_instruction<37>$x$()inv(reg[dest],reg[src]);
-      };
-    };
-template<>struct t_instruction<38>$x$()inv(reg[dest],mem[src]);
-      };
-    };
-template<>struct t_instruction<39>$x$()inv(reg[dest],raw[src]);
-      };
-    };
-template<>struct t_instruction<40>$x$()inv(mem[dest],reg[src]);
-      };
-    };
-template<>struct t_instruction<41>$x$()inv(mem[dest],mem[src]);
-      };
-    };
-template<>struct t_instruction<42>$x$()inv(mem[dest],raw[src]);
-      };
-    };
-template<>struct t_instruction<43>$x$()inv(raw[dest],reg[src]);
-      };
-    };
-template<>struct t_instruction<44>$x$()inv(raw[dest],mem[src]);
-      };
-    };
-template<>struct t_instruction<45>$x$()inv(raw[dest],raw[src]);
-      };
-    };
-template<>struct t_instruction<46>$x$()add(reg[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<47>$x$()add(reg[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<48>$x$()add(reg[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<49>$x$()add(reg[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<50>$x$()add(reg[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<51>$x$()add(reg[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<52>$x$()add(mem[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<53>$x$()add(mem[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<54>$x$()add(mem[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<55>$x$()add(mem[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<56>$x$()add(mem[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<57>$x$()add(mem[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<58>$x$()sub(reg[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<59>$x$()sub(reg[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<60>$x$()sub(reg[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<61>$x$()sub(reg[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<62>$x$()sub(reg[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<63>$x$()sub(reg[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<64>$x$()sub(mem[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<65>$x$()sub(mem[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<66>$x$()sub(mem[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<67>$x$()sub(mem[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<68>$x$()sub(mem[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<69>$x$()sub(mem[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<70>$x$()mul(reg[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<71>$x$()mul(reg[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<72>$x$()mul(reg[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<73>$x$()mul(reg[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<74>$x$()mul(reg[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<75>$x$()mul(reg[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<76>$x$()mul(mem[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<77>$x$()mul(mem[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<78>$x$()mul(mem[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<79>$x$()mul(mem[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<80>$x$()mul(mem[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<81>$x$()mul(mem[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<82>$x$()div(reg[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<83>$x$()div(reg[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<84>$x$()div(reg[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<85>$x$()div(reg[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<86>$x$()div(reg[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<87>$x$()div(reg[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<88>$x$()div(mem[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<89>$x$()div(mem[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<90>$x$()div(mem[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<91>$x$()div(mem[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<92>$x$()div(mem[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<93>$x$()div(mem[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<94>$x$()mod(reg[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<95>$x$()mod(reg[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<96>$x$()mod(reg[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<97>$x$()mod(reg[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<98>$x$()mod(reg[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<99>$x$()mod(reg[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<100>$x$()mod(mem[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<101>$x$()mod(mem[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<102>$x$()mod(mem[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<103>$x$()mod(mem[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<104>$x$()mod(mem[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<105>$x$()mod(mem[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<106>$x$()eq(reg[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<107>$x$()eq(reg[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<108>$x$()eq(reg[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<109>$x$()eq(reg[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<110>$x$()eq(reg[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<111>$x$()eq(reg[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<112>$x$()eq(mem[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<113>$x$()eq(mem[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<114>$x$()eq(mem[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<115>$x$()eq(mem[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<116>$x$()eq(mem[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<117>$x$()eq(mem[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<118>$x$()neq(reg[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<119>$x$()neq(reg[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<120>$x$()neq(reg[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<121>$x$()neq(reg[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<122>$x$()neq(reg[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<123>$x$()neq(reg[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<124>$x$()neq(mem[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<125>$x$()neq(mem[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<126>$x$()neq(mem[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<127>$x$()neq(mem[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<128>$x$()neq(mem[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<129>$x$()neq(mem[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<130>$x$()less(reg[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<131>$x$()less(reg[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<132>$x$()less(reg[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<133>$x$()less(reg[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<134>$x$()less(reg[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<135>$x$()less(reg[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<136>$x$()less(mem[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<137>$x$()less(mem[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<138>$x$()less(mem[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<139>$x$()less(mem[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<140>$x$()less(mem[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<141>$x$()less(mem[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<142>$x$()more(reg[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<143>$x$()more(reg[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<144>$x$()more(reg[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<145>$x$()more(reg[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<146>$x$()more(reg[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<147>$x$()more(reg[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<148>$x$()more(mem[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<149>$x$()more(mem[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<150>$x$()more(mem[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<151>$x$()more(mem[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<152>$x$()more(mem[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<153>$x$()more(mem[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<154>$x$()or_sukagcc(reg[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<155>$x$()or_sukagcc(reg[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<156>$x$()or_sukagcc(reg[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<157>$x$()or_sukagcc(reg[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<158>$x$()or_sukagcc(reg[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<159>$x$()or_sukagcc(reg[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<160>$x$()or_sukagcc(mem[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<161>$x$()or_sukagcc(mem[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<162>$x$()or_sukagcc(mem[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<163>$x$()or_sukagcc(mem[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<164>$x$()or_sukagcc(mem[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<165>$x$()or_sukagcc(mem[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<166>$x$()and_sukagcc(reg[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<167>$x$()and_sukagcc(reg[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<168>$x$()and_sukagcc(reg[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<169>$x$()and_sukagcc(reg[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<170>$x$()and_sukagcc(reg[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<171>$x$()and_sukagcc(reg[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<172>$x$()and_sukagcc(mem[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<173>$x$()and_sukagcc(mem[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<174>$x$()and_sukagcc(mem[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<175>$x$()and_sukagcc(mem[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<176>$x$()and_sukagcc(mem[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<177>$x$()and_sukagcc(mem[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<178>$x$()shr(reg[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<179>$x$()shr(reg[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<180>$x$()shr(reg[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<181>$x$()shr(reg[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<182>$x$()shr(reg[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<183>$x$()shr(reg[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<184>$x$()shr(mem[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<185>$x$()shr(mem[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<186>$x$()shr(mem[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<187>$x$()shr(mem[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<188>$x$()shr(mem[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<189>$x$()shr(mem[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<190>$x$()shl(reg[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<191>$x$()shl(reg[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<192>$x$()shl(reg[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<193>$x$()shl(reg[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<194>$x$()shl(reg[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<195>$x$()shl(reg[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<196>$x$()shl(mem[dest],reg[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<197>$x$()shl(mem[dest],reg[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<198>$x$()shl(mem[dest],reg[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<199>$x$()shl(mem[dest],mem[a],reg[b]);
-      };
-    };
-template<>struct t_instruction<200>$x$()shl(mem[dest],mem[a],mem[b]);
-      };
-    };
-template<>struct t_instruction<201>$x$()shl(mem[dest],mem[a],raw[b]);
-      };
-    };
-template<>struct t_instruction<202>$x$()jmp(reg[dest]);
-      };
-    };
-template<>struct t_instruction<203>$x$()jmp(mem[dest]);
-      };
-    };
-template<>struct t_instruction<204>$x$()jmp(raw[dest]);
-      };
-    };
-template<>struct t_instruction<205>$x$()call(reg[dest]);
-      };
-    };
-template<>struct t_instruction<206>$x$()call(mem[dest]);
-      };
-    };
-template<>struct t_instruction<207>$x$()call(raw[dest]);
-      };
-    };
-template<>struct t_instruction<208>$x$()push(reg[dest]);
-      };
-    };
-template<>struct t_instruction<209>$x$()push(mem[dest]);
-      };
-    };
-template<>struct t_instruction<210>$x$()push(raw[dest]);
-      };
-    };
-template<>struct t_instruction<211>$x$()pop(reg[dest]);
-      };
-    };
-template<>struct t_instruction<212>$x$()pop(mem[dest]);
-      };
-    };
-template<>struct t_instruction<213>$x$()inc(reg[dest]);
-      };
-    };
-template<>struct t_instruction<214>$x$()inc(mem[dest]);
-      };
-    };
-template<>struct t_instruction<215>$x$()dec(reg[dest]);
-      };
-    };
-template<>struct t_instruction<216>$x$()dec(mem[dest]);
-      };
-    };
-template<>struct t_instruction<217>$x$()ret();
-      };
-    };
-template<>struct t_instruction<218>$x$()nop();
-      };
-    };
-template<>struct t_instruction<219>$x$()label();
-      };
-    };
-template<>struct t_instruction<220>$x$()mov(mem[reg[dest]],reg[src]);
-      };
-    };
-template<>struct t_instruction<221>$x$()mov(mem[reg[dest]],mem[src]);
-      };
-    };
-template<>struct t_instruction<222>$x$()mov(mem[reg[dest]],raw[src]);
-      };
-    };
-template<>struct t_instruction<223>$x$()mov(reg[dest],mem[reg[src]]);
-      };
-    };
-template<>struct t_instruction<224>$x$()mov(mem[dest],mem[reg[src]]);
-      };
-    };
-    static const int end_counter=225;
-    static const int size=end_counter-beg_counter-1;
-    template<int N>static i_instruction&get()
-    {
-      static t_instruction<N> tmp;
-      return tmp;
-    };
-  };
-
-  std::vector<i_instruction*>& t_machine::get_all_instructions()
-  {
-    static vector<i_instruction*> out;
-    if (!out.empty())return out;
-    #define GG t_instructions
-    {
-      qap_add_back(out)=&GG::get<226-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<227-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<228-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<229-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<230-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<231-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<232-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<233-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<234-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<235-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<236-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<237-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<238-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<239-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<240-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<241-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<242-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<243-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<244-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<245-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<246-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<247-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<248-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<249-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<250-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<251-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<252-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<253-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<254-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<255-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<256-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<257-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<258-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<259-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<260-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<261-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<262-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<263-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<264-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<265-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<266-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<267-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<268-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<269-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<270-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<271-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<272-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<273-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<274-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<275-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<276-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<277-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<278-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<279-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<280-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<281-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<282-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<283-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<284-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<285-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<286-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<287-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<288-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<289-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<290-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<291-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<292-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<293-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<294-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<295-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<296-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<297-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<298-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<299-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<300-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<301-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<302-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<303-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<304-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<305-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<306-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<307-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<308-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<309-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<310-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<311-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<312-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<313-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<314-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<315-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<316-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<317-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<318-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<319-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<320-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<321-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<322-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<323-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<324-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<325-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<326-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<327-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<328-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<329-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<330-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<331-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<332-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<333-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<334-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<335-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<336-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<337-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<338-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<339-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<340-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<341-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<342-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<343-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<344-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<345-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<346-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<347-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<348-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<349-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<350-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<351-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<352-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<353-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<354-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<355-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<356-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<357-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<358-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<359-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<360-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<361-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<362-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<363-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<364-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<365-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<366-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<367-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<368-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<369-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<370-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<371-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<372-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<373-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<374-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<375-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<376-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<377-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<378-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<379-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<380-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<381-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<382-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<383-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<384-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<385-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<386-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<387-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<388-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<389-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<390-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<391-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<392-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<393-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<394-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<395-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<396-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<397-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<398-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<399-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<400-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<401-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<402-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<403-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<404-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<405-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<406-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<407-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<408-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<409-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<410-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<411-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<412-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<413-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<414-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<415-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<416-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<417-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<418-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<419-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<420-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<421-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<422-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<423-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<424-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<425-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<426-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<427-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<428-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<429-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<430-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<431-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<432-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<433-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<434-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<435-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<436-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<437-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<438-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<439-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<440-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<441-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<442-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<443-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<444-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<445-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<446-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<447-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<448-GG::end_counter>();
-    };
-    {
-      qap_add_back(out)=&GG::get<449-GG::end_counter>();
-    };
-    return out;
-  }
   
 int main()
 {
