@@ -1,4 +1,3 @@
-#define $x$():i_instruction{  void operator()(t_machine&m,const t_cmd&cmd)const{static const t_raw_const raw;auto&mem=m.mem;auto&reg=m.reg;auto&dest=cmd.dest;auto&src=cmd.a;auto&a=cmd.a;auto&b=cmd.b;m.
 typedef double real;
 #include <vector>
 #include <algorithm>
