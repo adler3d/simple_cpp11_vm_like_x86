@@ -1501,9 +1501,9 @@ struct t_machine
     for (;!reg[err];)sim_n(1);
     int gg=1;
   }
-  void def_app()
+  void def_app(int iter)
   {
-    arr.push_back(t_cmd(20,2,65536*256,0));
+    arr.push_back(t_cmd(20,2,iter,0));
     arr.push_back(t_cmd(20,3,0,0));
     arr.push_back(t_cmd(203,5,0,0));
     arr.push_back(t_cmd(218,0,0,0));
@@ -1517,21 +1517,49 @@ struct t_machine
     arr.push_back(t_cmd(20,8,1,0));
   }
 };
-  
+
+inline void mod(int&dest,int a,int b){dest=a%b;}
+inline void less(int&dest,int a,int b){dest=a<b;}
+inline void mov(int&dest,int src){dest=src;}
+inline void inc(int&inout){inout++;}
+int native_func(int*ptr,int iter){
+  int eax,ebx,ecx,edx;
+  mov(eax,iter);
+  mov(ebx,0);
+  goto body;
+  loop:
+  inc(ebx);
+  body:
+  mod(edx,ebx,4);
+  inc(edx);
+  mov(ptr[ebx],edx);
+  less(ecx,ebx,eax);
+  if(ecx)goto loop;
+  int gg=1;
+  return 0;
+}
+
 int main()
 {
+  int iter=1024*1024*32;
   t_machine m;
-  m.mem.resize(64*1024*1024);
+  m.mem.resize(iter+16);
   m.reg.resize(1024);
-  m.def_app();
+  m.def_app(iter);
   auto bef=getCPUTime();
   m.sim_till_err();
   static real t=1000.0*(getCPUTime()-bef);
+  for(int i=0;i<m.mem.size();i++)m.mem[i]=0;
+  bef=getCPUTime();
+  native_func(&m.mem[0],iter);
+  static real tn=1000.0*(getCPUTime()-bef);
   static real cpu_speed_ghz=get_cpu_speed()/1e9;
   static real cpu_speed=cpu_speed_ghz*1e6;
   static real cpu_cycles_per_cmd=t*cpu_speed/real(m.reg[cmd_counter]);
   printf("cpu_speed = %.2fGHz\n",cpu_speed_ghz);
   printf("t = %.3fms\n",t);
+  printf("tn = %.3fms\n",tn);
+  printf("t/tn = %.3f\n",t/tn);
   printf("cpu_cycles_per_cmd = %.4f\n",cpu_cycles_per_cmd);
   int gg=1;
   return 0;
