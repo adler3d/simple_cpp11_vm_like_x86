@@ -8,7 +8,7 @@
 #define QapDebugMsg(MSG)
 using std::vector; using std::string; using std::bitset;
 template<typename TYPE>TYPE Sign(TYPE value){return TYPE(value>0?1:(value<0?-1:0));}
-inline string IToS(const int&val){char c[16];_itoa_s(val,c,10);return string(c);}
+inline string IToS(const int&val){char c[16];sprintf(c,"%i",val);return string(c);}
 
 struct t_int;
 struct t_mem{
