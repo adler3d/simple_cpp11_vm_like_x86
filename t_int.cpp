@@ -71,7 +71,7 @@ struct t_int{
     if(!m)return a;
     auto b=ptr->arr[id+4];
     auto fp=a>>m;
-    u8 boff=u8(0xff)>>(8-m);//boff--;boff=~boff;
+    u8 boff=u8(0xff)>>(8-m);
     auto sp=b&boff;
     return fp|(sp<<32-m);
   }
@@ -84,7 +84,7 @@ struct t_int{
     auto&b=ptr->arr[id+4];
     auto off=1<<m;off--;
     a=(a&off)|(v<<m);
-    u8 boff=~((unsigned(1)<<m)-1);// >>(8-m);
+    u8 boff=~((unsigned(1)<<m)-1);
     auto fp=(b&boff);
     auto sp=u8(unsigned(v)>>(32-m));
     b=fp|sp;
@@ -108,9 +108,8 @@ int main()
   t_mem mem;init_mem(mem);
   string out;
   for(int i=0;i<256*1024;i++){
-    t_mem mem;init_mem(mem);//{for(int i=0;i<8;i++)mem.arr[i]=0;}
+    t_mem mem;init_mem(mem);
     auto addr=rnd()%32;
-    auto v=0xffffffff;//(rnd()<<16)|rnd();
     unsigned fv=mem[addr];
     unsigned sv=mem[addr].slow_get();
     out="";
@@ -126,11 +125,11 @@ int main()
   }
   printf("getter are tested!\n");
   for(int i=0;i<256*1024;i++){
-    t_mem mem;init_mem(mem);//{for(int i=0;i<8;i++)mem.arr[i]=0;}
+    t_mem mem;init_mem(mem);
     auto dbg=mem;
     auto mbs=mem;
     auto addr=i%32;
-    auto v=0xffffffff;//(rnd()<<16)|rnd();
+    auto v=(rnd()<<16)|rnd();
     mem[addr]=v;
     mbs[addr].slow_set(v);
     out="";
