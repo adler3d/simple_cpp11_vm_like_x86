@@ -37,78 +37,78 @@ template<class TYPE>static TYPE&qap_add_back(vector<TYPE>&arr){arr.resize(arr.si
 double getCPUTime( )
 {
 #if defined(_WIN32)
-	/* Windows -------------------------------------------------- */
-	FILETIME createTime;
-	FILETIME exitTime;
-	FILETIME kernelTime;
-	FILETIME userTime;
-	if ( GetProcessTimes( GetCurrentProcess( ),
-		&createTime, &exitTime, &kernelTime, &userTime ) != -1 )
-	{
-		SYSTEMTIME userSystemTime;
-		if ( FileTimeToSystemTime( &userTime, &userSystemTime ) != -1 )
-			return (double)userSystemTime.wHour * 3600.0 +
-				(double)userSystemTime.wMinute * 60.0 +
-				(double)userSystemTime.wSecond +
-				(double)userSystemTime.wMilliseconds / 1000.0;
-	}
+  /* Windows -------------------------------------------------- */
+  FILETIME createTime;
+  FILETIME exitTime;
+  FILETIME kernelTime;
+  FILETIME userTime;
+  if ( GetProcessTimes( GetCurrentProcess( ),
+    &createTime, &exitTime, &kernelTime, &userTime ) != -1 )
+  {
+    SYSTEMTIME userSystemTime;
+    if ( FileTimeToSystemTime( &userTime, &userSystemTime ) != -1 )
+      return (double)userSystemTime.wHour * 3600.0 +
+        (double)userSystemTime.wMinute * 60.0 +
+        (double)userSystemTime.wSecond +
+        (double)userSystemTime.wMilliseconds / 1000.0;
+  }
 
 #elif defined(__unix__) || defined(__unix) || defined(unix) || (defined(__APPLE__) && defined(__MACH__))
-	/* AIX, BSD, Cygwin, HP-UX, Linux, OSX, and_sukagcc Solaris --------- */
+  /* AIX, BSD, Cygwin, HP-UX, Linux, OSX, and_sukagcc Solaris --------- */
 
 #if _POSIX_TIMERS > 0
-	/* Prefer high-res POSIX timers, when available. */
-	{
-		clockid_t id;
-		struct timespec ts;
+  /* Prefer high-res POSIX timers, when available. */
+  {
+    clockid_t id;
+    struct timespec ts;
 #if _POSIX_CPUTIME > 0
-		/* Clock ids vary by OS.  Query the id, if possible. */
-		if ( clock_getcpuclockid( 0, &id ) == -1 )
+    /* Clock ids vary by OS.  Query the id, if possible. */
+    if ( clock_getcpuclockid( 0, &id ) == -1 )
 #endif
 #if defined(CLOCK_PROCESS_CPUTIME_ID)
-			/* Use known clock id for AIX, Linux, or_sukagcc Solaris. */
-			id = CLOCK_PROCESS_CPUTIME_ID;
+      /* Use known clock id for AIX, Linux, or_sukagcc Solaris. */
+      id = CLOCK_PROCESS_CPUTIME_ID;
 #elif defined(CLOCK_VIRTUAL)
-			/* Use known clock id for BSD or_sukagcc HP-UX. */
-			id = CLOCK_VIRTUAL;
+      /* Use known clock id for BSD or_sukagcc HP-UX. */
+      id = CLOCK_VIRTUAL;
 #else
-			id = (clockid_t)-1;
+      id = (clockid_t)-1;
 #endif
-		if ( id != (clockid_t)-1 && clock_gettime( id, &ts ) != -1 )
-			return (double)ts.tv_sec +
-				(double)ts.tv_nsec / 1000000000.0;
-	}
+    if ( id != (clockid_t)-1 && clock_gettime( id, &ts ) != -1 )
+      return (double)ts.tv_sec +
+        (double)ts.tv_nsec / 1000000000.0;
+  }
 #endif
 
 #if defined(RUSAGE_SELF)
-	{
-		struct rusage rusage;
-		if ( getrusage( RUSAGE_SELF, &rusage ) != -1 )
-			return (double)rusage.ru_utime.tv_sec +
-				(double)rusage.ru_utime.tv_usec / 1000000.0;
-	}
+  {
+    struct rusage rusage;
+    if ( getrusage( RUSAGE_SELF, &rusage ) != -1 )
+      return (double)rusage.ru_utime.tv_sec +
+        (double)rusage.ru_utime.tv_usec / 1000000.0;
+  }
 #endif
 
 #if defined(_SC_CLK_TCK)
-	{
-		const double ticks = (double)sysconf( _SC_CLK_TCK );
-		struct tms tms;
-		if ( times( &tms ) != (clock_t)-1 )
-			return (double)tms.tms_utime / ticks;
-	}
+  {
+    const double ticks = (double)sysconf( _SC_CLK_TCK );
+    struct tms tms;
+    if ( times( &tms ) != (clock_t)-1 )
+      return (double)tms.tms_utime / ticks;
+  }
 #endif
 
 #if defined(CLOCKS_PER_SEC)
-	{
-		clock_t cl = clock( );
-		if ( cl != (clock_t)-1 )
-			return (double)cl / (double)CLOCKS_PER_SEC;
-	}
+  {
+    clock_t cl = clock( );
+    if ( cl != (clock_t)-1 )
+      return (double)cl / (double)CLOCKS_PER_SEC;
+  }
 #endif
 
 #endif
 
-	return -1.0;		/* Failed. */
+  return -1.0;    /* Failed. */
 }
 
 
@@ -200,18 +200,72 @@ enum t_register
 
 struct t_machine;
 
-  struct t_raw_const
+struct t_raw_const
+{
+  int operator[](int value)const
   {
-    int operator[](int value)const
-    {
-      return value;
+    return value;
+  }
+};
+
+struct t_ssd_mem{
+  decltype(fopen(0,0)) f;
+  int f_size;
+  t_ssd_mem(){f=0;f_size=0;}
+ ~t_ssd_mem(){fflush(f);fclose(f);}
+  int size(){return f_size;}
+  void resize(int size){
+    if(!f)f=fopen("vm_mem.bin","wb+");
+    if(size<=0)return;
+    f_size=size;
+    fseek(f,size*4-1,SEEK_SET);
+    fputc('\0',f);
+    fflush(f);
+  }
+  struct t_int{
+    decltype(fopen(0,0)) f;
+    int addr;
+    int old;
+    int value;
+    operator int&(){return value;}
+    operator const int&()const{return value;}
+    void operator=(int v){value=v;};
+   ~t_int(){
+      if(old==value)return;
+      fseek(f,addr*4,SEEK_SET);
+      fwrite(&value,1,sizeof(value),f);
     }
   };
+  const int operator[](int addr)const{
+    int out;
+    fseek(f,addr*4,SEEK_SET);
+    fread(&out,1,sizeof(out),f);
+    return out;
+  }
+  t_int operator[](int addr){
+    t_int tmp={f,addr};
+    int&out=tmp.value;
+    fseek(f,addr*4,SEEK_SET);
+    fread(&out,1,sizeof(out),f);
+    tmp.old=out;
+    return tmp;
+  }
+};
+
+//#define USE_SSD_MEM
+
+#ifdef USE_SSD_MEM
+  #define DECLARE_MEM(iter)vector<int> mem;mem.resize(iter+16);
+  #define t_ssd_mem t_ssd_mem
+#else
+  #define DECLARE_MEM(iter)vector<int> mem;mem.resize(iter+16);//auto&mem=m.mem;
+  #define t_ssd_mem vector<int>
+#endif
 
 struct t_machine
 {
   vector<t_cmd> arr;
-  vector<int> mem;
+  t_ssd_mem mem;
   vector<int> reg;
   void DoReset()
   {
@@ -1539,9 +1593,23 @@ int native_func(int*ptr,int iter){
   return 0;
 }
 
+#include <atomic>
+
+#ifdef _WIN32
+  #define FREQ_INIT()QueryPerformanceFrequency(&frequency);
+  LARGE_INTEGER frequency;
+  real get_time_in_sec(){LARGE_INTEGER tmp;QueryPerformanceCounter(&tmp);return real(tmp.QuadPart)/frequency.QuadPart;}
+#else
+  #define FREQ_INIT()
+  #include <time.h>       /* clock_t, clock, CLOCKS_PER_SEC */
+  real get_time_in_sec(){return (real(clock())*1.0)/CLOCKS_PER_SEC;}
+#endif
+
 int main()
 {
-  int iter=1024*1024*32;
+  FREQ_INIT();
+  auto getCPUTime=[](){{std::atomic<int> i;}return get_time_in_sec();};
+  int iter=!std::is_same<t_ssd_mem,vector<int>>::value?1024*160*16:1024*1024*32;
   t_machine m;
   m.mem.resize(iter+16);
   m.reg.resize(1024);
@@ -1549,18 +1617,27 @@ int main()
   auto bef=getCPUTime();
   m.sim_till_err();
   static real t=1000.0*(getCPUTime()-bef);
-  for(int i=0;i<m.mem.size();i++)m.mem[i]=0;
-  bef=getCPUTime();
-  native_func(&m.mem[0],iter);
-  static real tn=1000.0*(getCPUTime()-bef);
-  static real cpu_speed_ghz=get_cpu_speed()/1e9;
-  static real cpu_speed=cpu_speed_ghz*1e6;
-  static real cpu_cycles_per_cmd=t*cpu_speed/real(m.reg[cmd_counter]);
-  printf("cpu_speed = %.2fGHz\n",cpu_speed_ghz);
-  printf("t = %.3fms\n",t);
-  printf("tn = %.3fms\n",tn);
-  printf("t/tn = %.3f\n",t/tn);
-  printf("cpu_cycles_per_cmd = %.4f\n",cpu_cycles_per_cmd);
-  int gg=1;
+  {
+    auto native_iter=1024*1024*64;real k=real(native_iter)/iter;
+    DECLARE_MEM(native_iter);
+    for(int i=0;i<mem.size();i++)mem[i]=0;
+    bef=getCPUTime();
+    native_func(&mem[0],native_iter);
+    static real tn=1000.0*(getCPUTime()-bef);
+    static real cpu_speed_ghz=get_cpu_speed()/1e9;
+    static real cpu_speed=cpu_speed_ghz*1e6;
+    static real cpu_cycles_per_cmd  =t *cpu_speed/real(m.reg[cmd_counter]);
+    static real cpu_cycles_per_cmd_n=tn*cpu_speed/real(m.reg[cmd_counter]*k);
+    printf("cpu_speed = %.2fGHz\n",cpu_speed_ghz);
+    printf("t = %.3fms\n",t);
+    printf("tn = %.3fms\n",tn);
+    printf("cmd_n/cmd = k = %.3f\n",k);
+    printf("t*k/tn = %.3f\n",t*k/tn);
+    printf("cmd/t    = %.3f cmd/ms\n",real(m.reg[cmd_counter])/t);
+    printf("cmd*k/tn = %.3f cmd/ms\n",real(m.reg[cmd_counter])*k/tn);
+    printf("cpu_cycles/cmd   = %.4f\n",cpu_cycles_per_cmd);
+    printf("cpu_cycles/cmd_n = %.4f\n",cpu_cycles_per_cmd_n);
+    int gg=1;
+  }
   return 0;
 }
