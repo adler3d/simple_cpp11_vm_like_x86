@@ -1,0 +1,3465 @@
+cpu_speed = 1.80GHz
+t = 1134.349ms
+tn = 58.390ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.854
+cmd/t    = 236642.749 cmd/ms
+cmd*k/tn = 9194569.824 cmd/ms
+cpu_cycles/cmd   = 7.6063
+cpu_cycles/cmd_n = 0.1958
+cpu_speed = 1.80GHz
+t = 4145.484ms
+tn = 60.327ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1759.152
+cmd/t    = 5058.886 cmd/ms
+cmd*k/tn = 8899351.335 cmd/ms
+cpu_cycles/cmd   = 355.8342
+cpu_cycles/cmd_n = 0.2023
+cpu_speed = 1.80GHz
+t = 1121.734ms
+tn = 58.278ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.496
+cmd/t    = 239304.029 cmd/ms
+cmd*k/tn = 9212240.159 cmd/ms
+cpu_cycles/cmd   = 7.5218
+cpu_cycles/cmd_n = 0.1954
+cpu_speed = 1.80GHz
+t = 4001.455ms
+tn = 58.645ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1746.735
+cmd/t    = 5240.976 cmd/ms
+cmd*k/tn = 9154594.049 cmd/ms
+cpu_cycles/cmd   = 343.4439
+cpu_cycles/cmd_n = 0.1966
+cpu_speed = 1.80GHz
+t = 1137.823ms
+tn = 58.227ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.082
+cmd/t    = 235920.232 cmd/ms
+cmd*k/tn = 9220308.998 cmd/ms
+cpu_cycles/cmd   = 7.6296
+cpu_cycles/cmd_n = 0.1952
+cpu_speed = 1.82GHz
+t = 4052.361ms
+tn = 57.853ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1793.173
+cmd/t    = 5175.139 cmd/ms
+cmd*k/tn = 9279919.244 cmd/ms
+cpu_cycles/cmd   = 350.8586
+cpu_cycles/cmd_n = 0.1957
+cpu_speed = 1.80GHz
+t = 1122.148ms
+tn = 57.797ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.831
+cmd/t    = 239215.742 cmd/ms
+cmd*k/tn = 9288906.552 cmd/ms
+cpu_cycles/cmd   = 7.5245
+cpu_cycles/cmd_n = 0.1938
+cpu_speed = 1.80GHz
+t = 4111.765ms
+tn = 56.538ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1861.778
+cmd/t    = 5100.372 cmd/ms
+cmd*k/tn = 9495758.039 cmd/ms
+cpu_cycles/cmd   = 352.9122
+cpu_cycles/cmd_n = 0.1896
+cpu_speed = 1.80GHz
+t = 1112.395ms
+tn = 58.176ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.242
+cmd/t    = 241313.082 cmd/ms
+cmd*k/tn = 9228391.983 cmd/ms
+cpu_cycles/cmd   = 7.4591
+cpu_cycles/cmd_n = 0.1950
+cpu_speed = 1.80GHz
+t = 4058.478ms
+tn = 57.752ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1799.021
+cmd/t    = 5167.339 cmd/ms
+cmd*k/tn = 9296148.497 cmd/ms
+cpu_cycles/cmd   = 348.3371
+cpu_cycles/cmd_n = 0.1936
+cpu_speed = 1.80GHz
+t = 1105.755ms
+tn = 63.634ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 34.754
+cmd/t    = 242762.154 cmd/ms
+cmd*k/tn = 8436856.586 cmd/ms
+cpu_cycles/cmd   = 7.4148
+cpu_cycles/cmd_n = 0.2134
+cpu_speed = 1.80GHz
+t = 4157.275ms
+tn = 57.182ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1861.184
+cmd/t    = 5044.538 cmd/ms
+cmd*k/tn = 9388814.102 cmd/ms
+cpu_cycles/cmd   = 356.8266
+cpu_cycles/cmd_n = 0.1917
+cpu_speed = 1.80GHz
+t = 1122.254ms
+tn = 61.336ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 36.594
+cmd/t    = 239193.147 cmd/ms
+cmd*k/tn = 8752949.850 cmd/ms
+cpu_cycles/cmd   = 7.5252
+cpu_cycles/cmd_n = 0.2056
+cpu_speed = 1.80GHz
+t = 4105.907ms
+tn = 58.095ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1809.299
+cmd/t    = 5107.649 cmd/ms
+cmd*k/tn = 9241262.897 cmd/ms
+cpu_cycles/cmd   = 352.4150
+cpu_cycles/cmd_n = 0.1948
+cpu_speed = 1.80GHz
+t = 1121.884ms
+tn = 61.392ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 36.548
+cmd/t    = 239272.033 cmd/ms
+cmd*k/tn = 8744965.663 cmd/ms
+cpu_cycles/cmd   = 7.5227
+cpu_cycles/cmd_n = 0.2058
+cpu_speed = 1.80GHz
+t = 4002.374ms
+tn = 58.470ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1752.365
+cmd/t    = 5239.773 cmd/ms
+cmd*k/tn = 9181993.638 cmd/ms
+cpu_cycles/cmd   = 343.5309
+cpu_cycles/cmd_n = 0.1960
+cpu_speed = 1.80GHz
+t = 1118.755ms
+tn = 58.118ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.499
+cmd/t    = 239941.244 cmd/ms
+cmd*k/tn = 9237601.638 cmd/ms
+cpu_cycles/cmd   = 7.5018
+cpu_cycles/cmd_n = 0.1949
+cpu_speed = 1.80GHz
+t = 4115.057ms
+tn = 58.297ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1807.048
+cmd/t    = 5096.291 cmd/ms
+cmd*k/tn = 9209241.779 cmd/ms
+cpu_cycles/cmd   = 353.1977
+cpu_cycles/cmd_n = 0.1955
+cpu_speed = 1.80GHz
+t = 1106.950ms
+tn = 57.771ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.322
+cmd/t    = 242500.082 cmd/ms
+cmd*k/tn = 9293087.051 cmd/ms
+cpu_cycles/cmd   = 7.4223
+cpu_cycles/cmd_n = 0.1937
+cpu_speed = 1.80GHz
+t = 4191.862ms
+tn = 58.219ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1843.241
+cmd/t    = 5002.915 cmd/ms
+cmd*k/tn = 9221580.034 cmd/ms
+cpu_cycles/cmd   = 359.7862
+cpu_cycles/cmd_n = 0.1952
+cpu_speed = 1.80GHz
+t = 1127.193ms
+tn = 58.594ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.475
+cmd/t    = 238145.079 cmd/ms
+cmd*k/tn = 9162558.146 cmd/ms
+cpu_cycles/cmd   = 7.5582
+cpu_cycles/cmd_n = 0.1964
+cpu_speed = 1.80GHz
+t = 4366.700ms
+tn = 58.121ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1923.359
+cmd/t    = 4802.604 cmd/ms
+cmd*k/tn = 9237128.886 cmd/ms
+cpu_cycles/cmd   = 374.7920
+cpu_cycles/cmd_n = 0.1949
+cpu_speed = 1.80GHz
+t = 1129.799ms
+tn = 61.945ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 36.477
+cmd/t    = 237595.772 cmd/ms
+cmd*k/tn = 8666896.957 cmd/ms
+cpu_cycles/cmd   = 7.5758
+cpu_cycles/cmd_n = 0.2077
+cpu_speed = 1.80GHz
+t = 4004.979ms
+tn = 58.449ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1754.135
+cmd/t    = 5236.365 cmd/ms
+cmd*k/tn = 9185292.614 cmd/ms
+cpu_cycles/cmd   = 343.7372
+cpu_cycles/cmd_n = 0.1960
+cpu_speed = 1.80GHz
+t = 1103.457ms
+tn = 57.962ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.075
+cmd/t    = 243267.718 cmd/ms
+cmd*k/tn = 9262463.890 cmd/ms
+cpu_cycles/cmd   = 7.3993
+cpu_cycles/cmd_n = 0.1943
+cpu_speed = 1.80GHz
+t = 4077.742ms
+tn = 60.089ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1737.260
+cmd/t    = 5142.927 cmd/ms
+cmd*k/tn = 8934599.810 cmd/ms
+cpu_cycles/cmd   = 349.9900
+cpu_cycles/cmd_n = 0.2015
+cpu_speed = 1.80GHz
+t = 1127.895ms
+tn = 57.250ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.402
+cmd/t    = 237996.858 cmd/ms
+cmd*k/tn = 9377658.201 cmd/ms
+cpu_cycles/cmd   = 7.5630
+cpu_cycles/cmd_n = 0.1919
+cpu_speed = 1.80GHz
+t = 4018.982ms
+tn = 58.216ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1767.314
+cmd/t    = 5218.120 cmd/ms
+cmd*k/tn = 9222055.243 cmd/ms
+cpu_cycles/cmd   = 344.9456
+cpu_cycles/cmd_n = 0.1952
+cpu_speed = 1.80GHz
+t = 1148.637ms
+tn = 58.032ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.586
+cmd/t    = 233699.129 cmd/ms
+cmd*k/tn = 9251291.219 cmd/ms
+cpu_cycles/cmd   = 7.7022
+cpu_cycles/cmd_n = 0.1946
+cpu_speed = 1.80GHz
+t = 4048.489ms
+tn = 51.396ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 2016.525
+cmd/t    = 5180.088 cmd/ms
+cmd*k/tn = 10445777.259 cmd/ms
+cpu_cycles/cmd   = 347.4771
+cpu_cycles/cmd_n = 0.1723
+cpu_speed = 1.80GHz
+t = 1129.409ms
+tn = 58.881ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.362
+cmd/t    = 237677.817 cmd/ms
+cmd*k/tn = 9117897.658 cmd/ms
+cpu_cycles/cmd   = 7.5732
+cpu_cycles/cmd_n = 0.1974
+cpu_speed = 1.80GHz
+t = 4162.586ms
+tn = 58.236ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1829.834
+cmd/t    = 5038.101 cmd/ms
+cmd*k/tn = 9218888.110 cmd/ms
+cpu_cycles/cmd   = 357.2750
+cpu_cycles/cmd_n = 0.1952
+cpu_speed = 1.80GHz
+t = 1127.326ms
+tn = 58.336ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.649
+cmd/t    = 238116.983 cmd/ms
+cmd*k/tn = 9203080.979 cmd/ms
+cpu_cycles/cmd   = 7.5592
+cpu_cycles/cmd_n = 0.1956
+cpu_speed = 1.80GHz
+t = 4282.221ms
+tn = 56.746ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1931.852
+cmd/t    = 4897.349 cmd/ms
+cmd*k/tn = 9460951.750 cmd/ms
+cpu_cycles/cmd   = 367.5381
+cpu_cycles/cmd_n = 0.1903
+cpu_speed = 1.80GHz
+t = 1126.941ms
+tn = 58.298ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.661
+cmd/t    = 238198.332 cmd/ms
+cmd*k/tn = 9209079.763 cmd/ms
+cpu_cycles/cmd   = 7.5566
+cpu_cycles/cmd_n = 0.1955
+cpu_speed = 1.80GHz
+t = 4145.306ms
+tn = 73.862ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1436.731
+cmd/t    = 5059.103 cmd/ms
+cmd*k/tn = 7268570.686 cmd/ms
+cpu_cycles/cmd   = 356.1373
+cpu_cycles/cmd_n = 0.2479
+cpu_speed = 1.80GHz
+t = 1096.668ms
+tn = 60.181ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 36.446
+cmd/t    = 244773.684 cmd/ms
+cmd*k/tn = 8920937.372 cmd/ms
+cpu_cycles/cmd   = 7.3538
+cpu_cycles/cmd_n = 0.2018
+cpu_speed = 1.80GHz
+t = 4234.191ms
+tn = 58.406ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1855.893
+cmd/t    = 4952.901 cmd/ms
+cmd*k/tn = 9192055.063 cmd/ms
+cpu_cycles/cmd   = 363.5395
+cpu_cycles/cmd_n = 0.1959
+cpu_speed = 1.80GHz
+t = 1126.043ms
+tn = 58.502ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.496
+cmd/t    = 238388.291 cmd/ms
+cmd*k/tn = 9176967.146 cmd/ms
+cpu_cycles/cmd   = 7.5506
+cpu_cycles/cmd_n = 0.1961
+cpu_speed = 1.80GHz
+t = 3993.474ms
+tn = 58.323ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1752.875
+cmd/t    = 5251.450 cmd/ms
+cmd*k/tn = 9205136.361 cmd/ms
+cpu_cycles/cmd   = 342.7678
+cpu_cycles/cmd_n = 0.1955
+cpu_speed = 1.80GHz
+t = 1114.909ms
+tn = 63.483ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 35.125
+cmd/t    = 240768.947 cmd/ms
+cmd*k/tn = 8456924.405 cmd/ms
+cpu_cycles/cmd   = 7.4758
+cpu_cycles/cmd_n = 0.2128
+cpu_speed = 1.80GHz
+t = 4166.831ms
+tn = 56.941ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1873.358
+cmd/t    = 5032.969 cmd/ms
+cmd*k/tn = 9428551.799 cmd/ms
+cpu_cycles/cmd   = 357.6368
+cpu_cycles/cmd_n = 0.1909
+cpu_speed = 1.80GHz
+t = 1121.127ms
+tn = 58.267ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.482
+cmd/t    = 239433.593 cmd/ms
+cmd*k/tn = 9213979.302 cmd/ms
+cpu_cycles/cmd   = 7.5177
+cpu_cycles/cmd_n = 0.1954
+cpu_speed = 1.80GHz
+t = 4114.650ms
+tn = 55.822ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1886.981
+cmd/t    = 5096.796 cmd/ms
+cmd*k/tn = 9617555.229 cmd/ms
+cpu_cycles/cmd   = 353.1603
+cpu_cycles/cmd_n = 0.1872
+cpu_speed = 1.80GHz
+t = 1054.904ms
+tn = 59.233ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 35.619
+cmd/t    = 254464.355 cmd/ms
+cmd*k/tn = 9063713.335 cmd/ms
+cpu_cycles/cmd   = 7.0736
+cpu_cycles/cmd_n = 0.1986
+cpu_speed = 1.80GHz
+t = 3911.600ms
+tn = 58.307ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1717.409
+cmd/t    = 5361.369 cmd/ms
+cmd*k/tn = 9207662.339 cmd/ms
+cpu_cycles/cmd   = 335.7312
+cpu_cycles/cmd_n = 0.1955
+cpu_speed = 1.80GHz
+t = 1122.349ms
+tn = 56.328ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.850
+cmd/t    = 239172.901 cmd/ms
+cmd*k/tn = 9531155.589 cmd/ms
+cpu_cycles/cmd   = 7.5268
+cpu_cycles/cmd_n = 0.1889
+cpu_speed = 1.80GHz
+t = 4045.364ms
+tn = 58.341ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1775.104
+cmd/t    = 5184.090 cmd/ms
+cmd*k/tn = 9202296.292 cmd/ms
+cpu_cycles/cmd   = 347.2116
+cpu_cycles/cmd_n = 0.1956
+cpu_speed = 1.80GHz
+t = 1111.580ms
+tn = 58.530ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 37.983
+cmd/t    = 241490.011 cmd/ms
+cmd*k/tn = 9172577.003 cmd/ms
+cpu_cycles/cmd   = 7.4537
+cpu_cycles/cmd_n = 0.1962
+cpu_speed = 1.80GHz
+t = 4101.709ms
+tn = 58.615ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1791.414
+cmd/t    = 5112.876 cmd/ms
+cmd*k/tn = 9159279.502 cmd/ms
+cpu_cycles/cmd   = 352.0572
+cpu_cycles/cmd_n = 0.1965
+cpu_speed = 1.80GHz
+t = 1120.921ms
+tn = 57.945ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.689
+cmd/t    = 239477.596 cmd/ms
+cmd*k/tn = 9265181.327 cmd/ms
+cpu_cycles/cmd   = 7.5165
+cpu_cycles/cmd_n = 0.1943
+cpu_speed = 1.80GHz
+t = 4209.883ms
+tn = 57.735ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1866.684
+cmd/t    = 4981.499 cmd/ms
+cmd*k/tn = 9298885.737 cmd/ms
+cpu_cycles/cmd   = 361.3303
+cpu_cycles/cmd_n = 0.1936
+cpu_speed = 1.80GHz
+t = 1123.243ms
+tn = 58.765ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.228
+cmd/t    = 238982.541 cmd/ms
+cmd*k/tn = 9135896.061 cmd/ms
+cpu_cycles/cmd   = 7.5318
+cpu_cycles/cmd_n = 0.1970
+cpu_speed = 1.80GHz
+t = 4001.728ms
+tn = 58.018ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1765.732
+cmd/t    = 5240.619 cmd/ms
+cmd*k/tn = 9253527.664 cmd/ms
+cpu_cycles/cmd   = 343.4665
+cpu_cycles/cmd_n = 0.1945
+cpu_speed = 1.80GHz
+t = 1139.444ms
+tn = 58.567ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.911
+cmd/t    = 235584.606 cmd/ms
+cmd*k/tn = 9166782.181 cmd/ms
+cpu_cycles/cmd   = 7.6403
+cpu_cycles/cmd_n = 0.1964
+cpu_speed = 1.80GHz
+t = 4092.059ms
+tn = 56.875ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1841.876
+cmd/t    = 5124.933 cmd/ms
+cmd*k/tn = 9439493.064 cmd/ms
+cpu_cycles/cmd   = 351.2157
+cpu_cycles/cmd_n = 0.1907
+cpu_speed = 1.80GHz
+t = 1132.554ms
+tn = 58.072ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.005
+cmd/t    = 237017.808 cmd/ms
+cmd*k/tn = 9244918.928 cmd/ms
+cpu_cycles/cmd   = 7.5943
+cpu_cycles/cmd_n = 0.1947
+cpu_speed = 1.80GHz
+t = 4132.182ms
+tn = 58.068ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1821.724
+cmd/t    = 5075.171 cmd/ms
+cmd*k/tn = 9245559.826 cmd/ms
+cpu_cycles/cmd   = 354.6643
+cpu_cycles/cmd_n = 0.1947
+cpu_speed = 1.80GHz
+t = 1122.283ms
+tn = 58.064ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.657
+cmd/t    = 239186.966 cmd/ms
+cmd*k/tn = 9246192.684 cmd/ms
+cpu_cycles/cmd   = 7.5257
+cpu_cycles/cmd_n = 0.1947
+cpu_speed = 1.80GHz
+t = 4033.643ms
+tn = 56.826ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1817.148
+cmd/t    = 5199.154 cmd/ms
+cmd*k/tn = 9447632.563 cmd/ms
+cpu_cycles/cmd   = 346.2432
+cpu_cycles/cmd_n = 0.1905
+cpu_speed = 1.80GHz
+t = 1113.655ms
+tn = 59.051ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 37.718
+cmd/t    = 241040.058 cmd/ms
+cmd*k/tn = 9091648.439 cmd/ms
+cpu_cycles/cmd   = 7.4677
+cpu_cycles/cmd_n = 0.1980
+cpu_speed = 1.80GHz
+t = 4016.060ms
+tn = 58.114ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1769.129
+cmd/t    = 5221.917 cmd/ms
+cmd*k/tn = 9238241.525 cmd/ms
+cpu_cycles/cmd   = 344.7137
+cpu_cycles/cmd_n = 0.1948
+cpu_speed = 1.80GHz
+t = 1102.070ms
+tn = 60.574ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 36.388
+cmd/t    = 243573.880 cmd/ms
+cmd*k/tn = 8863058.936 cmd/ms
+cpu_cycles/cmd   = 7.3898
+cpu_cycles/cmd_n = 0.2031
+cpu_speed = 1.80GHz
+t = 4284.056ms
+tn = 57.924ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1893.375
+cmd/t    = 4895.251 cmd/ms
+cmd*k/tn = 9268544.438 cmd/ms
+cpu_cycles/cmd   = 367.6876
+cpu_cycles/cmd_n = 0.1942
+cpu_speed = 1.80GHz
+t = 1117.658ms
+tn = 69.616ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 32.109
+cmd/t    = 240176.750 cmd/ms
+cmd*k/tn = 7711889.968 cmd/ms
+cpu_cycles/cmd   = 7.4951
+cpu_cycles/cmd_n = 0.2334
+cpu_speed = 1.80GHz
+t = 4095.400ms
+tn = 55.877ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1876.304
+cmd/t    = 5120.753 cmd/ms
+cmd*k/tn = 9608088.623 cmd/ms
+cpu_cycles/cmd   = 351.5053
+cpu_cycles/cmd_n = 0.1873
+cpu_speed = 1.80GHz
+t = 1131.493ms
+tn = 58.213ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.874
+cmd/t    = 237240.059 cmd/ms
+cmd*k/tn = 9222526.446 cmd/ms
+cpu_cycles/cmd   = 7.5874
+cpu_cycles/cmd_n = 0.1952
+cpu_speed = 1.80GHz
+t = 4294.569ms
+tn = 58.417ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1882.003
+cmd/t    = 4883.268 cmd/ms
+cmd*k/tn = 9190324.186 cmd/ms
+cpu_cycles/cmd   = 368.6094
+cpu_cycles/cmd_n = 0.1959
+cpu_speed = 1.80GHz
+t = 1150.690ms
+tn = 67.090ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 34.303
+cmd/t    = 233282.175 cmd/ms
+cmd*k/tn = 8002249.694 cmd/ms
+cpu_cycles/cmd   = 7.7158
+cpu_cycles/cmd_n = 0.2249
+cpu_speed = 1.80GHz
+t = 4126.368ms
+tn = 59.220ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1783.773
+cmd/t    = 5082.322 cmd/ms
+cmd*k/tn = 9065706.991 cmd/ms
+cpu_cycles/cmd   = 354.1616
+cpu_cycles/cmd_n = 0.1985
+cpu_speed = 1.80GHz
+t = 1127.794ms
+tn = 68.120ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 33.112
+cmd/t    = 238018.172 cmd/ms
+cmd*k/tn = 7881252.672 cmd/ms
+cpu_cycles/cmd   = 7.5623
+cpu_cycles/cmd_n = 0.2284
+cpu_speed = 1.80GHz
+t = 4254.438ms
+tn = 58.869ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1850.101
+cmd/t    = 4929.330 cmd/ms
+cmd*k/tn = 9119760.281 cmd/ms
+cpu_cycles/cmd   = 365.1586
+cpu_cycles/cmd_n = 0.1974
+cpu_speed = 1.80GHz
+t = 1116.731ms
+tn = 55.987ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.893
+cmd/t    = 240376.121 cmd/ms
+cmd*k/tn = 9589206.994 cmd/ms
+cpu_cycles/cmd   = 7.4882
+cpu_cycles/cmd_n = 0.1877
+cpu_speed = 1.80GHz
+t = 4008.132ms
+tn = 58.208ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1762.785
+cmd/t    = 5232.245 cmd/ms
+cmd*k/tn = 9223322.705 cmd/ms
+cpu_cycles/cmd   = 344.0245
+cpu_cycles/cmd_n = 0.1952
+cpu_speed = 1.80GHz
+t = 1130.858ms
+tn = 58.130ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.908
+cmd/t    = 237373.274 cmd/ms
+cmd*k/tn = 9235694.684 cmd/ms
+cpu_cycles/cmd   = 7.5829
+cpu_cycles/cmd_n = 0.1949
+cpu_speed = 1.80GHz
+t = 4061.885ms
+tn = 58.307ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1783.392
+cmd/t    = 5163.004 cmd/ms
+cmd*k/tn = 9207662.339 cmd/ms
+cpu_cycles/cmd   = 348.6309
+cpu_cycles/cmd_n = 0.1955
+cpu_speed = 1.80GHz
+t = 1075.369ms
+tn = 58.009ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 37.076
+cmd/t    = 249621.726 cmd/ms
+cmd*k/tn = 9254959.265 cmd/ms
+cpu_cycles/cmd   = 7.2111
+cpu_cycles/cmd_n = 0.1945
+cpu_speed = 1.80GHz
+t = 3998.873ms
+tn = 58.488ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1750.293
+cmd/t    = 5244.360 cmd/ms
+cmd*k/tn = 9179167.829 cmd/ms
+cpu_cycles/cmd   = 343.2176
+cpu_cycles/cmd_n = 0.1961
+cpu_speed = 1.80GHz
+t = 1123.321ms
+tn = 57.950ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.769
+cmd/t    = 238965.947 cmd/ms
+cmd*k/tn = 9264381.915 cmd/ms
+cpu_cycles/cmd   = 7.5325
+cpu_cycles/cmd_n = 0.1943
+cpu_speed = 1.80GHz
+t = 3994.345ms
+tn = 58.692ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1742.235
+cmd/t    = 5250.305 cmd/ms
+cmd*k/tn = 9147263.136 cmd/ms
+cpu_cycles/cmd   = 342.8496
+cpu_cycles/cmd_n = 0.1968
+cpu_speed = 1.80GHz
+t = 1129.257ms
+tn = 59.368ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.043
+cmd/t    = 237709.809 cmd/ms
+cmd*k/tn = 9043102.884 cmd/ms
+cpu_cycles/cmd   = 7.5722
+cpu_cycles/cmd_n = 0.1990
+cpu_speed = 1.80GHz
+t = 4256.093ms
+tn = 58.384ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1866.196
+cmd/t    = 4927.413 cmd/ms
+cmd*k/tn = 9195518.772 cmd/ms
+cpu_cycles/cmd   = 365.2989
+cpu_cycles/cmd_n = 0.1957
+cpu_speed = 1.80GHz
+t = 1122.255ms
+tn = 58.427ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.416
+cmd/t    = 239192.934 cmd/ms
+cmd*k/tn = 9188747.189 cmd/ms
+cpu_cycles/cmd   = 7.5252
+cpu_cycles/cmd_n = 0.1959
+cpu_speed = 1.80GHz
+t = 4234.513ms
+tn = 58.060ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1867.095
+cmd/t    = 4952.525 cmd/ms
+cmd*k/tn = 9246833.758 cmd/ms
+cpu_cycles/cmd   = 363.4983
+cpu_cycles/cmd_n = 0.1947
+cpu_speed = 1.80GHz
+t = 1133.466ms
+tn = 58.036ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.061
+cmd/t    = 236827.100 cmd/ms
+cmd*k/tn = 9250653.594 cmd/ms
+cpu_cycles/cmd   = 7.6004
+cpu_cycles/cmd_n = 0.1946
+cpu_speed = 1.80GHz
+t = 4078.288ms
+tn = 57.673ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1810.278
+cmd/t    = 5142.239 cmd/ms
+cmd*k/tn = 9308882.285 cmd/ms
+cpu_cycles/cmd   = 350.0359
+cpu_cycles/cmd_n = 0.1934
+cpu_speed = 1.80GHz
+t = 1125.222ms
+tn = 58.543ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.441
+cmd/t    = 238562.227 cmd/ms
+cmd*k/tn = 9170540.150 cmd/ms
+cpu_cycles/cmd   = 7.5451
+cpu_cycles/cmd_n = 0.1963
+cpu_speed = 1.80GHz
+t = 4136.806ms
+tn = 58.786ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1801.487
+cmd/t    = 5069.498 cmd/ms
+cmd*k/tn = 9132636.478 cmd/ms
+cpu_cycles/cmd   = 355.1039
+cpu_cycles/cmd_n = 0.1971
+cpu_speed = 1.80GHz
+t = 1131.342ms
+tn = 58.179ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.892
+cmd/t    = 237271.723 cmd/ms
+cmd*k/tn = 9227916.121 cmd/ms
+cpu_cycles/cmd   = 7.5860
+cpu_cycles/cmd_n = 0.1951
+cpu_speed = 1.80GHz
+t = 4007.877ms
+tn = 58.396ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1756.998
+cmd/t    = 5232.578 cmd/ms
+cmd*k/tn = 9193629.153 cmd/ms
+cpu_cycles/cmd   = 343.9924
+cpu_cycles/cmd_n = 0.1958
+cpu_speed = 1.80GHz
+t = 1127.731ms
+tn = 58.612ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.481
+cmd/t    = 238031.468 cmd/ms
+cmd*k/tn = 9159744.284 cmd/ms
+cpu_cycles/cmd   = 7.5619
+cpu_cycles/cmd_n = 0.1965
+cpu_speed = 1.80GHz
+t = 4128.179ms
+tn = 58.722ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1799.690
+cmd/t    = 5080.092 cmd/ms
+cmd*k/tn = 9142589.966 cmd/ms
+cpu_cycles/cmd   = 354.3206
+cpu_cycles/cmd_n = 0.1969
+cpu_speed = 1.80GHz
+t = 1144.412ms
+tn = 58.375ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.209
+cmd/t    = 234561.911 cmd/ms
+cmd*k/tn = 9196932.454 cmd/ms
+cpu_cycles/cmd   = 7.6738
+cpu_cycles/cmd_n = 0.1957
+cpu_speed = 1.80GHz
+t = 4083.241ms
+tn = 58.426ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1789.117
+cmd/t    = 5136.001 cmd/ms
+cmd*k/tn = 9188908.500 cmd/ms
+cpu_cycles/cmd   = 350.4637
+cpu_cycles/cmd_n = 0.1959
+cpu_speed = 1.80GHz
+t = 1138.918ms
+tn = 58.627ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.853
+cmd/t    = 235693.409 cmd/ms
+cmd*k/tn = 9157400.720 cmd/ms
+cpu_cycles/cmd   = 7.6376
+cpu_cycles/cmd_n = 0.1966
+cpu_speed = 1.80GHz
+t = 4195.950ms
+tn = 58.839ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1825.597
+cmd/t    = 4998.041 cmd/ms
+cmd*k/tn = 9124410.136 cmd/ms
+cpu_cycles/cmd   = 360.1354
+cpu_cycles/cmd_n = 0.1973
+cpu_speed = 1.80GHz
+t = 1132.466ms
+tn = 58.410ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.776
+cmd/t    = 237036.225 cmd/ms
+cmd*k/tn = 9191421.537 cmd/ms
+cpu_cycles/cmd   = 7.5942
+cpu_cycles/cmd_n = 0.1958
+cpu_speed = 1.80GHz
+t = 4324.888ms
+tn = 58.647ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1887.857
+cmd/t    = 4849.034 cmd/ms
+cmd*k/tn = 9154281.856 cmd/ms
+cpu_cycles/cmd   = 371.2014
+cpu_cycles/cmd_n = 0.1966
+cpu_speed = 1.80GHz
+t = 1123.710ms
+tn = 58.350ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.516
+cmd/t    = 238883.223 cmd/ms
+cmd*k/tn = 9200872.871 cmd/ms
+cpu_cycles/cmd   = 7.5349
+cpu_cycles/cmd_n = 0.1956
+cpu_speed = 1.80GHz
+t = 4018.532ms
+tn = 58.678ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1753.203
+cmd/t    = 5218.704 cmd/ms
+cmd*k/tn = 9149445.584 cmd/ms
+cpu_cycles/cmd   = 344.8938
+cpu_cycles/cmd_n = 0.1967
+cpu_speed = 1.80GHz
+t = 1124.463ms
+tn = 58.374ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.526
+cmd/t    = 238723.254 cmd/ms
+cmd*k/tn = 9197090.006 cmd/ms
+cpu_cycles/cmd   = 7.5401
+cpu_cycles/cmd_n = 0.1957
+cpu_speed = 1.80GHz
+t = 3985.743ms
+tn = 58.833ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1734.316
+cmd/t    = 5261.636 cmd/ms
+cmd*k/tn = 9125340.676 cmd/ms
+cpu_cycles/cmd   = 342.1063
+cpu_cycles/cmd_n = 0.1973
+cpu_speed = 1.80GHz
+t = 1133.063ms
+tn = 58.107ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.999
+cmd/t    = 236911.333 cmd/ms
+cmd*k/tn = 9239350.371 cmd/ms
+cpu_cycles/cmd   = 7.5977
+cpu_cycles/cmd_n = 0.1948
+cpu_speed = 1.80GHz
+t = 4045.693ms
+tn = 59.891ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1729.304
+cmd/t    = 5183.668 cmd/ms
+cmd*k/tn = 8964137.650 cmd/ms
+cpu_cycles/cmd   = 347.2461
+cpu_cycles/cmd_n = 0.2008
+cpu_speed = 1.80GHz
+t = 1134.493ms
+tn = 58.623ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.705
+cmd/t    = 236612.712 cmd/ms
+cmd*k/tn = 9158025.553 cmd/ms
+cpu_cycles/cmd   = 7.6073
+cpu_cycles/cmd_n = 0.1965
+cpu_speed = 1.80GHz
+t = 4144.132ms
+tn = 57.849ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1833.909
+cmd/t    = 5060.536 cmd/ms
+cmd*k/tn = 9280560.909 cmd/ms
+cpu_cycles/cmd   = 355.6997
+cpu_cycles/cmd_n = 0.1940
+cpu_speed = 1.80GHz
+t = 1155.360ms
+tn = 57.603ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 40.115
+cmd/t    = 232339.241 cmd/ms
+cmd*k/tn = 9320190.476 cmd/ms
+cpu_cycles/cmd   = 7.7474
+cpu_cycles/cmd_n = 0.1931
+cpu_speed = 1.80GHz
+t = 4054.047ms
+tn = 57.997ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1789.465
+cmd/t    = 5172.986 cmd/ms
+cmd*k/tn = 9256878.252 cmd/ms
+cpu_cycles/cmd   = 347.9573
+cpu_cycles/cmd_n = 0.1944
+cpu_speed = 1.80GHz
+t = 1097.408ms
+tn = 63.882ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 34.357
+cmd/t    = 244608.629 cmd/ms
+cmd*k/tn = 8404103.378 cmd/ms
+cpu_cycles/cmd   = 7.3586
+cpu_cycles/cmd_n = 0.2142
+cpu_speed = 1.80GHz
+t = 4031.492ms
+tn = 55.619ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1855.592
+cmd/t    = 5201.928 cmd/ms
+cmd*k/tn = 9652657.689 cmd/ms
+cpu_cycles/cmd   = 346.0212
+cpu_cycles/cmd_n = 0.1865
+cpu_speed = 1.80GHz
+t = 1139.693ms
+tn = 54.654ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 41.706
+cmd/t    = 235533.136 cmd/ms
+cmd*k/tn = 9823085.813 cmd/ms
+cpu_cycles/cmd   = 7.6418
+cpu_cycles/cmd_n = 0.1832
+cpu_speed = 1.80GHz
+t = 4080.165ms
+tn = 58.218ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1794.157
+cmd/t    = 5139.873 cmd/ms
+cmd*k/tn = 9221738.431 cmd/ms
+cpu_cycles/cmd   = 350.2241
+cpu_cycles/cmd_n = 0.1952
+cpu_speed = 1.80GHz
+t = 1130.993ms
+tn = 58.221ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.852
+cmd/t    = 237344.940 cmd/ms
+cmd*k/tn = 9221259.202 cmd/ms
+cpu_cycles/cmd   = 7.5837
+cpu_cycles/cmd_n = 0.1952
+cpu_speed = 1.80GHz
+t = 4125.245ms
+tn = 58.471ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1806.131
+cmd/t    = 5083.705 cmd/ms
+cmd*k/tn = 9181836.603 cmd/ms
+cpu_cycles/cmd   = 354.0630
+cpu_cycles/cmd_n = 0.1960
+cpu_speed = 1.80GHz
+t = 1122.266ms
+tn = 58.159ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.593
+cmd/t    = 239190.589 cmd/ms
+cmd*k/tn = 9231089.462 cmd/ms
+cpu_cycles/cmd   = 7.5255
+cpu_cycles/cmd_n = 0.1950
+cpu_speed = 1.80GHz
+t = 4017.310ms
+tn = 56.697ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1813.908
+cmd/t    = 5220.292 cmd/ms
+cmd*k/tn = 9469128.314 cmd/ms
+cpu_cycles/cmd   = 344.8149
+cpu_cycles/cmd_n = 0.1901
+cpu_speed = 1.80GHz
+t = 1109.168ms
+tn = 58.375ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.001
+cmd/t    = 242015.156 cmd/ms
+cmd*k/tn = 9196932.454 cmd/ms
+cpu_cycles/cmd   = 7.4378
+cpu_cycles/cmd_n = 0.1957
+cpu_speed = 1.80GHz
+t = 4013.565ms
+tn = 63.762ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1611.418
+cmd/t    = 5225.163 cmd/ms
+cmd*k/tn = 8419923.591 cmd/ms
+cpu_cycles/cmd   = 344.4823
+cpu_cycles/cmd_n = 0.2138
+cpu_speed = 1.80GHz
+t = 1120.333ms
+tn = 58.128ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.547
+cmd/t    = 239603.284 cmd/ms
+cmd*k/tn = 9236012.455 cmd/ms
+cpu_cycles/cmd   = 7.5123
+cpu_cycles/cmd_n = 0.1949
+cpu_speed = 1.80GHz
+t = 4200.467ms
+tn = 58.667ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1832.921
+cmd/t    = 4992.666 cmd/ms
+cmd*k/tn = 9151161.096 cmd/ms
+cpu_cycles/cmd   = 360.5333
+cpu_cycles/cmd_n = 0.1967
+cpu_speed = 1.80GHz
+t = 1132.806ms
+tn = 54.199ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 41.802
+cmd/t    = 236965.081 cmd/ms
+cmd*k/tn = 9905550.508 cmd/ms
+cpu_cycles/cmd   = 7.5960
+cpu_cycles/cmd_n = 0.1817
+cpu_speed = 1.80GHz
+t = 4128.068ms
+tn = 60.522ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1746.118
+cmd/t    = 5080.229 cmd/ms
+cmd*k/tn = 8870677.902 cmd/ms
+cpu_cycles/cmd   = 354.3047
+cpu_cycles/cmd_n = 0.2029
+cpu_speed = 1.80GHz
+t = 1123.528ms
+tn = 58.972ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.104
+cmd/t    = 238921.919 cmd/ms
+cmd*k/tn = 9103827.783 cmd/ms
+cpu_cycles/cmd   = 7.5338
+cpu_cycles/cmd_n = 0.1977
+cpu_speed = 1.80GHz
+t = 4001.644ms
+tn = 58.503ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1751.057
+cmd/t    = 5240.729 cmd/ms
+cmd*k/tn = 9176814.317 cmd/ms
+cpu_cycles/cmd   = 343.4598
+cpu_cycles/cmd_n = 0.1961
+cpu_speed = 1.80GHz
+t = 1133.589ms
+tn = 58.713ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.615
+cmd/t    = 236801.403 cmd/ms
+cmd*k/tn = 9143987.396 cmd/ms
+cpu_cycles/cmd   = 7.6021
+cpu_cycles/cmd_n = 0.1969
+cpu_speed = 1.81GHz
+t = 4057.457ms
+tn = 58.939ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1762.346
+cmd/t    = 5168.639 cmd/ms
+cmd*k/tn = 9108929.028 cmd/ms
+cpu_cycles/cmd   = 349.5799
+cpu_cycles/cmd_n = 0.1984
+cpu_speed = 1.80GHz
+t = 1134.283ms
+tn = 58.329ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.893
+cmd/t    = 236656.519 cmd/ms
+cmd*k/tn = 9204185.431 cmd/ms
+cpu_cycles/cmd   = 7.6062
+cpu_cycles/cmd_n = 0.1956
+cpu_speed = 1.80GHz
+t = 4038.308ms
+tn = 58.478ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1767.856
+cmd/t    = 5193.148 cmd/ms
+cmd*k/tn = 9180737.508 cmd/ms
+cpu_cycles/cmd   = 346.6060
+cpu_cycles/cmd_n = 0.1961
+cpu_speed = 1.80GHz
+t = 1141.000ms
+tn = 58.525ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.992
+cmd/t    = 235263.336 cmd/ms
+cmd*k/tn = 9173360.649 cmd/ms
+cpu_cycles/cmd   = 7.6507
+cpu_cycles/cmd_n = 0.1962
+cpu_speed = 1.80GHz
+t = 4098.934ms
+tn = 58.506ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1793.538
+cmd/t    = 5116.338 cmd/ms
+cmd*k/tn = 9176343.760 cmd/ms
+cpu_cycles/cmd   = 351.8192
+cpu_cycles/cmd_n = 0.1962
+cpu_speed = 1.80GHz
+t = 1124.156ms
+tn = 58.413ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.490
+cmd/t    = 238788.448 cmd/ms
+cmd*k/tn = 9190949.480 cmd/ms
+cpu_cycles/cmd   = 7.5379
+cpu_cycles/cmd_n = 0.1958
+cpu_speed = 1.80GHz
+t = 4077.736ms
+tn = 63.679ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1639.317
+cmd/t    = 5142.935 cmd/ms
+cmd*k/tn = 8430898.224 cmd/ms
+cpu_cycles/cmd   = 349.9893
+cpu_cycles/cmd_n = 0.2135
+cpu_speed = 1.80GHz
+t = 1132.675ms
+tn = 57.980ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.071
+cmd/t    = 236992.488 cmd/ms
+cmd*k/tn = 9259588.341 cmd/ms
+cpu_cycles/cmd   = 7.5952
+cpu_cycles/cmd_n = 0.1944
+cpu_speed = 1.80GHz
+t = 4141.014ms
+tn = 58.183ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1822.009
+cmd/t    = 5064.347 cmd/ms
+cmd*k/tn = 9227285.771 cmd/ms
+cpu_cycles/cmd   = 355.4234
+cpu_cycles/cmd_n = 0.1951
+cpu_speed = 1.80GHz
+t = 1122.316ms
+tn = 58.852ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.140
+cmd/t    = 239179.933 cmd/ms
+cmd*k/tn = 9122390.607 cmd/ms
+cpu_cycles/cmd   = 7.5256
+cpu_cycles/cmd_n = 0.1973
+cpu_speed = 1.80GHz
+t = 4029.547ms
+tn = 58.335ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1768.345
+cmd/t    = 5204.439 cmd/ms
+cmd*k/tn = 9203242.787 cmd/ms
+cpu_cycles/cmd   = 345.8689
+cpu_cycles/cmd_n = 0.1956
+cpu_speed = 1.80GHz
+t = 1122.541ms
+tn = 57.896ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.778
+cmd/t    = 239131.993 cmd/ms
+cmd*k/tn = 9273022.869 cmd/ms
+cpu_cycles/cmd   = 7.5277
+cpu_cycles/cmd_n = 0.1941
+cpu_speed = 1.80GHz
+t = 4500.155ms
+tn = 73.177ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1574.319
+cmd/t    = 4660.179 cmd/ms
+cmd*k/tn = 7336610.793 cmd/ms
+cpu_cycles/cmd   = 386.2459
+cpu_cycles/cmd_n = 0.2453
+cpu_speed = 1.80GHz
+t = 1123.113ms
+tn = 57.980ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.741
+cmd/t    = 239010.203 cmd/ms
+cmd*k/tn = 9259588.341 cmd/ms
+cpu_cycles/cmd   = 7.5310
+cpu_cycles/cmd_n = 0.1944
+cpu_speed = 1.80GHz
+t = 4196.371ms
+tn = 59.232ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1813.667
+cmd/t    = 4997.540 cmd/ms
+cmd*k/tn = 9063870.340 cmd/ms
+cpu_cycles/cmd   = 360.1764
+cpu_cycles/cmd_n = 0.1986
+cpu_speed = 1.80GHz
+t = 1128.306ms
+tn = 57.557ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.207
+cmd/t    = 237910.164 cmd/ms
+cmd*k/tn = 9327639.245 cmd/ms
+cpu_cycles/cmd   = 7.5661
+cpu_cycles/cmd_n = 0.1930
+cpu_speed = 1.80GHz
+t = 4008.200ms
+tn = 58.509ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1753.746
+cmd/t    = 5232.157 cmd/ms
+cmd*k/tn = 9175873.250 cmd/ms
+cpu_cycles/cmd   = 344.0433
+cpu_cycles/cmd_n = 0.1962
+cpu_speed = 1.81GHz
+t = 1108.677ms
+tn = 61.675ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 35.952
+cmd/t    = 242122.337 cmd/ms
+cmd*k/tn = 8704838.784 cmd/ms
+cpu_cycles/cmd   = 7.4592
+cpu_cycles/cmd_n = 0.2075
+cpu_speed = 1.80GHz
+t = 4178.278ms
+tn = 56.740ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1885.159
+cmd/t    = 5019.180 cmd/ms
+cmd*k/tn = 9461952.203 cmd/ms
+cpu_cycles/cmd   = 358.6201
+cpu_cycles/cmd_n = 0.1902
+cpu_speed = 1.80GHz
+t = 1098.895ms
+tn = 58.058ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 37.855
+cmd/t    = 244277.630 cmd/ms
+cmd*k/tn = 9247148.231 cmd/ms
+cpu_cycles/cmd   = 7.3686
+cpu_cycles/cmd_n = 0.1947
+cpu_speed = 1.80GHz
+t = 4044.645ms
+tn = 58.329ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1775.153
+cmd/t    = 5185.011 cmd/ms
+cmd*k/tn = 9204189.477 cmd/ms
+cpu_cycles/cmd   = 347.1604
+cpu_cycles/cmd_n = 0.1956
+cpu_speed = 1.80GHz
+t = 1136.065ms
+tn = 55.707ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 40.787
+cmd/t    = 236285.306 cmd/ms
+cmd*k/tn = 9637405.209 cmd/ms
+cpu_cycles/cmd   = 7.6178
+cpu_cycles/cmd_n = 0.1868
+cpu_speed = 1.80GHz
+t = 4191.604ms
+tn = 58.864ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1822.932
+cmd/t    = 5003.223 cmd/ms
+cmd*k/tn = 9120534.928 cmd/ms
+cpu_cycles/cmd   = 359.7636
+cpu_cycles/cmd_n = 0.1974
+cpu_speed = 1.80GHz
+t = 1104.041ms
+tn = 57.891ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.142
+cmd/t    = 243139.037 cmd/ms
+cmd*k/tn = 9273823.772 cmd/ms
+cpu_cycles/cmd   = 7.4034
+cpu_cycles/cmd_n = 0.1941
+cpu_speed = 1.80GHz
+t = 4188.357ms
+tn = 59.064ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1815.352
+cmd/t    = 5007.102 cmd/ms
+cmd*k/tn = 9089651.361 cmd/ms
+cpu_cycles/cmd   = 359.4796
+cpu_cycles/cmd_n = 0.1980
+cpu_speed = 1.80GHz
+t = 1129.374ms
+tn = 58.678ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.494
+cmd/t    = 237685.183 cmd/ms
+cmd*k/tn = 9149441.562 cmd/ms
+cpu_cycles/cmd   = 7.5730
+cpu_cycles/cmd_n = 0.1967
+cpu_speed = 1.80GHz
+t = 4015.069ms
+tn = 49.916ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 2059.175
+cmd/t    = 5223.205 cmd/ms
+cmd*k/tn = 10755492.588 cmd/ms
+cpu_cycles/cmd   = 344.6300
+cpu_cycles/cmd_n = 0.1674
+cpu_speed = 1.80GHz
+t = 1123.375ms
+tn = 58.835ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.187
+cmd/t    = 238954.460 cmd/ms
+cmd*k/tn = 9125026.464 cmd/ms
+cpu_cycles/cmd   = 7.5327
+cpu_cycles/cmd_n = 0.1973
+cpu_speed = 1.80GHz
+t = 4164.657ms
+tn = 58.620ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1818.752
+cmd/t    = 5035.596 cmd/ms
+cmd*k/tn = 9158498.260 cmd/ms
+cpu_cycles/cmd   = 357.4489
+cpu_cycles/cmd_n = 0.1965
+cpu_speed = 1.80GHz
+t = 1125.348ms
+tn = 58.181ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.684
+cmd/t    = 238535.516 cmd/ms
+cmd*k/tn = 9227598.907 cmd/ms
+cpu_cycles/cmd   = 7.5459
+cpu_cycles/cmd_n = 0.1951
+cpu_speed = 1.80GHz
+t = 4105.406ms
+tn = 58.044ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1810.668
+cmd/t    = 5108.272 cmd/ms
+cmd*k/tn = 9249382.675 cmd/ms
+cpu_cycles/cmd   = 352.3660
+cpu_cycles/cmd_n = 0.1946
+cpu_speed = 1.80GHz
+t = 1121.351ms
+tn = 58.067ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.623
+cmd/t    = 239385.764 cmd/ms
+cmd*k/tn = 9245714.984 cmd/ms
+cpu_cycles/cmd   = 7.5192
+cpu_cycles/cmd_n = 0.1947
+cpu_speed = 1.80GHz
+t = 4007.967ms
+tn = 58.508ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1753.674
+cmd/t    = 5232.461 cmd/ms
+cmd*k/tn = 9176030.081 cmd/ms
+cpu_cycles/cmd   = 344.0021
+cpu_cycles/cmd_n = 0.1962
+cpu_speed = 1.80GHz
+t = 1101.789ms
+tn = 79.205ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 27.821
+cmd/t    = 243636.001 cmd/ms
+cmd*k/tn = 6778245.464 cmd/ms
+cpu_cycles/cmd   = 7.3880
+cpu_cycles/cmd_n = 0.2656
+cpu_speed = 1.80GHz
+t = 4012.636ms
+tn = 58.106ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1767.864
+cmd/t    = 5226.372 cmd/ms
+cmd*k/tn = 9239513.441 cmd/ms
+cpu_cycles/cmd   = 344.4051
+cpu_cycles/cmd_n = 0.1948
+cpu_speed = 1.80GHz
+t = 1154.530ms
+tn = 62.658ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 36.852
+cmd/t    = 232506.272 cmd/ms
+cmd*k/tn = 8568274.315 cmd/ms
+cpu_cycles/cmd   = 7.7420
+cpu_cycles/cmd_n = 0.2101
+cpu_speed = 1.80GHz
+t = 3981.962ms
+tn = 59.916ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1701.352
+cmd/t    = 5266.632 cmd/ms
+cmd*k/tn = 8960397.356 cmd/ms
+cpu_cycles/cmd   = 341.7824
+cpu_cycles/cmd_n = 0.2009
+cpu_speed = 1.80GHz
+t = 1169.558ms
+tn = 58.175ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 40.208
+cmd/t    = 229518.729 cmd/ms
+cmd*k/tn = 9228550.615 cmd/ms
+cpu_cycles/cmd   = 7.8424
+cpu_cycles/cmd_n = 0.1950
+cpu_speed = 1.80GHz
+t = 4037.894ms
+tn = 58.079ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1779.819
+cmd/t    = 5193.680 cmd/ms
+cmd*k/tn = 9243808.743 cmd/ms
+cpu_cycles/cmd   = 346.5706
+cpu_cycles/cmd_n = 0.1947
+cpu_speed = 1.80GHz
+t = 1124.083ms
+tn = 58.494ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.434
+cmd/t    = 238803.955 cmd/ms
+cmd*k/tn = 9178222.245 cmd/ms
+cpu_cycles/cmd   = 7.5378
+cpu_cycles/cmd_n = 0.1961
+cpu_speed = 1.80GHz
+t = 3956.420ms
+tn = 59.401ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1705.095
+cmd/t    = 5300.633 cmd/ms
+cmd*k/tn = 9038082.995 cmd/ms
+cpu_cycles/cmd   = 339.5907
+cpu_cycles/cmd_n = 0.1992
+cpu_speed = 1.80GHz
+t = 1121.290ms
+tn = 69.404ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 32.312
+cmd/t    = 239398.787 cmd/ms
+cmd*k/tn = 7735446.545 cmd/ms
+cpu_cycles/cmd   = 7.5185
+cpu_cycles/cmd_n = 0.2327
+cpu_speed = 1.80GHz
+t = 4110.076ms
+tn = 69.662ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1510.407
+cmd/t    = 5102.468 cmd/ms
+cmd*k/tn = 7706800.953 cmd/ms
+cpu_cycles/cmd   = 352.7659
+cpu_cycles/cmd_n = 0.2336
+cpu_speed = 1.80GHz
+t = 1134.956ms
+tn = 65.434ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 34.690
+cmd/t    = 236516.187 cmd/ms
+cmd*k/tn = 8204770.181 cmd/ms
+cpu_cycles/cmd   = 7.6103
+cpu_cycles/cmd_n = 0.2194
+cpu_speed = 1.80GHz
+t = 4076.670ms
+tn = 58.642ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1779.659
+cmd/t    = 5144.280 cmd/ms
+cmd*k/tn = 9155062.378 cmd/ms
+cpu_cycles/cmd   = 349.9333
+cpu_cycles/cmd_n = 0.1966
+cpu_speed = 1.80GHz
+t = 1110.989ms
+tn = 58.091ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.250
+cmd/t    = 241618.473 cmd/ms
+cmd*k/tn = 9241895.164 cmd/ms
+cpu_cycles/cmd   = 7.4526
+cpu_cycles/cmd_n = 0.1948
+cpu_speed = 1.80GHz
+t = 4263.917ms
+tn = 54.807ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1991.648
+cmd/t    = 4918.372 cmd/ms
+cmd*k/tn = 9795667.853 cmd/ms
+cpu_cycles/cmd   = 365.9963
+cpu_cycles/cmd_n = 0.1838
+cpu_speed = 1.80GHz
+t = 1118.987ms
+tn = 60.922ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 36.735
+cmd/t    = 239891.497 cmd/ms
+cmd*k/tn = 8812431.174 cmd/ms
+cpu_cycles/cmd   = 7.5032
+cpu_cycles/cmd_n = 0.2043
+cpu_speed = 1.80GHz
+t = 4088.137ms
+tn = 58.417ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1791.539
+cmd/t    = 5129.850 cmd/ms
+cmd*k/tn = 9190324.186 cmd/ms
+cpu_cycles/cmd   = 350.8772
+cpu_cycles/cmd_n = 0.1959
+cpu_speed = 1.80GHz
+t = 1132.131ms
+tn = 58.975ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.394
+cmd/t    = 237106.365 cmd/ms
+cmd*k/tn = 9103364.680 cmd/ms
+cpu_cycles/cmd   = 7.5912
+cpu_cycles/cmd_n = 0.1977
+cpu_speed = 1.80GHz
+t = 4229.850ms
+tn = 63.403ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1707.871
+cmd/t    = 4957.984 cmd/ms
+cmd*k/tn = 8467598.820 cmd/ms
+cpu_cycles/cmd   = 363.0716
+cpu_cycles/cmd_n = 0.2126
+cpu_speed = 1.80GHz
+t = 1136.723ms
+tn = 58.347ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.964
+cmd/t    = 236148.530 cmd/ms
+cmd*k/tn = 9201345.948 cmd/ms
+cpu_cycles/cmd   = 7.6218
+cpu_cycles/cmd_n = 0.1956
+cpu_speed = 1.80GHz
+t = 4178.321ms
+tn = 58.602ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1825.279
+cmd/t    = 5019.128 cmd/ms
+cmd*k/tn = 9161311.355 cmd/ms
+cpu_cycles/cmd   = 358.6339
+cpu_cycles/cmd_n = 0.1965
+cpu_speed = 1.80GHz
+t = 1150.437ms
+tn = 60.702ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 37.904
+cmd/t    = 233333.478 cmd/ms
+cmd*k/tn = 8844369.741 cmd/ms
+cpu_cycles/cmd   = 7.7143
+cpu_cycles/cmd_n = 0.2035
+cpu_speed = 1.82GHz
+t = 4117.288ms
+tn = 62.273ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1692.589
+cmd/t    = 5093.530 cmd/ms
+cmd*k/tn = 8621251.072 cmd/ms
+cpu_cycles/cmd   = 356.8452
+cpu_cycles/cmd_n = 0.2108
+cpu_speed = 1.80GHz
+t = 1123.744ms
+tn = 58.295ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.554
+cmd/t    = 238875.995 cmd/ms
+cmd*k/tn = 9209553.684 cmd/ms
+cpu_cycles/cmd   = 7.5352
+cpu_cycles/cmd_n = 0.1954
+cpu_speed = 1.80GHz
+t = 4402.375ms
+tn = 71.498ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1576.279
+cmd/t    = 4763.686 cmd/ms
+cmd*k/tn = 7508897.703 cmd/ms
+cpu_cycles/cmd   = 377.8632
+cpu_cycles/cmd_n = 0.2397
+cpu_speed = 1.80GHz
+t = 1136.779ms
+tn = 57.928ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.248
+cmd/t    = 236136.897 cmd/ms
+cmd*k/tn = 9267900.359 cmd/ms
+cpu_cycles/cmd   = 7.6233
+cpu_cycles/cmd_n = 0.1942
+cpu_speed = 1.81GHz
+t = 4060.367ms
+tn = 58.417ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1779.369
+cmd/t    = 5164.935 cmd/ms
+cmd*k/tn = 9190324.186 cmd/ms
+cpu_cycles/cmd   = 350.5009
+cpu_cycles/cmd_n = 0.1970
+cpu_speed = 1.81GHz
+t = 1152.008ms
+tn = 56.211ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 40.989
+cmd/t    = 233015.279 cmd/ms
+cmd*k/tn = 9550994.147 cmd/ms
+cpu_cycles/cmd   = 7.7486
+cpu_cycles/cmd_n = 0.1890
+cpu_speed = 1.80GHz
+t = 4115.860ms
+tn = 59.176ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1780.553
+cmd/t    = 5095.297 cmd/ms
+cmd*k/tn = 9072447.749 cmd/ms
+cpu_cycles/cmd   = 353.2454
+cpu_cycles/cmd_n = 0.1984
+cpu_speed = 1.80GHz
+t = 1123.049ms
+tn = 55.990ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 40.116
+cmd/t    = 239023.824 cmd/ms
+cmd*k/tn = 9588693.195 cmd/ms
+cpu_cycles/cmd   = 7.5306
+cpu_cycles/cmd_n = 0.1877
+cpu_speed = 1.80GHz
+t = 4100.845ms
+tn = 58.323ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1800.004
+cmd/t    = 5113.953 cmd/ms
+cmd*k/tn = 9205136.361 cmd/ms
+cpu_cycles/cmd   = 352.2213
+cpu_cycles/cmd_n = 0.1957
+cpu_speed = 1.80GHz
+t = 1120.970ms
+tn = 59.523ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 37.665
+cmd/t    = 239467.128 cmd/ms
+cmd*k/tn = 9019554.324 cmd/ms
+cpu_cycles/cmd   = 7.5173
+cpu_cycles/cmd_n = 0.1996
+cpu_speed = 1.80GHz
+t = 4025.521ms
+tn = 58.654ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1756.970
+cmd/t    = 5209.644 cmd/ms
+cmd*k/tn = 9153189.348 cmd/ms
+cpu_cycles/cmd   = 345.5052
+cpu_cycles/cmd_n = 0.1966
+cpu_speed = 1.80GHz
+t = 1124.640ms
+tn = 58.292ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.586
+cmd/t    = 238685.683 cmd/ms
+cmd*k/tn = 9210027.654 cmd/ms
+cpu_cycles/cmd   = 7.5422
+cpu_cycles/cmd_n = 0.1955
+cpu_speed = 1.80GHz
+t = 4081.572ms
+tn = 57.242ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1825.377
+cmd/t    = 5138.101 cmd/ms
+cmd*k/tn = 9378972.922 cmd/ms
+cpu_cycles/cmd   = 350.3333
+cpu_cycles/cmd_n = 0.1919
+cpu_speed = 1.80GHz
+t = 1110.515ms
+tn = 58.628ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 37.883
+cmd/t    = 241721.603 cmd/ms
+cmd*k/tn = 9157244.525 cmd/ms
+cpu_cycles/cmd   = 7.4464
+cpu_cycles/cmd_n = 0.1966
+cpu_speed = 1.80GHz
+t = 4149.516ms
+tn = 58.274ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1822.899
+cmd/t    = 5053.970 cmd/ms
+cmd*k/tn = 9212876.549 cmd/ms
+cpu_cycles/cmd   = 356.1722
+cpu_cycles/cmd_n = 0.1954
+cpu_speed = 1.80GHz
+t = 1134.122ms
+tn = 57.963ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.133
+cmd/t    = 236690.114 cmd/ms
+cmd*k/tn = 9262304.091 cmd/ms
+cpu_cycles/cmd   = 7.6113
+cpu_cycles/cmd_n = 0.1945
+cpu_speed = 1.80GHz
+t = 4021.596ms
+tn = 56.530ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1821.207
+cmd/t    = 5214.728 cmd/ms
+cmd*k/tn = 9497101.857 cmd/ms
+cpu_cycles/cmd   = 345.1715
+cpu_cycles/cmd_n = 0.1895
+cpu_speed = 1.80GHz
+t = 1159.431ms
+tn = 60.850ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.108
+cmd/t    = 231523.451 cmd/ms
+cmd*k/tn = 8822858.373 cmd/ms
+cpu_cycles/cmd   = 7.7745
+cpu_cycles/cmd_n = 0.2040
+cpu_speed = 1.80GHz
+t = 4080.439ms
+tn = 58.472ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1786.483
+cmd/t    = 5139.528 cmd/ms
+cmd*k/tn = 9181679.573 cmd/ms
+cpu_cycles/cmd   = 350.2352
+cpu_cycles/cmd_n = 0.1960
+cpu_speed = 1.80GHz
+t = 1138.353ms
+tn = 63.214ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 36.016
+cmd/t    = 235810.391 cmd/ms
+cmd*k/tn = 8492911.887 cmd/ms
+cpu_cycles/cmd   = 7.6341
+cpu_cycles/cmd_n = 0.2120
+cpu_speed = 1.80GHz
+t = 4322.610ms
+tn = 62.314ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1775.826
+cmd/t    = 4851.590 cmd/ms
+cmd*k/tn = 8615578.650 cmd/ms
+cpu_cycles/cmd   = 371.0251
+cpu_cycles/cmd_n = 0.2089
+cpu_speed = 1.80GHz
+t = 1181.805ms
+tn = 58.170ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 40.633
+cmd/t    = 227140.235 cmd/ms
+cmd*k/tn = 9229343.854 cmd/ms
+cpu_cycles/cmd   = 7.9249
+cpu_cycles/cmd_n = 0.1950
+cpu_speed = 1.80GHz
+t = 3838.012ms
+tn = 58.268ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1686.228
+cmd/t    = 5464.165 cmd/ms
+cmd*k/tn = 9213825.221 cmd/ms
+cpu_cycles/cmd   = 329.4275
+cpu_cycles/cmd_n = 0.1954
+cpu_speed = 1.80GHz
+t = 1142.811ms
+tn = 61.985ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 36.874
+cmd/t    = 234890.516 cmd/ms
+cmd*k/tn = 8661304.057 cmd/ms
+cpu_cycles/cmd   = 7.6631
+cpu_cycles/cmd_n = 0.2078
+cpu_speed = 1.80GHz
+t = 4181.540ms
+tn = 63.123ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1695.855
+cmd/t    = 5015.265 cmd/ms
+cmd*k/tn = 8505159.260 cmd/ms
+cpu_cycles/cmd   = 358.8883
+cpu_cycles/cmd_n = 0.2116
+cpu_speed = 1.80GHz
+t = 1133.519ms
+tn = 54.232ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 41.803
+cmd/t    = 236816.027 cmd/ms
+cmd*k/tn = 9899523.012 cmd/ms
+cpu_cycles/cmd   = 7.6007
+cpu_cycles/cmd_n = 0.1818
+cpu_speed = 1.80GHz
+t = 4085.378ms
+tn = 58.183ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1797.530
+cmd/t    = 5133.314 cmd/ms
+cmd*k/tn = 9227285.771 cmd/ms
+cpu_cycles/cmd   = 350.6705
+cpu_cycles/cmd_n = 0.1951
+cpu_speed = 1.81GHz
+t = 1127.559ms
+tn = 54.090ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 41.692
+cmd/t    = 238067.778 cmd/ms
+cmd*k/tn = 9925511.777 cmd/ms
+cpu_cycles/cmd   = 7.5929
+cpu_cycles/cmd_n = 0.1821
+cpu_speed = 1.80GHz
+t = 4090.403ms
+tn = 58.029ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1804.517
+cmd/t    = 5127.008 cmd/ms
+cmd*k/tn = 9251773.561 cmd/ms
+cpu_cycles/cmd   = 351.0737
+cpu_cycles/cmd_n = 0.1946
+cpu_speed = 1.80GHz
+t = 1149.579ms
+tn = 62.804ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 36.608
+cmd/t    = 233507.628 cmd/ms
+cmd*k/tn = 8548355.710 cmd/ms
+cpu_cycles/cmd   = 7.7087
+cpu_cycles/cmd_n = 0.2106
+cpu_speed = 1.80GHz
+t = 4015.921ms
+tn = 58.408ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1760.163
+cmd/t    = 5222.097 cmd/ms
+cmd*k/tn = 9191740.310 cmd/ms
+cpu_cycles/cmd   = 344.6836
+cpu_cycles/cmd_n = 0.1958
+cpu_speed = 1.80GHz
+t = 1128.676ms
+tn = 57.390ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.334
+cmd/t    = 237832.173 cmd/ms
+cmd*k/tn = 9354781.878 cmd/ms
+cpu_cycles/cmd   = 7.5698
+cpu_cycles/cmd_n = 0.1925
+cpu_speed = 1.80GHz
+t = 3981.480ms
+tn = 57.074ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1785.855
+cmd/t    = 5267.270 cmd/ms
+cmd*k/tn = 9406580.369 cmd/ms
+cpu_cycles/cmd   = 341.7285
+cpu_cycles/cmd_n = 0.1914
+cpu_speed = 1.80GHz
+t = 1130.723ms
+tn = 64.083ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 35.289
+cmd/t    = 237401.615 cmd/ms
+cmd*k/tn = 8377743.426 cmd/ms
+cpu_cycles/cmd   = 7.5818
+cpu_cycles/cmd_n = 0.2148
+cpu_speed = 1.82GHz
+t = 4077.386ms
+tn = 58.467ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1785.299
+cmd/t    = 5143.376 cmd/ms
+cmd*k/tn = 9182464.775 cmd/ms
+cpu_cycles/cmd   = 353.2372
+cpu_cycles/cmd_n = 0.1979
+cpu_speed = 1.80GHz
+t = 1078.569ms
+tn = 58.011ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 37.185
+cmd/t    = 248881.125 cmd/ms
+cmd*k/tn = 9254640.189 cmd/ms
+cpu_cycles/cmd   = 7.2333
+cpu_cycles/cmd_n = 0.1945
+cpu_speed = 1.82GHz
+t = 3996.698ms
+tn = 61.698ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1658.327
+cmd/t    = 5247.214 cmd/ms
+cmd*k/tn = 8701597.588 cmd/ms
+cpu_cycles/cmd   = 346.5349
+cpu_cycles/cmd_n = 0.2090
+cpu_speed = 1.80GHz
+t = 1092.249ms
+tn = 58.128ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 37.581
+cmd/t    = 245763.984 cmd/ms
+cmd*k/tn = 9236012.455 cmd/ms
+cpu_cycles/cmd   = 7.3240
+cpu_cycles/cmd_n = 0.1949
+cpu_speed = 1.80GHz
+t = 3923.255ms
+tn = 58.684ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1711.460
+cmd/t    = 5345.441 cmd/ms
+cmd*k/tn = 9148510.122 cmd/ms
+cpu_cycles/cmd   = 336.7262
+cpu_cycles/cmd_n = 0.1967
+cpu_speed = 1.80GHz
+t = 1145.099ms
+tn = 61.712ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 37.111
+cmd/t    = 234421.186 cmd/ms
+cmd*k/tn = 8699619.717 cmd/ms
+cpu_cycles/cmd   = 7.6783
+cpu_cycles/cmd_n = 0.2069
+cpu_speed = 1.80GHz
+t = 4146.246ms
+tn = 64.079ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1656.454
+cmd/t    = 5057.956 cmd/ms
+cmd*k/tn = 8378270.073 cmd/ms
+cpu_cycles/cmd   = 355.9196
+cpu_cycles/cmd_n = 0.2149
+cpu_speed = 1.80GHz
+t = 1158.430ms
+tn = 58.432ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.651
+cmd/t    = 231723.510 cmd/ms
+cmd*k/tn = 9187960.912 cmd/ms
+cpu_cycles/cmd   = 7.7684
+cpu_cycles/cmd_n = 0.1959
+cpu_speed = 1.80GHz
+t = 4086.658ms
+tn = 56.591ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1848.676
+cmd/t    = 5131.707 cmd/ms
+cmd*k/tn = 9486864.837 cmd/ms
+cpu_cycles/cmd   = 350.7563
+cpu_cycles/cmd_n = 0.1897
+cpu_speed = 1.81GHz
+t = 1142.934ms
+tn = 59.509ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.412
+cmd/t    = 234865.238 cmd/ms
+cmd*k/tn = 9021676.251 cmd/ms
+cpu_cycles/cmd   = 7.6910
+cpu_cycles/cmd_n = 0.2002
+cpu_speed = 1.80GHz
+t = 4132.183ms
+tn = 65.146ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1623.797
+cmd/t    = 5075.170 cmd/ms
+cmd*k/tn = 8241045.774 cmd/ms
+cpu_cycles/cmd   = 354.6585
+cpu_cycles/cmd_n = 0.2184
+cpu_speed = 1.80GHz
+t = 1084.151ms
+tn = 57.872ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 37.467
+cmd/t    = 247599.703 cmd/ms
+cmd*k/tn = 9276868.468 cmd/ms
+cpu_cycles/cmd   = 7.2697
+cpu_cycles/cmd_n = 0.1940
+cpu_speed = 1.80GHz
+t = 3982.892ms
+tn = 58.219ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1751.353
+cmd/t    = 5265.403 cmd/ms
+cmd*k/tn = 9221580.034 cmd/ms
+cpu_cycles/cmd   = 341.8906
+cpu_cycles/cmd_n = 0.1952
+cpu_speed = 1.80GHz
+t = 1080.144ms
+tn = 58.291ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 37.060
+cmd/t    = 248518.222 cmd/ms
+cmd*k/tn = 9210185.655 cmd/ms
+cpu_cycles/cmd   = 7.2429
+cpu_cycles/cmd_n = 0.1954
+cpu_speed = 1.80GHz
+t = 4089.684ms
+tn = 66.060ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1584.861
+cmd/t    = 5127.910 cmd/ms
+cmd*k/tn = 8127023.433 cmd/ms
+cpu_cycles/cmd   = 351.0065
+cpu_cycles/cmd_n = 0.2215
+cpu_speed = 1.80GHz
+t = 1129.232ms
+tn = 57.817ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.062
+cmd/t    = 237715.072 cmd/ms
+cmd*k/tn = 9285693.343 cmd/ms
+cpu_cycles/cmd   = 7.5720
+cpu_cycles/cmd_n = 0.1938
+cpu_speed = 1.80GHz
+t = 3967.367ms
+tn = 58.587ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1733.569
+cmd/t    = 5286.007 cmd/ms
+cmd*k/tn = 9163656.920 cmd/ms
+cpu_cycles/cmd   = 340.5245
+cpu_cycles/cmd_n = 0.1964
+cpu_speed = 1.80GHz
+t = 1123.366ms
+tn = 58.252ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.569
+cmd/t    = 238956.374 cmd/ms
+cmd*k/tn = 9216351.919 cmd/ms
+cpu_cycles/cmd   = 7.5327
+cpu_cycles/cmd_n = 0.1953
+cpu_speed = 1.80GHz
+t = 3979.651ms
+tn = 61.629ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1653.103
+cmd/t    = 5269.691 cmd/ms
+cmd*k/tn = 8711339.921 cmd/ms
+cpu_cycles/cmd   = 341.5617
+cpu_cycles/cmd_n = 0.2066
+cpu_speed = 1.80GHz
+t = 1122.544ms
+tn = 57.936ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.751
+cmd/t    = 239131.353 cmd/ms
+cmd*k/tn = 9266620.616 cmd/ms
+cpu_cycles/cmd   = 7.5272
+cpu_cycles/cmd_n = 0.1942
+cpu_speed = 1.80GHz
+t = 4018.021ms
+tn = 58.374ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1762.109
+cmd/t    = 5219.368 cmd/ms
+cmd*k/tn = 9197094.049 cmd/ms
+cpu_cycles/cmd   = 344.8652
+cpu_cycles/cmd_n = 0.1957
+cpu_speed = 1.80GHz
+t = 1099.387ms
+tn = 57.171ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.460
+cmd/t    = 244168.310 cmd/ms
+cmd*k/tn = 9390616.431 cmd/ms
+cpu_cycles/cmd   = 7.3724
+cpu_cycles/cmd_n = 0.1917
+cpu_speed = 1.80GHz
+t = 3997.560ms
+tn = 58.069ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1762.344
+cmd/t    = 5246.083 cmd/ms
+cmd*k/tn = 9245400.610 cmd/ms
+cpu_cycles/cmd   = 343.1112
+cpu_cycles/cmd_n = 0.1947
+cpu_speed = 1.80GHz
+t = 1118.116ms
+tn = 58.332ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.336
+cmd/t    = 240078.369 cmd/ms
+cmd*k/tn = 9203712.062 cmd/ms
+cpu_cycles/cmd   = 7.4975
+cpu_cycles/cmd_n = 0.1956
+cpu_speed = 1.80GHz
+t = 4104.928ms
+tn = 63.441ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1656.439
+cmd/t    = 5108.867 cmd/ms
+cmd*k/tn = 8462526.883 cmd/ms
+cpu_cycles/cmd   = 352.3224
+cpu_cycles/cmd_n = 0.2127
+cpu_speed = 1.80GHz
+t = 1145.303ms
+tn = 58.747ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.991
+cmd/t    = 234379.431 cmd/ms
+cmd*k/tn = 9138695.287 cmd/ms
+cpu_cycles/cmd   = 7.6840
+cpu_cycles/cmd_n = 0.1971
+cpu_speed = 1.80GHz
+t = 4064.580ms
+tn = 63.736ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1632.566
+cmd/t    = 5159.581 cmd/ms
+cmd*k/tn = 8423358.353 cmd/ms
+cpu_cycles/cmd   = 348.8591
+cpu_cycles/cmd_n = 0.2137
+cpu_speed = 1.82GHz
+t = 1133.245ms
+tn = 55.613ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 40.755
+cmd/t    = 236873.285 cmd/ms
+cmd*k/tn = 9653694.856 cmd/ms
+cpu_cycles/cmd   = 7.6683
+cpu_cycles/cmd_n = 0.1882
+cpu_speed = 1.80GHz
+t = 4030.892ms
+tn = 58.356ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1768.299
+cmd/t    = 5202.702 cmd/ms
+cmd*k/tn = 9199930.907 cmd/ms
+cpu_cycles/cmd   = 345.9705
+cpu_cycles/cmd_n = 0.1957
+cpu_speed = 1.80GHz
+t = 1130.899ms
+tn = 58.271ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.815
+cmd/t    = 237364.668 cmd/ms
+cmd*k/tn = 9213346.811 cmd/ms
+cpu_cycles/cmd   = 7.5833
+cpu_cycles/cmd_n = 0.1954
+cpu_speed = 1.80GHz
+t = 4055.305ms
+tn = 64.905ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1599.504
+cmd/t    = 5171.382 cmd/ms
+cmd*k/tn = 8271645.759 cmd/ms
+cpu_cycles/cmd   = 348.0639
+cpu_cycles/cmd_n = 0.2176
+cpu_speed = 1.80GHz
+t = 1108.853ms
+tn = 51.952ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 42.688
+cmd/t    = 242083.907 cmd/ms
+cmd*k/tn = 10333980.059 cmd/ms
+cpu_cycles/cmd   = 7.4351
+cpu_cycles/cmd_n = 0.1742
+cpu_speed = 1.80GHz
+t = 4019.914ms
+tn = 61.235ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1680.572
+cmd/t    = 5216.910 cmd/ms
+cmd*k/tn = 8767390.675 cmd/ms
+cpu_cycles/cmd   = 345.0272
+cpu_cycles/cmd_n = 0.2053
+cpu_speed = 1.80GHz
+t = 1136.893ms
+tn = 58.224ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.052
+cmd/t    = 236113.219 cmd/ms
+cmd*k/tn = 9220784.075 cmd/ms
+cpu_cycles/cmd   = 7.6232
+cpu_cycles/cmd_n = 0.1952
+cpu_speed = 1.81GHz
+t = 4021.023ms
+tn = 57.792ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1781.184
+cmd/t    = 5215.471 cmd/ms
+cmd*k/tn = 9289714.286 cmd/ms
+cpu_cycles/cmd   = 347.7776
+cpu_cycles/cmd_n = 0.1953
+cpu_speed = 1.80GHz
+t = 1124.390ms
+tn = 58.698ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.311
+cmd/t    = 238738.753 cmd/ms
+cmd*k/tn = 9146324.100 cmd/ms
+cpu_cycles/cmd   = 7.5397
+cpu_cycles/cmd_n = 0.1968
+cpu_speed = 1.80GHz
+t = 4060.315ms
+tn = 58.808ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1767.516
+cmd/t    = 5165.001 cmd/ms
+cmd*k/tn = 9129219.970 cmd/ms
+cpu_cycles/cmd   = 348.4898
+cpu_cycles/cmd_n = 0.1972
+cpu_speed = 1.80GHz
+t = 1212.708ms
+tn = 55.199ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 43.939
+cmd/t    = 221352.103 cmd/ms
+cmd*k/tn = 9726098.879 cmd/ms
+cpu_cycles/cmd   = 8.1317
+cpu_cycles/cmd_n = 0.1851
+cpu_speed = 1.80GHz
+t = 4010.834ms
+tn = 65.221ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1574.299
+cmd/t    = 5228.721 cmd/ms
+cmd*k/tn = 8231569.096 cmd/ms
+cpu_cycles/cmd   = 344.2422
+cpu_cycles/cmd_n = 0.2187
+cpu_speed = 1.80GHz
+t = 1121.218ms
+tn = 55.238ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 40.596
+cmd/t    = 239414.160 cmd/ms
+cmd*k/tn = 9719231.906 cmd/ms
+cpu_cycles/cmd   = 7.5180
+cpu_cycles/cmd_n = 0.1852
+cpu_speed = 1.80GHz
+t = 4132.341ms
+tn = 58.573ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1806.087
+cmd/t    = 5074.976 cmd/ms
+cmd*k/tn = 9165847.199 cmd/ms
+cpu_cycles/cmd   = 354.6755
+cpu_cycles/cmd_n = 0.1964
+cpu_speed = 1.80GHz
+t = 1156.884ms
+tn = 58.265ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.711
+cmd/t    = 232033.174 cmd/ms
+cmd*k/tn = 9214295.581 cmd/ms
+cpu_cycles/cmd   = 7.7574
+cpu_cycles/cmd_n = 0.1953
+cpu_speed = 1.80GHz
+t = 4072.190ms
+tn = 55.331ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1884.081
+cmd/t    = 5149.939 cmd/ms
+cmd*k/tn = 9702900.146 cmd/ms
+cpu_cycles/cmd   = 349.5155
+cpu_cycles/cmd_n = 0.1855
+cpu_speed = 1.80GHz
+t = 1114.361ms
+tn = 58.225ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.278
+cmd/t    = 240887.348 cmd/ms
+cmd*k/tn = 9220625.711 cmd/ms
+cpu_cycles/cmd   = 7.4723
+cpu_cycles/cmd_n = 0.1952
+cpu_speed = 1.80GHz
+t = 4182.989ms
+tn = 58.771ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1822.064
+cmd/t    = 5013.527 cmd/ms
+cmd*k/tn = 9134967.382 cmd/ms
+cpu_cycles/cmd   = 359.0248
+cpu_cycles/cmd_n = 0.1970
+cpu_speed = 1.80GHz
+t = 1108.441ms
+tn = 57.737ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.396
+cmd/t    = 242173.887 cmd/ms
+cmd*k/tn = 9298559.537 cmd/ms
+cpu_cycles/cmd   = 7.4331
+cpu_cycles/cmd_n = 0.1936
+cpu_speed = 1.80GHz
+t = 4295.745ms
+tn = 61.630ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1784.376
+cmd/t    = 4881.931 cmd/ms
+cmd*k/tn = 8711198.572 cmd/ms
+cpu_cycles/cmd   = 368.7019
+cpu_cycles/cmd_n = 0.2066
+cpu_speed = 1.80GHz
+t = 1104.614ms
+tn = 59.817ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 36.933
+cmd/t    = 243012.913 cmd/ms
+cmd*k/tn = 8975223.298 cmd/ms
+cpu_cycles/cmd   = 7.4069
+cpu_cycles/cmd_n = 0.2005
+cpu_speed = 1.80GHz
+t = 3916.885ms
+tn = 58.212ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1722.536
+cmd/t    = 5354.135 cmd/ms
+cmd*k/tn = 9222688.930 cmd/ms
+cpu_cycles/cmd   = 336.2086
+cpu_cycles/cmd_n = 0.1952
+cpu_speed = 1.80GHz
+t = 1101.197ms
+tn = 58.035ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 37.949
+cmd/t    = 243766.979 cmd/ms
+cmd*k/tn = 9250812.992 cmd/ms
+cpu_cycles/cmd   = 7.3840
+cpu_cycles/cmd_n = 0.1946
+cpu_speed = 1.80GHz
+t = 4160.081ms
+tn = 58.393ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1823.816
+cmd/t    = 5041.135 cmd/ms
+cmd*k/tn = 9194101.485 cmd/ms
+cpu_cycles/cmd   = 357.0581
+cpu_cycles/cmd_n = 0.1958
+cpu_speed = 1.80GHz
+t = 1095.485ms
+tn = 58.874ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 37.215
+cmd/t    = 245038.011 cmd/ms
+cmd*k/tn = 9118981.758 cmd/ms
+cpu_cycles/cmd   = 7.3456
+cpu_cycles/cmd_n = 0.1974
+cpu_speed = 1.80GHz
+t = 4336.034ms
+tn = 58.686ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1891.464
+cmd/t    = 4836.570 cmd/ms
+cmd*k/tn = 9148198.344 cmd/ms
+cpu_cycles/cmd   = 372.1568
+cpu_cycles/cmd_n = 0.1968
+cpu_speed = 1.80GHz
+t = 1107.103ms
+tn = 76.136ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 29.082
+cmd/t    = 242466.569 cmd/ms
+cmd*k/tn = 7051472.786 cmd/ms
+cpu_cycles/cmd   = 7.4244
+cpu_cycles/cmd_n = 0.2553
+cpu_speed = 1.80GHz
+t = 4095.701ms
+tn = 57.447ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1825.160
+cmd/t    = 5120.376 cmd/ms
+cmd*k/tn = 9345503.995 cmd/ms
+cpu_cycles/cmd   = 351.5238
+cpu_cycles/cmd_n = 0.1926
+cpu_speed = 1.80GHz
+t = 1129.430ms
+tn = 57.033ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.606
+cmd/t    = 237673.398 cmd/ms
+cmd*k/tn = 9413338.453 cmd/ms
+cpu_cycles/cmd   = 7.5734
+cpu_cycles/cmd_n = 0.1912
+cpu_speed = 1.80GHz
+t = 4085.472ms
+tn = 58.304ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1793.841
+cmd/t    = 5133.196 cmd/ms
+cmd*k/tn = 9208136.114 cmd/ms
+cpu_cycles/cmd   = 350.6521
+cpu_cycles/cmd_n = 0.1955
+cpu_speed = 1.80GHz
+t = 1119.786ms
+tn = 58.378ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.363
+cmd/t    = 239720.327 cmd/ms
+cmd*k/tn = 9196459.831 cmd/ms
+cpu_cycles/cmd   = 7.5086
+cpu_cycles/cmd_n = 0.1957
+cpu_speed = 1.80GHz
+t = 4303.146ms
+tn = 58.535ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1881.960
+cmd/t    = 4873.534 cmd/ms
+cmd*k/tn = 9171797.523 cmd/ms
+cpu_cycles/cmd   = 369.3317
+cpu_cycles/cmd_n = 0.1962
+cpu_speed = 1.80GHz
+t = 1127.125ms
+tn = 56.135ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 40.158
+cmd/t    = 238159.446 cmd/ms
+cmd*k/tn = 9563925.038 cmd/ms
+cpu_cycles/cmd   = 7.5579
+cpu_cycles/cmd_n = 0.1882
+cpu_speed = 1.80GHz
+t = 4052.028ms
+tn = 58.427ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1775.411
+cmd/t    = 5175.564 cmd/ms
+cmd*k/tn = 9188751.228 cmd/ms
+cpu_cycles/cmd   = 347.7762
+cpu_cycles/cmd_n = 0.1959
+cpu_speed = 1.80GHz
+t = 1137.683ms
+tn = 58.837ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.672
+cmd/t    = 235949.264 cmd/ms
+cmd*k/tn = 9124716.284 cmd/ms
+cpu_cycles/cmd   = 7.6286
+cpu_cycles/cmd_n = 0.1973
+cpu_speed = 1.80GHz
+t = 4040.790ms
+tn = 59.023ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1752.609
+cmd/t    = 5189.958 cmd/ms
+cmd*k/tn = 9095965.437 cmd/ms
+cpu_cycles/cmd   = 346.8197
+cpu_cycles/cmd_n = 0.1979
+cpu_speed = 1.80GHz
+t = 1122.574ms
+tn = 58.093ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.647
+cmd/t    = 239124.963 cmd/ms
+cmd*k/tn = 9241576.989 cmd/ms
+cpu_cycles/cmd   = 7.5273
+cpu_cycles/cmd_n = 0.1948
+cpu_speed = 1.80GHz
+t = 4104.613ms
+tn = 65.161ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1612.592
+cmd/t    = 5109.259 cmd/ms
+cmd*k/tn = 8239148.693 cmd/ms
+cpu_cycles/cmd   = 352.2941
+cpu_cycles/cmd_n = 0.2185
+cpu_speed = 1.80GHz
+t = 1136.842ms
+tn = 64.410ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 35.300
+cmd/t    = 236123.811 cmd/ms
+cmd*k/tn = 8335210.868 cmd/ms
+cpu_cycles/cmd   = 7.6233
+cpu_cycles/cmd_n = 0.2160
+cpu_speed = 1.80GHz
+t = 4443.198ms
+tn = 66.379ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1713.582
+cmd/t    = 4719.918 cmd/ms
+cmd*k/tn = 8087967.098 cmd/ms
+cpu_cycles/cmd   = 381.3588
+cpu_cycles/cmd_n = 0.2226
+cpu_speed = 1.80GHz
+t = 1291.273ms
+tn = 66.705ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.716
+cmd/t    = 207884.364 cmd/ms
+cmd*k/tn = 8048436.129 cmd/ms
+cpu_cycles/cmd   = 8.6585
+cpu_cycles/cmd_n = 0.2236
+cpu_speed = 1.80GHz
+t = 4417.384ms
+tn = 58.548ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1931.493
+cmd/t    = 4747.500 cmd/ms
+cmd*k/tn = 9169761.017 cmd/ms
+cpu_cycles/cmd   = 379.1382
+cpu_cycles/cmd_n = 0.1963
+cpu_speed = 1.80GHz
+t = 1222.198ms
+tn = 58.579ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 41.728
+cmd/t    = 219633.370 cmd/ms
+cmd*k/tn = 9164904.351 cmd/ms
+cpu_cycles/cmd   = 8.1953
+cpu_cycles/cmd_n = 0.1964
+cpu_speed = 1.80GHz
+t = 4219.667ms
+tn = 58.283ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1853.430
+cmd/t    = 4969.949 cmd/ms
+cmd*k/tn = 9211453.906 cmd/ms
+cpu_cycles/cmd   = 362.1728
+cpu_cycles/cmd_n = 0.1954
+cpu_speed = 1.80GHz
+t = 1144.909ms
+tn = 63.093ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 36.293
+cmd/t    = 234460.089 cmd/ms
+cmd*k/tn = 8509199.626 cmd/ms
+cpu_cycles/cmd   = 7.6771
+cpu_cycles/cmd_n = 0.2115
+cpu_speed = 1.80GHz
+t = 4244.195ms
+tn = 68.667ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1582.294
+cmd/t    = 4941.227 cmd/ms
+cmd*k/tn = 7818474.202 cmd/ms
+cpu_cycles/cmd   = 364.2628
+cpu_cycles/cmd_n = 0.2302
+cpu_speed = 1.80GHz
+t = 1120.240ms
+tn = 58.046ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.598
+cmd/t    = 239623.175 cmd/ms
+cmd*k/tn = 9249059.918 cmd/ms
+cpu_cycles/cmd   = 7.5126
+cpu_cycles/cmd_n = 0.1946
+cpu_speed = 1.80GHz
+t = 4090.390ms
+tn = 54.721ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1913.598
+cmd/t    = 5127.025 cmd/ms
+cmd*k/tn = 9811062.810 cmd/ms
+cpu_cycles/cmd   = 351.0912
+cpu_cycles/cmd_n = 0.1835
+cpu_speed = 1.80GHz
+t = 1124.831ms
+tn = 58.319ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.575
+cmd/t    = 238645.153 cmd/ms
+cmd*k/tn = 9205763.679 cmd/ms
+cpu_cycles/cmd   = 7.5424
+cpu_cycles/cmd_n = 0.1955
+cpu_speed = 1.80GHz
+t = 4114.628ms
+tn = 58.772ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1792.256
+cmd/t    = 5096.823 cmd/ms
+cmd*k/tn = 9134811.951 cmd/ms
+cpu_cycles/cmd   = 353.1568
+cpu_cycles/cmd_n = 0.1970
+cpu_speed = 1.80GHz
+t = 1121.796ms
+tn = 51.469ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 43.591
+cmd/t    = 239290.803 cmd/ms
+cmd*k/tn = 10430957.120 cmd/ms
+cpu_cycles/cmd   = 7.5222
+cpu_cycles/cmd_n = 0.1726
+cpu_speed = 1.80GHz
+t = 4233.784ms
+tn = 58.434ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1854.825
+cmd/t    = 4953.377 cmd/ms
+cmd*k/tn = 9187650.477 cmd/ms
+cpu_cycles/cmd   = 363.3826
+cpu_cycles/cmd_n = 0.1959
+cpu_speed = 1.80GHz
+t = 1282.771ms
+tn = 58.153ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 44.117
+cmd/t    = 209262.188 cmd/ms
+cmd*k/tn = 9232041.889 cmd/ms
+cpu_cycles/cmd   = 8.6015
+cpu_cycles/cmd_n = 0.1950
+cpu_speed = 1.80GHz
+t = 4126.049ms
+tn = 58.387ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1809.082
+cmd/t    = 5082.715 cmd/ms
+cmd*k/tn = 9195046.295 cmd/ms
+cpu_cycles/cmd   = 354.1373
+cpu_cycles/cmd_n = 0.1958
+cpu_speed = 1.80GHz
+t = 1122.483ms
+tn = 58.182ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.585
+cmd/t    = 239144.349 cmd/ms
+cmd*k/tn = 9227440.308 cmd/ms
+cpu_cycles/cmd   = 7.5268
+cpu_cycles/cmd_n = 0.1951
+cpu_speed = 1.80GHz
+t = 4191.116ms
+tn = 58.148ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1845.164
+cmd/t    = 5003.806 cmd/ms
+cmd*k/tn = 9232839.788 cmd/ms
+cpu_cycles/cmd   = 359.7215
+cpu_cycles/cmd_n = 0.1950
+cpu_speed = 1.80GHz
+t = 1122.756ms
+tn = 58.343ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.488
+cmd/t    = 239086.200 cmd/ms
+cmd*k/tn = 9201976.792 cmd/ms
+cpu_cycles/cmd   = 7.5286
+cpu_cycles/cmd_n = 0.1956
+cpu_speed = 1.80GHz
+t = 4283.375ms
+tn = 58.129ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1886.397
+cmd/t    = 4896.029 cmd/ms
+cmd*k/tn = 9235857.627 cmd/ms
+cpu_cycles/cmd   = 367.6394
+cpu_cycles/cmd_n = 0.1949
+cpu_speed = 1.80GHz
+t = 1084.968ms
+tn = 58.357ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 37.184
+cmd/t    = 247413.256 cmd/ms
+cmd*k/tn = 9199769.214 cmd/ms
+cpu_cycles/cmd   = 7.2752
+cpu_cycles/cmd_n = 0.1957
+cpu_speed = 1.80GHz
+t = 4134.118ms
+tn = 60.115ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1760.516
+cmd/t    = 5072.794 cmd/ms
+cmd*k/tn = 8930735.557 cmd/ms
+cpu_cycles/cmd   = 354.8290
+cpu_cycles/cmd_n = 0.2015
+cpu_speed = 1.80GHz
+t = 1127.692ms
+tn = 58.397ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.622
+cmd/t    = 238039.701 cmd/ms
+cmd*k/tn = 9193467.678 cmd/ms
+cpu_cycles/cmd   = 7.5617
+cpu_cycles/cmd_n = 0.1958
+cpu_speed = 1.80GHz
+t = 4316.275ms
+tn = 58.472ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1889.736
+cmd/t    = 4858.710 cmd/ms
+cmd*k/tn = 9181679.573 cmd/ms
+cpu_cycles/cmd   = 370.4554
+cpu_cycles/cmd_n = 0.1960
+cpu_speed = 1.80GHz
+t = 1113.321ms
+tn = 58.208ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.253
+cmd/t    = 241112.371 cmd/ms
+cmd*k/tn = 9223318.650 cmd/ms
+cpu_cycles/cmd   = 7.4654
+cpu_cycles/cmd_n = 0.1952
+cpu_speed = 1.80GHz
+t = 4187.491ms
+tn = 58.443ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1834.262
+cmd/t    = 5008.137 cmd/ms
+cmd*k/tn = 9186235.614 cmd/ms
+cpu_cycles/cmd   = 359.4095
+cpu_cycles/cmd_n = 0.1959
+cpu_speed = 1.80GHz
+t = 1106.054ms
+tn = 58.067ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.096
+cmd/t    = 242696.528 cmd/ms
+cmd*k/tn = 9245714.984 cmd/ms
+cpu_cycles/cmd   = 7.4166
+cpu_cycles/cmd_n = 0.1947
+cpu_speed = 1.80GHz
+t = 4631.565ms
+tn = 58.604ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 2023.208
+cmd/t    = 4527.958 cmd/ms
+cmd*k/tn = 9160998.703 cmd/ms
+cpu_cycles/cmd   = 397.5243
+cpu_cycles/cmd_n = 0.1965
+cpu_speed = 1.80GHz
+t = 1090.675ms
+tn = 58.786ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 37.107
+cmd/t    = 246118.657 cmd/ms
+cmd*k/tn = 9132632.464 cmd/ms
+cpu_cycles/cmd   = 7.3138
+cpu_cycles/cmd_n = 0.1971
+cpu_speed = 1.80GHz
+t = 4028.796ms
+tn = 55.757ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1849.762
+cmd/t    = 5205.409 cmd/ms
+cmd*k/tn = 9628767.114 cmd/ms
+cpu_cycles/cmd   = 345.7792
+cpu_cycles/cmd_n = 0.1869
+cpu_speed = 1.80GHz
+t = 1120.579ms
+tn = 54.933ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 40.798
+cmd/t    = 239550.684 cmd/ms
+cmd*k/tn = 9773195.201 cmd/ms
+cpu_cycles/cmd   = 7.5138
+cpu_cycles/cmd_n = 0.1842
+cpu_speed = 1.80GHz
+t = 4504.443ms
+tn = 58.219ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1980.689
+cmd/t    = 4655.743 cmd/ms
+cmd*k/tn = 9221580.034 cmd/ms
+cpu_cycles/cmd   = 386.6135
+cpu_cycles/cmd_n = 0.1952
+cpu_speed = 1.80GHz
+t = 1225.294ms
+tn = 58.440ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 41.933
+cmd/t    = 219078.414 cmd/ms
+cmd*k/tn = 9186703.149 cmd/ms
+cpu_cycles/cmd   = 8.2162
+cpu_cycles/cmd_n = 0.1959
+cpu_speed = 1.80GHz
+t = 4082.197ms
+tn = 61.921ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1687.703
+cmd/t    = 5137.315 cmd/ms
+cmd*k/tn = 8670259.976 cmd/ms
+cpu_cycles/cmd   = 350.3605
+cpu_cycles/cmd_n = 0.2076
+cpu_speed = 1.80GHz
+t = 1129.533ms
+tn = 58.150ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.849
+cmd/t    = 237651.725 cmd/ms
+cmd*k/tn = 9232518.177 cmd/ms
+cpu_cycles/cmd   = 7.5744
+cpu_cycles/cmd_n = 0.1950
+cpu_speed = 1.80GHz
+t = 4204.328ms
+tn = 58.550ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1838.272
+cmd/t    = 4988.081 cmd/ms
+cmd*k/tn = 9169447.788 cmd/ms
+cpu_cycles/cmd   = 360.8557
+cpu_cycles/cmd_n = 0.1963
+cpu_speed = 1.80GHz
+t = 1117.301ms
+tn = 58.170ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.415
+cmd/t    = 240253.491 cmd/ms
+cmd*k/tn = 9229343.854 cmd/ms
+cpu_cycles/cmd   = 7.4920
+cpu_cycles/cmd_n = 0.1950
+cpu_speed = 1.80GHz
+t = 4192.528ms
+tn = 59.087ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1816.452
+cmd/t    = 5002.120 cmd/ms
+cmd*k/tn = 9086113.155 cmd/ms
+cpu_cycles/cmd   = 359.8349
+cpu_cycles/cmd_n = 0.1981
+cpu_speed = 1.80GHz
+t = 1144.278ms
+tn = 65.098ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 35.156
+cmd/t    = 234589.380 cmd/ms
+cmd*k/tn = 8247118.683 cmd/ms
+cpu_cycles/cmd   = 7.6729
+cpu_cycles/cmd_n = 0.2183
+cpu_speed = 1.80GHz
+t = 4060.212ms
+tn = 58.885ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1765.160
+cmd/t    = 5165.132 cmd/ms
+cmd*k/tn = 9117282.296 cmd/ms
+cpu_cycles/cmd   = 348.4851
+cpu_cycles/cmd_n = 0.1974
+cpu_speed = 1.80GHz
+t = 1129.752ms
+tn = 58.398ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.691
+cmd/t    = 237605.657 cmd/ms
+cmd*k/tn = 9193310.250 cmd/ms
+cpu_cycles/cmd   = 7.5753
+cpu_cycles/cmd_n = 0.1958
+cpu_speed = 1.80GHz
+t = 4248.185ms
+tn = 58.867ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1847.445
+cmd/t    = 4936.586 cmd/ms
+cmd*k/tn = 9120070.124 cmd/ms
+cpu_cycles/cmd   = 364.6196
+cpu_cycles/cmd_n = 0.1974
+cpu_speed = 1.80GHz
+t = 1166.031ms
+tn = 61.573ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 37.875
+cmd/t    = 230212.975 cmd/ms
+cmd*k/tn = 8719258.961 cmd/ms
+cpu_cycles/cmd   = 7.8187
+cpu_cycles/cmd_n = 0.2064
+cpu_speed = 1.80GHz
+t = 4270.086ms
+tn = 63.831ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1712.557
+cmd/t    = 4911.266 cmd/ms
+cmd*k/tn = 8410821.826 cmd/ms
+cpu_cycles/cmd   = 366.4979
+cpu_cycles/cmd_n = 0.2140
+cpu_speed = 1.80GHz
+t = 1151.915ms
+tn = 58.449ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.416
+cmd/t    = 233034.092 cmd/ms
+cmd*k/tn = 9185288.576 cmd/ms
+cpu_cycles/cmd   = 7.7241
+cpu_cycles/cmd_n = 0.1960
+cpu_speed = 1.80GHz
+t = 4204.479ms
+tn = 59.038ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1823.142
+cmd/t    = 4987.902 cmd/ms
+cmd*k/tn = 9093654.392 cmd/ms
+cpu_cycles/cmd   = 360.8573
+cpu_cycles/cmd_n = 0.1979
+cpu_speed = 1.80GHz
+t = 1123.221ms
+tn = 58.469ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.421
+cmd/t    = 238987.222 cmd/ms
+cmd*k/tn = 9182146.642 cmd/ms
+cpu_cycles/cmd   = 7.5317
+cpu_cycles/cmd_n = 0.1960
+cpu_speed = 1.80GHz
+t = 4205.807ms
+tn = 58.597ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1837.443
+cmd/t    = 4986.327 cmd/ms
+cmd*k/tn = 9162093.076 cmd/ms
+cpu_cycles/cmd   = 360.9831
+cpu_cycles/cmd_n = 0.1965
+cpu_speed = 1.80GHz
+t = 1127.193ms
+tn = 59.623ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 37.811
+cmd/t    = 238145.079 cmd/ms
+cmd*k/tn = 9004426.681 cmd/ms
+cpu_cycles/cmd   = 7.5585
+cpu_cycles/cmd_n = 0.1999
+cpu_speed = 1.80GHz
+t = 4261.513ms
+tn = 77.514ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1407.420
+cmd/t    = 4921.147 cmd/ms
+cmd*k/tn = 6926118.740 cmd/ms
+cpu_cycles/cmd   = 365.7619
+cpu_cycles/cmd_n = 0.2599
+cpu_speed = 1.80GHz
+t = 1122.565ms
+tn = 58.104ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.640
+cmd/t    = 239126.880 cmd/ms
+cmd*k/tn = 9239827.413 cmd/ms
+cpu_cycles/cmd   = 7.5270
+cpu_cycles/cmd_n = 0.1948
+cpu_speed = 1.80GHz
+t = 4114.743ms
+tn = 62.787ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1677.695
+cmd/t    = 5096.680 cmd/ms
+cmd*k/tn = 8550673.993 cmd/ms
+cpu_cycles/cmd   = 353.1655
+cpu_cycles/cmd_n = 0.2105
+cpu_speed = 1.80GHz
+t = 1164.244ms
+tn = 58.250ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.974
+cmd/t    = 230566.330 cmd/ms
+cmd*k/tn = 9216668.361 cmd/ms
+cpu_cycles/cmd   = 7.8065
+cpu_cycles/cmd_n = 0.1953
+cpu_speed = 1.80GHz
+t = 4404.428ms
+tn = 58.941ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1912.987
+cmd/t    = 4761.465 cmd/ms
+cmd*k/tn = 9108619.942 cmd/ms
+cpu_cycles/cmd   = 378.0274
+cpu_cycles/cmd_n = 0.1976
+cpu_speed = 1.80GHz
+t = 1151.908ms
+tn = 62.500ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 36.861
+cmd/t    = 233035.508 cmd/ms
+cmd*k/tn = 8589934.912 cmd/ms
+cpu_cycles/cmd   = 7.7242
+cpu_cycles/cmd_n = 0.2095
+cpu_speed = 1.80GHz
+t = 4182.893ms
+tn = 58.191ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1840.183
+cmd/t    = 5013.642 cmd/ms
+cmd*k/tn = 9226017.219 cmd/ms
+cpu_cycles/cmd   = 359.0163
+cpu_cycles/cmd_n = 0.1951
+cpu_speed = 1.80GHz
+t = 1136.265ms
+tn = 58.649ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.748
+cmd/t    = 236243.716 cmd/ms
+cmd*k/tn = 9153965.660 cmd/ms
+cpu_cycles/cmd   = 7.6191
+cpu_cycles/cmd_n = 0.1966
+cpu_speed = 1.80GHz
+t = 4385.259ms
+tn = 72.492ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1548.621
+cmd/t    = 4782.279 cmd/ms
+cmd*k/tn = 7405936.765 cmd/ms
+cpu_cycles/cmd   = 376.3865
+cpu_cycles/cmd_n = 0.2430
+cpu_speed = 1.80GHz
+t = 1133.634ms
+tn = 58.577ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.706
+cmd/t    = 236792.003 cmd/ms
+cmd*k/tn = 9165217.270 cmd/ms
+cpu_cycles/cmd   = 7.6016
+cpu_cycles/cmd_n = 0.1964
+cpu_speed = 1.80GHz
+t = 4102.756ms
+tn = 59.774ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1757.128
+cmd/t    = 5111.571 cmd/ms
+cmd*k/tn = 8981683.809 cmd/ms
+cpu_cycles/cmd   = 352.1372
+cpu_cycles/cmd_n = 0.2004
+cpu_speed = 1.80GHz
+t = 1125.952ms
+tn = 58.535ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.471
+cmd/t    = 238407.557 cmd/ms
+cmd*k/tn = 9171793.491 cmd/ms
+cpu_cycles/cmd   = 7.5500
+cpu_cycles/cmd_n = 0.1963
+cpu_speed = 1.80GHz
+t = 4081.029ms
+tn = 58.605ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1782.687
+cmd/t    = 5138.785 cmd/ms
+cmd*k/tn = 9160842.385 cmd/ms
+cpu_cycles/cmd   = 350.2651
+cpu_cycles/cmd_n = 0.1965
+cpu_speed = 1.80GHz
+t = 1135.559ms
+tn = 62.869ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 36.125
+cmd/t    = 236390.594 cmd/ms
+cmd*k/tn = 8539517.600 cmd/ms
+cpu_cycles/cmd   = 7.6144
+cpu_cycles/cmd_n = 0.2108
+cpu_speed = 1.80GHz
+t = 4132.959ms
+tn = 61.823ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1711.398
+cmd/t    = 5074.217 cmd/ms
+cmd*k/tn = 8684003.817 cmd/ms
+cpu_cycles/cmd   = 354.7299
+cpu_cycles/cmd_n = 0.2073
+cpu_speed = 1.80GHz
+t = 1127.541ms
+tn = 59.661ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 37.798
+cmd/t    = 238071.579 cmd/ms
+cmd*k/tn = 8998691.473 cmd/ms
+cpu_cycles/cmd   = 7.5607
+cpu_cycles/cmd_n = 0.2000
+cpu_speed = 1.80GHz
+t = 4026.037ms
+tn = 61.463ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1676.888
+cmd/t    = 5208.976 cmd/ms
+cmd*k/tn = 8734867.611 cmd/ms
+cpu_cycles/cmd   = 345.5533
+cpu_cycles/cmd_n = 0.2061
+cpu_speed = 1.80GHz
+t = 1116.222ms
+tn = 58.507ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.157
+cmd/t    = 240485.733 cmd/ms
+cmd*k/tn = 9176182.884 cmd/ms
+cpu_cycles/cmd   = 7.4847
+cpu_cycles/cmd_n = 0.1962
+cpu_speed = 1.80GHz
+t = 4266.933ms
+tn = 58.571ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1864.976
+cmd/t    = 4914.896 cmd/ms
+cmd*k/tn = 9166160.182 cmd/ms
+cpu_cycles/cmd   = 366.2322
+cpu_cycles/cmd_n = 0.1964
+cpu_speed = 1.80GHz
+t = 1126.437ms
+tn = 57.893ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.914
+cmd/t    = 238304.908 cmd/ms
+cmd*k/tn = 9273503.394 cmd/ms
+cpu_cycles/cmd   = 7.5533
+cpu_cycles/cmd_n = 0.1941
+cpu_speed = 1.80GHz
+t = 4129.691ms
+tn = 58.480ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1807.799
+cmd/t    = 5078.232 cmd/ms
+cmd*k/tn = 9180423.529 cmd/ms
+cpu_cycles/cmd   = 354.4515
+cpu_cycles/cmd_n = 0.1961
+cpu_speed = 1.80GHz
+t = 1127.053ms
+tn = 63.849ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 35.304
+cmd/t    = 238174.661 cmd/ms
+cmd*k/tn = 8408446.992 cmd/ms
+cpu_cycles/cmd   = 7.5574
+cpu_cycles/cmd_n = 0.2141
+cpu_speed = 1.80GHz
+t = 4327.838ms
+tn = 59.940ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1848.393
+cmd/t    = 4845.729 cmd/ms
+cmd*k/tn = 8956809.610 cmd/ms
+cpu_cycles/cmd   = 371.4520
+cpu_cycles/cmd_n = 0.2010
+cpu_speed = 1.80GHz
+t = 1123.401ms
+tn = 58.349ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.506
+cmd/t    = 238948.929 cmd/ms
+cmd*k/tn = 9201030.558 cmd/ms
+cpu_cycles/cmd   = 7.5329
+cpu_cycles/cmd_n = 0.1956
+cpu_speed = 1.80GHz
+t = 4053.262ms
+tn = 61.272ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1693.490
+cmd/t    = 5173.988 cmd/ms
+cmd*k/tn = 8762096.357 cmd/ms
+cpu_cycles/cmd   = 347.8801
+cpu_cycles/cmd_n = 0.2054
+cpu_speed = 1.80GHz
+t = 1125.751ms
+tn = 58.336ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.595
+cmd/t    = 238450.124 cmd/ms
+cmd*k/tn = 9203080.979 cmd/ms
+cpu_cycles/cmd   = 7.5487
+cpu_cycles/cmd_n = 0.1956
+cpu_speed = 1.80GHz
+t = 4414.148ms
+tn = 61.446ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1839.049
+cmd/t    = 4750.980 cmd/ms
+cmd*k/tn = 8737284.250 cmd/ms
+cpu_cycles/cmd   = 378.8608
+cpu_cycles/cmd_n = 0.2060
+cpu_speed = 1.80GHz
+t = 1107.429ms
+tn = 57.624ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.436
+cmd/t    = 242395.193 cmd/ms
+cmd*k/tn = 9316793.905 cmd/ms
+cpu_cycles/cmd   = 7.4258
+cpu_cycles/cmd_n = 0.1932
+cpu_speed = 1.80GHz
+t = 4105.507ms
+tn = 58.469ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1797.550
+cmd/t    = 5108.146 cmd/ms
+cmd*k/tn = 9182150.678 cmd/ms
+cpu_cycles/cmd   = 352.3736
+cpu_cycles/cmd_n = 0.1960
+cpu_speed = 1.80GHz
+t = 1125.323ms
+tn = 58.408ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.533
+cmd/t    = 238540.815 cmd/ms
+cmd*k/tn = 9191736.269 cmd/ms
+cpu_cycles/cmd   = 7.5458
+cpu_cycles/cmd_n = 0.1958
+cpu_speed = 1.80GHz
+t = 4058.629ms
+tn = 58.485ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1776.539
+cmd/t    = 5167.146 cmd/ms
+cmd*k/tn = 9179638.677 cmd/ms
+cpu_cycles/cmd   = 348.3508
+cpu_cycles/cmd_n = 0.1961
+cpu_speed = 1.80GHz
+t = 1128.141ms
+tn = 58.207ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.763
+cmd/t    = 237944.961 cmd/ms
+cmd*k/tn = 9223477.108 cmd/ms
+cpu_cycles/cmd   = 7.5647
+cpu_cycles/cmd_n = 0.1952
+cpu_speed = 1.80GHz
+t = 4120.650ms
+tn = 58.799ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1794.055
+cmd/t    = 5089.374 cmd/ms
+cmd*k/tn = 9130617.323 cmd/ms
+cpu_cycles/cmd   = 353.6707
+cpu_cycles/cmd_n = 0.1971
+cpu_speed = 1.80GHz
+t = 1137.483ms
+tn = 58.470ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.908
+cmd/t    = 235990.750 cmd/ms
+cmd*k/tn = 9181989.602 cmd/ms
+cpu_cycles/cmd   = 7.6319
+cpu_cycles/cmd_n = 0.1962
+cpu_speed = 1.80GHz
+t = 4088.399ms
+tn = 64.100ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1632.808
+cmd/t    = 5129.521 cmd/ms
+cmd*k/tn = 8375525.242 cmd/ms
+cpu_cycles/cmd   = 350.9169
+cpu_cycles/cmd_n = 0.2149
+cpu_speed = 1.80GHz
+t = 1160.786ms
+tn = 64.730ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 35.865
+cmd/t    = 231253.191 cmd/ms
+cmd*k/tn = 8294004.820 cmd/ms
+cpu_cycles/cmd   = 7.7838
+cpu_cycles/cmd_n = 0.2170
+cpu_speed = 1.80GHz
+t = 4221.109ms
+tn = 66.555ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1623.625
+cmd/t    = 4968.251 cmd/ms
+cmd*k/tn = 8066579.040 cmd/ms
+cpu_cycles/cmd   = 362.2823
+cpu_cycles/cmd_n = 0.2231
+cpu_speed = 1.80GHz
+t = 1156.861ms
+tn = 65.283ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 35.441
+cmd/t    = 232037.787 cmd/ms
+cmd*k/tn = 8223747.867 cmd/ms
+cpu_cycles/cmd   = 7.7572
+cpu_cycles/cmd_n = 0.2189
+cpu_speed = 1.80GHz
+t = 4424.927ms
+tn = 62.584ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1810.017
+cmd/t    = 4739.407 cmd/ms
+cmd*k/tn = 8578409.306 cmd/ms
+cpu_cycles/cmd   = 379.7948
+cpu_cycles/cmd_n = 0.2098
+cpu_speed = 1.80GHz
+t = 1131.751ms
+tn = 57.754ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.192
+cmd/t    = 237185.976 cmd/ms
+cmd*k/tn = 9295822.488 cmd/ms
+cpu_cycles/cmd   = 7.5889
+cpu_cycles/cmd_n = 0.1936
+cpu_speed = 1.80GHz
+t = 4040.112ms
+tn = 63.111ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1638.809
+cmd/t    = 5190.829 cmd/ms
+cmd*k/tn = 8506776.442 cmd/ms
+cpu_cycles/cmd   = 346.7604
+cpu_cycles/cmd_n = 0.2116
+cpu_speed = 1.80GHz
+t = 1111.516ms
+tn = 61.128ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 36.367
+cmd/t    = 241503.915 cmd/ms
+cmd*k/tn = 8782733.477 cmd/ms
+cpu_cycles/cmd   = 7.4532
+cpu_cycles/cmd_n = 0.2049
+cpu_speed = 1.80GHz
+t = 4700.970ms
+tn = 58.487ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 2057.634
+cmd/t    = 4461.107 cmd/ms
+cmd*k/tn = 9179324.773 cmd/ms
+cpu_cycles/cmd   = 403.5050
+cpu_cycles/cmd_n = 0.1961
+cpu_speed = 1.80GHz
+t = 1133.277ms
+tn = 59.528ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.075
+cmd/t    = 236866.597 cmd/ms
+cmd*k/tn = 9018796.734 cmd/ms
+cpu_cycles/cmd   = 7.5991
+cpu_cycles/cmd_n = 0.1996
+cpu_speed = 1.80GHz
+t = 4084.065ms
+tn = 58.795ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1778.248
+cmd/t    = 5134.965 cmd/ms
+cmd*k/tn = 9131238.507 cmd/ms
+cpu_cycles/cmd   = 350.5264
+cpu_cycles/cmd_n = 0.1971
+cpu_speed = 1.80GHz
+t = 1122.589ms
+tn = 59.111ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 37.982
+cmd/t    = 239121.768 cmd/ms
+cmd*k/tn = 9082420.057 cmd/ms
+cpu_cycles/cmd   = 7.5273
+cpu_cycles/cmd_n = 0.1982
+cpu_speed = 1.80GHz
+t = 4109.883ms
+tn = 58.854ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1787.695
+cmd/t    = 5102.707 cmd/ms
+cmd*k/tn = 9122084.616 cmd/ms
+cpu_cycles/cmd   = 352.7496
+cpu_cycles/cmd_n = 0.1973
+cpu_speed = 1.80GHz
+t = 1121.611ms
+tn = 57.998ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 38.678
+cmd/t    = 239330.272 cmd/ms
+cmd*k/tn = 9256714.576 cmd/ms
+cpu_cycles/cmd   = 7.5209
+cpu_cycles/cmd_n = 0.1945
+cpu_speed = 1.80GHz
+t = 4014.802ms
+tn = 58.517ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1756.394
+cmd/t    = 5223.553 cmd/ms
+cmd*k/tn = 9174618.795 cmd/ms
+cpu_cycles/cmd   = 344.5877
+cpu_cycles/cmd_n = 0.1962
+cpu_speed = 1.80GHz
+t = 1147.540ms
+tn = 58.069ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 39.523
+cmd/t    = 233922.535 cmd/ms
+cmd*k/tn = 9245396.545 cmd/ms
+cpu_cycles/cmd   = 7.6948
+cpu_cycles/cmd_n = 0.1947
+cpu_speed = 1.80GHz
+t = 4095.023ms
+tn = 58.534ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1790.969
+cmd/t    = 5121.224 cmd/ms
+cmd*k/tn = 9171954.215 cmd/ms
+cpu_cycles/cmd   = 351.4736
+cpu_cycles/cmd_n = 0.1962
+cpu_speed = 1.80GHz
+t = 1130.603ms
+tn = 64.125ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 35.262
+cmd/t    = 237426.812 cmd/ms
+cmd*k/tn = 8372256.250 cmd/ms
+cpu_cycles/cmd   = 7.5810
+cpu_cycles/cmd_n = 0.2150
+cpu_speed = 1.80GHz
+t = 4089.870ms
+tn = 65.609ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1595.828
+cmd/t    = 5127.676 cmd/ms
+cmd*k/tn = 8182889.055 cmd/ms
+cpu_cycles/cmd   = 351.0294
+cpu_cycles/cmd_n = 0.2200
+cpu_speed = 1.80GHz
+t = 1147.207ms
+tn = 60.686ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 37.808
+cmd/t    = 233990.436 cmd/ms
+cmd*k/tn = 8846701.579 cmd/ms
+cpu_cycles/cmd   = 7.6923
+cpu_cycles/cmd_n = 0.2035
+cpu_speed = 1.80GHz
+t = 4200.509ms
+tn = 59.320ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1812.762
+cmd/t    = 4992.616 cmd/ms
+cmd*k/tn = 9050424.275 cmd/ms
+cpu_cycles/cmd   = 360.5282
+cpu_cycles/cmd_n = 0.1989
+cpu_speed = 1.80GHz
+t = 1121.925ms
+tn = 62.484ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 35.911
+cmd/t    = 239263.289 cmd/ms
+cmd*k/tn = 8592134.498 cmd/ms
+cpu_cycles/cmd   = 7.5233
+cpu_cycles/cmd_n = 0.2095
+cpu_speed = 1.80GHz
+t = 4180.980ms
+tn = 61.199ms
+cmd_n/cmd = k = 25.600
+t*k/tn = 1748.935
+cmd/t    = 5015.936 cmd/ms
+cmd*k/tn = 8772548.048 cmd/ms
+cpu_cycles/cmd   = 358.8670
+cpu_cycles/cmd_n = 0.2052
+cpu_speed = 1.80GHz
+t = 1142.206ms
+tn = 55.355ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 41.268
+cmd/t    = 235014.933 cmd/ms
+cmd*k/tn = 9698689.043 cmd/ms
+cpu_cycles/cmd   = 7.6590
+cpu_cycles/cmd_n = 0.1856
