@@ -1,0 +1,10 @@
+~/test$ ./cpu_cycles_per_cmd.out 
+cpu_speed = 2.93GHz
+t = 1062.180ms
+tn = 112.870ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 18.821
+cmd/t    = 252721.258 cmd/ms
+cmd*k/tn = 4756542.323 cmd/ms
+cpu_cycles/cmd   = 11.6074
+cpu_cycles/cmd_n = 0.6167
