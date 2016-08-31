@@ -1,7 +1,7 @@
 typedef double real;
-#include <vector>
 #include <algorithm>
 #include <vector>
+#include <string>
 #include <stdio.h>
 using std::vector;using std::string;
 #define QapAssert(UNUSED)
