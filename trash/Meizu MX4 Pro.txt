@@ -1,0 +1,9 @@
+cpu_speed = 1.50GHz
+t = 6725.738ms
+tn = 115.067ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 116.901
+cmd/t    = 39911.675 cmd/ms
+cmd*k/tn = 4665724.595 cmd/ms
+cpu_cycles/cmd   = 37.5830
+cpu_cycles/cmd_n = 0.3215
