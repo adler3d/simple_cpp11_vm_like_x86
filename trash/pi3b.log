@@ -7,3 +7,12 @@ cmd/t    = 55795.261 cmd/ms
 cmd*k/tn = 2386793.157 cmd/ms
 cpu_cycles/cmd   = 21.5072
 cpu_cycles/cmd_n = 0.5028
+cpu_speed = 1.20GHz
+t = 4769.918ms
+tn = 169.463ms
+cmd_n/cmd = k = 2.000
+t*k/tn = 56.295
+cmd/t    = 56276.746 cmd/ms
+cmd*k/tn = 3168071.685 cmd/ms
+cpu_cycles/cmd   = 21.3232
+cpu_cycles/cmd_n = 0.3788
