@@ -1649,7 +1649,7 @@ int main(int argc)
     F(cpu_cycles/cmd_n,"%.4f",cpu_cycles_per_cmd_n);
     #undef F
     string s=(","+jq("raw")+":{\n"+
-      "  "+to_jk("VM_perf"+string(no_ssd?"mem":"ssd"),t,cmd)+",\n"+
+      "  "+to_jk("VM_perf_"+string(no_ssd?"mem":"ssd"),t,cmd)+",\n"+
       "  "+to_jk("O2_perf",tn,native_iter)+"\n"
       "}\n"
     );
