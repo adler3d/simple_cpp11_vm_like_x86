@@ -1608,11 +1608,14 @@ int native_func(int*ptr,int iter){
 
 string jq(const string&s){string q="\"";return q+s+q;}
 
-int main()
+string to_jk(string s,real t,int n){return jq(s)+":["+std::to_string(t)+","+std::to_string(n)+"]";}
+
+int main(int argc)
 {
   FREQ_INIT();
   auto getCPUTime=[](){{std::atomic<int> i;}return get_time_in_sec();};
-  int iter=!std::is_same<t_ssd_mem,vector<int>>::value?1024*160*16:1024*1024*32;
+  bool no_ssd=std::is_same<t_ssd_mem,vector<int>>::value;
+  int iter=!no_ssd?1024*160*16:1024*1024*32;
   t_machine m;
   m.mem.resize(iter+16);
   m.reg.resize(1024);
@@ -1633,7 +1636,7 @@ int main()
     static real cpu_cycles_per_cmd_n=tn*cpu_speed/real(m.reg[cmd_counter]*k);
     real cmd=real(m.reg[cmd_counter]);
     printf("{\n");
-    printf((jq("version(k==cmd_n/cmd)")+":"+jq("1.0.0")+"\n").c_str());
+    printf((jq("version(k==cmd_n/cmd)")+":"+jq("1.0.1")+"\n").c_str());
     #define F(A,B,C)printf((","+jq(#A)+":"+jq(B)+"\n").c_str(),C);
     F(cpu_speed,"%.2f GHz",cpu_speed_ghz);
     F(t,"%.3f ms",t);
@@ -1645,6 +1648,12 @@ int main()
     F(cpu_cycles/cmd,"%.4f",cpu_cycles_per_cmd);
     F(cpu_cycles/cmd_n,"%.4f",cpu_cycles_per_cmd_n);
     #undef F
+    string s=(","+jq("raw")+":{\n"+
+      "  "+to_jk("VM_perf"+string(no_ssd?"mem":"ssd"),t,cmd)+",\n"+
+      "  "+to_jk("O2_perf",tn,native_iter)+"\n"
+      "}\n"
+    );
+    printf("%s",s.c_str());
     printf("}");
     int gg=1;
   }
