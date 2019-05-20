@@ -1,9 +1,10 @@
 typedef double real;
 #include <vector>
+#include <string>
 #include <algorithm>
-#include <vector>
 #include <stdio.h>
 using std::vector;
+using std::string;
 #define QapAssert(UNUSED)
 #define QapNoWay()
 #define QapDebugMsg(MSG)
@@ -1605,6 +1606,8 @@ int native_func(int*ptr,int iter){
   real get_time_in_sec(){return (real(clock())*1.0)/CLOCKS_PER_SEC;}
 #endif
 
+string jq(const string&s){string q="\"";return q+s+q;}
+
 int main()
 {
   FREQ_INIT();
@@ -1628,15 +1631,21 @@ int main()
     static real cpu_speed=cpu_speed_ghz*1e6;
     static real cpu_cycles_per_cmd  =t *cpu_speed/real(m.reg[cmd_counter]);
     static real cpu_cycles_per_cmd_n=tn*cpu_speed/real(m.reg[cmd_counter]*k);
-    printf("cpu_speed = %.2fGHz\n",cpu_speed_ghz);
-    printf("t = %.3fms\n",t);
-    printf("tn = %.3fms\n",tn);
-    printf("cmd_n/cmd = k = %.3f\n",k);
-    printf("t*k/tn = %.3f\n",t*k/tn);
-    printf("cmd/t    = %.3f cmd/ms\n",real(m.reg[cmd_counter])/t);
-    printf("cmd*k/tn = %.3f cmd/ms\n",real(m.reg[cmd_counter])*k/tn);
-    printf("cpu_cycles/cmd   = %.4f\n",cpu_cycles_per_cmd);
-    printf("cpu_cycles/cmd_n = %.4f\n",cpu_cycles_per_cmd_n);
+    real cmd=real(m.reg[cmd_counter]);
+    printf("{\n");
+    printf((jq("version(k==cmd_n/cmd)")+":"+jq("1.0.0")+"\n").c_str());
+    #define F(A,B,C)printf((","+jq(#A)+":"+jq(B)+"\n").c_str(),C);
+    F(cpu_speed,"%.2f GHz",cpu_speed_ghz);
+    F(t,"%.3f ms",t);
+    F(tn,"%.3f ms",tn);
+    F(cmd_n/cmd,"%.3f",k);
+    F(t*k/tn,"%.3f",t*k/tn);
+    F(cmd/t,"%.3f cmd/ms",cmd/t);
+    F(cmd*k/tn,"%.3f cmd/ms",cmd*k/tn);
+    F(cpu_cycles/cmd,"%.4f",cpu_cycles_per_cmd);
+    F(cpu_cycles/cmd_n,"%.4f",cpu_cycles_per_cmd_n);
+    #undef F
+    printf("}");
     int gg=1;
   }
   return 0;
