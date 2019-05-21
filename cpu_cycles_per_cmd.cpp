@@ -240,14 +240,14 @@ struct t_ssd_mem{
   const int operator[](int addr)const{
     int out;
     fseek(f,addr*4,SEEK_SET);
-    fread(&out,1,sizeof(out),f);
+    (void)fread(&out,1,sizeof(out),f);
     return out;
   }
   t_int operator[](int addr){
     t_int tmp={f,addr};
     int&out=tmp.value;
     fseek(f,addr*4,SEEK_SET);
-    fread(&out,1,sizeof(out),f);
+    (void)fread(&out,1,sizeof(out),f);
     tmp.old=out;
     return tmp;
   }
@@ -1612,7 +1612,7 @@ string jq(const string&s){string q="\"";return q+s+q;}
 
 string to_jk(string s,real t,int n){return jq(s)+":["+std::to_string(t)+","+std::to_string(n)+"]";}
 
-int main(int argc,int*argv)
+int main(int argc)
 {
   FREQ_INIT();
   auto getCPUTime=[](){{std::atomic<int> i;}return get_time_in_sec();};
@@ -1638,7 +1638,7 @@ int main(int argc,int*argv)
     static real cpu_cycles_per_cmd_n=tn*cpu_speed/real(m.reg[cmd_counter]*k);
     real cmd=real(m.reg[cmd_counter]);
     printf("{\n");
-    printf("%s\n",(jq("version(k==cmd_n/cmd)")+":"+jq("1.0.2")).c_str());
+    printf((jq("version(k==cmd_n/cmd)")+":"+jq("1.0.2")+"\n").c_str());
     #define F(A,B,C)printf((","+jq(#A)+":"+jq(B)+"\n").c_str(),C);
     F(cpu_speed,"%.2f GHz",cpu_speed_ghz);
     F(cmd,"%i",int(cmd));
