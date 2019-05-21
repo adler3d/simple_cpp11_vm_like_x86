@@ -1577,6 +1577,8 @@ inline void mod(int&dest,int a,int b){dest=a%b;}
 inline void less(int&dest,int a,int b){dest=a<b;}
 inline void mov(int&dest,int src){dest=src;}
 inline void inc(int&inout){inout++;}
+
+// like sequential fill: for(int i=0;i<iter;i++)ptr[i]=(i%4)+1;
 int native_func(int*ptr,int iter){
   int eax,ebx,ecx,edx;
   mov(eax,iter);
@@ -1615,7 +1617,7 @@ int main(int argc)
   FREQ_INIT();
   auto getCPUTime=[](){{std::atomic<int> i;}return get_time_in_sec();};
   bool no_ssd=std::is_same<t_ssd_mem,vector<int>>::value;
-  int iter=!no_ssd?1024*160*16:1024*1024*32;
+  int iter=!no_ssd?1024*160:1024*1024*32;
   t_machine m;
   m.mem.resize(iter+16);
   m.reg.resize(1024);
@@ -1636,9 +1638,11 @@ int main(int argc)
     static real cpu_cycles_per_cmd_n=tn*cpu_speed/real(m.reg[cmd_counter]*k);
     real cmd=real(m.reg[cmd_counter]);
     printf("{\n");
-    printf((jq("version(k==cmd_n/cmd)")+":"+jq("1.0.1")+"\n").c_str());
+    printf((jq("version(k==cmd_n/cmd)")+":"+jq("1.0.2")+"\n").c_str());
     #define F(A,B,C)printf((","+jq(#A)+":"+jq(B)+"\n").c_str(),C);
     F(cpu_speed,"%.2f GHz",cpu_speed_ghz);
+    F(cmd,"%i",int(cmd));
+    F(cmd/iter,"%.3f",cmd/iter);
     F(t,"%.3f ms",t);
     F(tn,"%.3f ms",tn);
     F(cmd_n/cmd,"%.3f",k);
@@ -1649,7 +1653,7 @@ int main(int argc)
     F(cpu_cycles/cmd_n,"%.4f",cpu_cycles_per_cmd_n);
     #undef F
     string s=(","+jq("raw")+":{\n"+
-      "  "+to_jk("VM_perf_"+string(no_ssd?"mem":"ssd"),t,cmd)+",\n"+
+      "  "+to_jk("VM_perf_"+string(no_ssd?"mem":"ssd"),t,iter)+",\n"+
       "  "+to_jk("O2_perf",tn,native_iter)+"\n"
       "}\n"
     );
