@@ -240,14 +240,14 @@ struct t_ssd_mem{
   const int operator[](int addr)const{
     int out;
     fseek(f,addr*4,SEEK_SET);
-    (void)fread(&out,1,sizeof(out),f);
+    if(fread(&out,1,sizeof(out),f)!=sizeof(out))out=0;
     return out;
   }
   t_int operator[](int addr){
     t_int tmp={f,addr};
     int&out=tmp.value;
     fseek(f,addr*4,SEEK_SET);
-    (void)fread(&out,1,sizeof(out),f);
+    if(fread(&out,1,sizeof(out),f)!=sizeof(out))out=0;
     tmp.old=out;
     return tmp;
   }
@@ -1612,7 +1612,7 @@ string jq(const string&s){string q="\"";return q+s+q;}
 
 string to_jk(string s,real t,int n){return jq(s)+":["+std::to_string(t)+","+std::to_string(n)+"]";}
 
-int main(int argc,int*argv)
+int main(int argc,char**argv)
 {
   FREQ_INIT();
   auto getCPUTime=[](){{std::atomic<int> i;}return get_time_in_sec();};
