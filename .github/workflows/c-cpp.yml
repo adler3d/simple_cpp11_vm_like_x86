@@ -30,8 +30,8 @@ jobs:
         uses: actions/checkout@v1
       - name: ilammy/msvc-dev-cmd@v1
         uses: ilammy/msvc-dev-cmd@v1
-      - name: Download Internet
-        run: npm install
+        with:
+          arch: x86
       - name: Compile and run some C code
         shell: cmd
         run: |
