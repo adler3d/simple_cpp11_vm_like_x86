@@ -17,11 +17,3 @@ jobs:
       run: g++ -O2 cpu_cycles_per_cmd.cpp -o cpu_cycles_per_cmd.elf
     - name: foobar
       run: ./cpu_cycles_per_cmd.elf
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
