@@ -92,16 +92,17 @@ struct t_int{
 };
 t_int t_mem::operator[](int bitptr){return t_int(this,bitptr);}
 
-template<unsigned N>
-string tostr(const std::bitset<N>&bs){string out;out.resize(N);for(int i=0;i<N;i++)out[i]=bs[i]?'1':'0';return out;}
+template<size_t N>
+string tostr(const std::bitset<N>&bs){string out;out.resize(N);for(size_t i=0;i<N;i++)out[i]=bs[i]?'1':'0';return out;}
 
 static unsigned rnd(){
   static std::ranlux24 generator;
   static std::uniform_int_distribution<unsigned> distribution(0,0xffff);
   return distribution(generator);
 }
-void init_mem(t_mem&mem){mem.resize(8*64);for(int i=0;i<64/8;i++)mem.arr[i]=rnd();}
-string mem2str(const t_mem&mem){auto&bs=(std::bitset<64>&)mem.arr[0];return tostr(bs);}
+constexpr size_t mem_n=64;
+void init_mem(t_mem&mem){mem.arr.resize(mem_n);for(auto&ex:mem.arr)ex=rnd();}
+string mem2str(const t_mem&mem){auto&bs=(std::bitset<mem_n>&)mem.arr[0];return tostr(bs);}
 
 int main()
 {
