@@ -45,6 +45,8 @@ jobs:
           powershell Get-WmiObject win32_processor
           powershell Get-WmiObject win32_baseboard
           node --version
+          dcc32.exe --version
+          dcc32.exe --help
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2
