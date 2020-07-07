@@ -44,6 +44,7 @@ jobs:
           powershell Get-WmiObject win32_physicalmemory
           powershell Get-WmiObject win32_processor
           powershell Get-WmiObject win32_baseboard
+          node --version
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2
