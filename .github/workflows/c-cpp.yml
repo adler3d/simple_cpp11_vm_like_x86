@@ -12,8 +12,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: g++ -O2 cpu_cycles_per_cmd.cpp
-      run: g++ -O2 cpu_cycles_per_cmd.cpp -o cpu_cycles_per_cmd.elf
-    - name: foobar
-      run: ./cpu_cycles_per_cmd.elf
+      - uses: actions/checkout@v2
+      - name: g++ -O2 cpu_cycles_per_cmd.cpp
+        run: g++ -O2 cpu_cycles_per_cmd.cpp -o cpu_cycles_per_cmd.elf
+      - name: foobar
+        run: ./cpu_cycles_per_cmd.elf
+  test:
+    name: default
+    runs-on: windows-latest
+    steps:
+      - name: Check out source code
+        uses: actions/checkout@v1
+      - name: Download Internet
+        run: npm install
+      - name: Enable Developer Command Prompt
+        uses: ./
+      - name: Compile and run some C code
+        shell: cmd
+        run: |
+          cl.exe /O2 cpu_cycles_per_cmd.cpp
+          cpu_cycles_per_cmd.exe
