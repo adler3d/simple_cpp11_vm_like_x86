@@ -17,18 +17,29 @@ jobs:
         run: g++ -O2 cpu_cycles_per_cmd.cpp -o cpu_cycles_per_cmd.elf
       - name: foobar
         run: ./cpu_cycles_per_cmd.elf
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: cpu_cycles_per_cmd.elf
+          path: cpu_cycles_per_cmd.elf
   test:
     name: default
     runs-on: windows-latest
     steps:
       - name: Check out source code
         uses: actions/checkout@v1
+      - name: ilammy/msvc-dev-cmd@v1
+        uses: ilammy/msvc-dev-cmd@v1
       - name: Download Internet
         run: npm install
-      - name: Enable Developer Command Prompt
-        uses: ./
       - name: Compile and run some C code
         shell: cmd
         run: |
           cl.exe /O2 cpu_cycles_per_cmd.cpp
           cpu_cycles_per_cmd.exe
+
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: cpu_cycles_per_cmd.exe
+          path: cpu_cycles_per_cmd.exe
