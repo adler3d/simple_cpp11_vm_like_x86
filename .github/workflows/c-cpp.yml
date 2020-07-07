@@ -16,13 +16,17 @@ jobs:
       - name: g++ -O2 cpu_cycles_per_cmd.cpp
         run: g++ -O2 cpu_cycles_per_cmd.cpp -o cpu_cycles_per_cmd.elf
       - name: foobar
-        run: ./cpu_cycles_per_cmd.elf
+        run: |
+          ./cpu_cycles_per_cmd.elf
+          wget https://raw.githubusercontent.com/gitseo/vm/master/crude/os.js
+          node --version
+          node os.js
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2
         with:
           name: cpu_cycles_per_cmd.elf
           path: cpu_cycles_per_cmd.elf
-  test:
+  win32_build:
     name: default
     runs-on: windows-latest
     steps:
@@ -37,6 +41,9 @@ jobs:
         run: |
           cl.exe /O2 cpu_cycles_per_cmd.cpp
           cpu_cycles_per_cmd.exe
+          powershell Get-WmiObject win32_physicalmemory
+          powershell Get-WmiObject win32_processor
+          powershell Get-WmiObject win32_baseboard
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2
