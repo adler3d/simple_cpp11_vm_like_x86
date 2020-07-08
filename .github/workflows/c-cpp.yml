@@ -19,6 +19,8 @@ jobs:
         run: |
           ./cpu_cycles_per_cmd.elf
           wget https://raw.githubusercontent.com/gitseo/vm/master/crude/os.js
+          wget https://raw.githubusercontent.com/gitseo/vm/master/proc_mem_limit_detector.cpp
+          g++ -O2 proc_mem_limit_detector.cpp -o proc_mem_limit_detector.elf
           node --version
           node os.js
       - name: Upload a Build Artifact
@@ -26,6 +28,11 @@ jobs:
         with:
           name: cpu_cycles_per_cmd.elf
           path: cpu_cycles_per_cmd.elf
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: proc_mem_limit_detector.elf
+          path: proc_mem_limit_detector.elf
   win32_build:
     name: default
     runs-on: windows-latest
