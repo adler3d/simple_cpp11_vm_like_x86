@@ -418,1129 +418,248 @@ struct t_machine
     auto&b=cmd.b;
     int cur_id=0;
     const int base_counter=0+1;
-    switch (cmd.id)
-    {
-    case 1-base_counter:
-    {
-      jz(reg[dest],reg[src]);
-      break;
-    };
-    case 2-base_counter:
-    {
-      jz(reg[dest],mem[src]);
-      break;
-    };
-    case 3-base_counter:
-    {
-      jz(reg[dest],raw[src]);
-      break;
-    };
-    case 4-base_counter:
-    {
-      jz(mem[dest],reg[src]);
-      break;
-    };
-    case 5-base_counter:
-    {
-      jz(mem[dest],mem[src]);
-      break;
-    };
-    case 6-base_counter:
-    {
-      jz(mem[dest],raw[src]);
-      break;
-    };
-    case 7-base_counter:
-    {
-      jz(raw[dest],reg[src]);
-      break;
-    };
-    case 8-base_counter:
-    {
-      jz(raw[dest],mem[src]);
-      break;
-    };
-    case 9-base_counter:
-    {
-      jz(raw[dest],raw[src]);
-      break;
-    };
-    case 10-base_counter:
-    {
-      jnz(reg[dest],reg[src]);
-      break;
-    };
-    case 11-base_counter:
-    {
-      jnz(reg[dest],mem[src]);
-      break;
-    };
-    case 12-base_counter:
-    {
-      jnz(reg[dest],raw[src]);
-      break;
-    };
-    case 13-base_counter:
-    {
-      jnz(mem[dest],reg[src]);
-      break;
-    };
-    case 14-base_counter:
-    {
-      jnz(mem[dest],mem[src]);
-      break;
-    };
-    case 15-base_counter:
-    {
-      jnz(mem[dest],raw[src]);
-      break;
-    };
-    case 16-base_counter:
-    {
-      jnz(raw[dest],reg[src]);
-      break;
-    };
-    case 17-base_counter:
-    {
-      jnz(raw[dest],mem[src]);
-      break;
-    };
-    case 18-base_counter:
-    {
-      jnz(raw[dest],raw[src]);
-      break;
-    };
-    case 19-base_counter:
-    {
-      mov(reg[dest],reg[src]);
-      break;
-    };
-    case 20-base_counter:
-    {
-      mov(reg[dest],mem[src]);
-      break;
-    };
-    case 21-base_counter:
-    {
-      mov(reg[dest],raw[src]);
-      break;
-    };
-    case 22-base_counter:
-    {
-      mov(mem[dest],reg[src]);
-      break;
-    };
-    case 23-base_counter:
-    {
-      mov(mem[dest],mem[src]);
-      break;
-    };
-    case 24-base_counter:
-    {
-      mov(mem[dest],raw[src]);
-      break;
-    };
-    case 25-base_counter:
-    {
-      mov(raw[dest],reg[src]);
-      break;
-    };
-    case 26-base_counter:
-    {
-      mov(raw[dest],mem[src]);
-      break;
-    };
-    case 27-base_counter:
-    {
-      mov(raw[dest],raw[src]);
-      break;
-    };
-    case 28-base_counter:
-    {
-      not_sukagcc(reg[dest],reg[src]);
-      break;
-    };
-    case 29-base_counter:
-    {
-      not_sukagcc(reg[dest],mem[src]);
-      break;
-    };
-    case 30-base_counter:
-    {
-      not_sukagcc(reg[dest],raw[src]);
-      break;
-    };
-    case 31-base_counter:
-    {
-      not_sukagcc(mem[dest],reg[src]);
-      break;
-    };
-    case 32-base_counter:
-    {
-      not_sukagcc(mem[dest],mem[src]);
-      break;
-    };
-    case 33-base_counter:
-    {
-      not_sukagcc(mem[dest],raw[src]);
-      break;
-    };
-    case 34-base_counter:
-    {
-      not_sukagcc(raw[dest],reg[src]);
-      break;
-    };
-    case 35-base_counter:
-    {
-      not_sukagcc(raw[dest],mem[src]);
-      break;
-    };
-    case 36-base_counter:
-    {
-      not_sukagcc(raw[dest],raw[src]);
-      break;
-    };
-    case 37-base_counter:
-    {
-      inv(reg[dest],reg[src]);
-      break;
-    };
-    case 38-base_counter:
-    {
-      inv(reg[dest],mem[src]);
-      break;
-    };
-    case 39-base_counter:
-    {
-      inv(reg[dest],raw[src]);
-      break;
-    };
-    case 40-base_counter:
-    {
-      inv(mem[dest],reg[src]);
-      break;
-    };
-    case 41-base_counter:
-    {
-      inv(mem[dest],mem[src]);
-      break;
-    };
-    case 42-base_counter:
-    {
-      inv(mem[dest],raw[src]);
-      break;
-    };
-    case 43-base_counter:
-    {
-      inv(raw[dest],reg[src]);
-      break;
-    };
-    case 44-base_counter:
-    {
-      inv(raw[dest],mem[src]);
-      break;
-    };
-    case 45-base_counter:
-    {
-      inv(raw[dest],raw[src]);
-      break;
-    };
-    case 46-base_counter:
-    {
-      add(reg[dest],reg[a],reg[b]);
-      break;
-    };
-    case 47-base_counter:
-    {
-      add(reg[dest],reg[a],mem[b]);
-      break;
-    };
-    case 48-base_counter:
-    {
-      add(reg[dest],reg[a],raw[b]);
-      break;
-    };
-    case 49-base_counter:
-    {
-      add(reg[dest],mem[a],reg[b]);
-      break;
-    };
-    case 50-base_counter:
-    {
-      add(reg[dest],mem[a],mem[b]);
-      break;
-    };
-    case 51-base_counter:
-    {
-      add(reg[dest],mem[a],raw[b]);
-      break;
-    };
-    case 52-base_counter:
-    {
-      add(mem[dest],reg[a],reg[b]);
-      break;
-    };
-    case 53-base_counter:
-    {
-      add(mem[dest],reg[a],mem[b]);
-      break;
-    };
-    case 54-base_counter:
-    {
-      add(mem[dest],reg[a],raw[b]);
-      break;
-    };
-    case 55-base_counter:
-    {
-      add(mem[dest],mem[a],reg[b]);
-      break;
-    };
-    case 56-base_counter:
-    {
-      add(mem[dest],mem[a],mem[b]);
-      break;
-    };
-    case 57-base_counter:
-    {
-      add(mem[dest],mem[a],raw[b]);
-      break;
-    };
-    case 58-base_counter:
-    {
-      sub(reg[dest],reg[a],reg[b]);
-      break;
-    };
-    case 59-base_counter:
-    {
-      sub(reg[dest],reg[a],mem[b]);
-      break;
-    };
-    case 60-base_counter:
-    {
-      sub(reg[dest],reg[a],raw[b]);
-      break;
-    };
-    case 61-base_counter:
-    {
-      sub(reg[dest],mem[a],reg[b]);
-      break;
-    };
-    case 62-base_counter:
-    {
-      sub(reg[dest],mem[a],mem[b]);
-      break;
-    };
-    case 63-base_counter:
-    {
-      sub(reg[dest],mem[a],raw[b]);
-      break;
-    };
-    case 64-base_counter:
-    {
-      sub(mem[dest],reg[a],reg[b]);
-      break;
-    };
-    case 65-base_counter:
-    {
-      sub(mem[dest],reg[a],mem[b]);
-      break;
-    };
-    case 66-base_counter:
-    {
-      sub(mem[dest],reg[a],raw[b]);
-      break;
-    };
-    case 67-base_counter:
-    {
-      sub(mem[dest],mem[a],reg[b]);
-      break;
-    };
-    case 68-base_counter:
-    {
-      sub(mem[dest],mem[a],mem[b]);
-      break;
-    };
-    case 69-base_counter:
-    {
-      sub(mem[dest],mem[a],raw[b]);
-      break;
-    };
-    case 70-base_counter:
-    {
-      mul(reg[dest],reg[a],reg[b]);
-      break;
-    };
-    case 71-base_counter:
-    {
-      mul(reg[dest],reg[a],mem[b]);
-      break;
-    };
-    case 72-base_counter:
-    {
-      mul(reg[dest],reg[a],raw[b]);
-      break;
-    };
-    case 73-base_counter:
-    {
-      mul(reg[dest],mem[a],reg[b]);
-      break;
-    };
-    case 74-base_counter:
-    {
-      mul(reg[dest],mem[a],mem[b]);
-      break;
-    };
-    case 75-base_counter:
-    {
-      mul(reg[dest],mem[a],raw[b]);
-      break;
-    };
-    case 76-base_counter:
-    {
-      mul(mem[dest],reg[a],reg[b]);
-      break;
-    };
-    case 77-base_counter:
-    {
-      mul(mem[dest],reg[a],mem[b]);
-      break;
-    };
-    case 78-base_counter:
-    {
-      mul(mem[dest],reg[a],raw[b]);
-      break;
-    };
-    case 79-base_counter:
-    {
-      mul(mem[dest],mem[a],reg[b]);
-      break;
-    };
-    case 80-base_counter:
-    {
-      mul(mem[dest],mem[a],mem[b]);
-      break;
-    };
-    case 81-base_counter:
-    {
-      mul(mem[dest],mem[a],raw[b]);
-      break;
-    };
-    case 82-base_counter:
-    {
-      div(reg[dest],reg[a],reg[b]);
-      break;
-    };
-    case 83-base_counter:
-    {
-      div(reg[dest],reg[a],mem[b]);
-      break;
-    };
-    case 84-base_counter:
-    {
-      div(reg[dest],reg[a],raw[b]);
-      break;
-    };
-    case 85-base_counter:
-    {
-      div(reg[dest],mem[a],reg[b]);
-      break;
-    };
-    case 86-base_counter:
-    {
-      div(reg[dest],mem[a],mem[b]);
-      break;
-    };
-    case 87-base_counter:
-    {
-      div(reg[dest],mem[a],raw[b]);
-      break;
-    };
-    case 88-base_counter:
-    {
-      div(mem[dest],reg[a],reg[b]);
-      break;
-    };
-    case 89-base_counter:
-    {
-      div(mem[dest],reg[a],mem[b]);
-      break;
-    };
-    case 90-base_counter:
-    {
-      div(mem[dest],reg[a],raw[b]);
-      break;
-    };
-    case 91-base_counter:
-    {
-      div(mem[dest],mem[a],reg[b]);
-      break;
-    };
-    case 92-base_counter:
-    {
-      div(mem[dest],mem[a],mem[b]);
-      break;
-    };
-    case 93-base_counter:
-    {
-      div(mem[dest],mem[a],raw[b]);
-      break;
-    };
-    case 94-base_counter:
-    {
-      mod(reg[dest],reg[a],reg[b]);
-      break;
-    };
-    case 95-base_counter:
-    {
-      mod(reg[dest],reg[a],mem[b]);
-      break;
-    };
-    case 96-base_counter:
-    {
-      mod(reg[dest],reg[a],raw[b]);
-      break;
-    };
-    case 97-base_counter:
-    {
-      mod(reg[dest],mem[a],reg[b]);
-      break;
-    };
-    case 98-base_counter:
-    {
-      mod(reg[dest],mem[a],mem[b]);
-      break;
-    };
-    case 99-base_counter:
-    {
-      mod(reg[dest],mem[a],raw[b]);
-      break;
-    };
-    case 100-base_counter:
-    {
-      mod(mem[dest],reg[a],reg[b]);
-      break;
-    };
-    case 101-base_counter:
-    {
-      mod(mem[dest],reg[a],mem[b]);
-      break;
-    };
-    case 102-base_counter:
-    {
-      mod(mem[dest],reg[a],raw[b]);
-      break;
-    };
-    case 103-base_counter:
-    {
-      mod(mem[dest],mem[a],reg[b]);
-      break;
-    };
-    case 104-base_counter:
-    {
-      mod(mem[dest],mem[a],mem[b]);
-      break;
-    };
-    case 105-base_counter:
-    {
-      mod(mem[dest],mem[a],raw[b]);
-      break;
-    };
-    case 106-base_counter:
-    {
-      eq(reg[dest],reg[a],reg[b]);
-      break;
-    };
-    case 107-base_counter:
-    {
-      eq(reg[dest],reg[a],mem[b]);
-      break;
-    };
-    case 108-base_counter:
-    {
-      eq(reg[dest],reg[a],raw[b]);
-      break;
-    };
-    case 109-base_counter:
-    {
-      eq(reg[dest],mem[a],reg[b]);
-      break;
-    };
-    case 110-base_counter:
-    {
-      eq(reg[dest],mem[a],mem[b]);
-      break;
-    };
-    case 111-base_counter:
-    {
-      eq(reg[dest],mem[a],raw[b]);
-      break;
-    };
-    case 112-base_counter:
-    {
-      eq(mem[dest],reg[a],reg[b]);
-      break;
-    };
-    case 113-base_counter:
-    {
-      eq(mem[dest],reg[a],mem[b]);
-      break;
-    };
-    case 114-base_counter:
-    {
-      eq(mem[dest],reg[a],raw[b]);
-      break;
-    };
-    case 115-base_counter:
-    {
-      eq(mem[dest],mem[a],reg[b]);
-      break;
-    };
-    case 116-base_counter:
-    {
-      eq(mem[dest],mem[a],mem[b]);
-      break;
-    };
-    case 117-base_counter:
-    {
-      eq(mem[dest],mem[a],raw[b]);
-      break;
-    };
-    case 118-base_counter:
-    {
-      neq(reg[dest],reg[a],reg[b]);
-      break;
-    };
-    case 119-base_counter:
-    {
-      neq(reg[dest],reg[a],mem[b]);
-      break;
-    };
-    case 120-base_counter:
-    {
-      neq(reg[dest],reg[a],raw[b]);
-      break;
-    };
-    case 121-base_counter:
-    {
-      neq(reg[dest],mem[a],reg[b]);
-      break;
-    };
-    case 122-base_counter:
-    {
-      neq(reg[dest],mem[a],mem[b]);
-      break;
-    };
-    case 123-base_counter:
-    {
-      neq(reg[dest],mem[a],raw[b]);
-      break;
-    };
-    case 124-base_counter:
-    {
-      neq(mem[dest],reg[a],reg[b]);
-      break;
-    };
-    case 125-base_counter:
-    {
-      neq(mem[dest],reg[a],mem[b]);
-      break;
-    };
-    case 126-base_counter:
-    {
-      neq(mem[dest],reg[a],raw[b]);
-      break;
-    };
-    case 127-base_counter:
-    {
-      neq(mem[dest],mem[a],reg[b]);
-      break;
-    };
-    case 128-base_counter:
-    {
-      neq(mem[dest],mem[a],mem[b]);
-      break;
-    };
-    case 129-base_counter:
-    {
-      neq(mem[dest],mem[a],raw[b]);
-      break;
-    };
-    case 130-base_counter:
-    {
-      less(reg[dest],reg[a],reg[b]);
-      break;
-    };
-    case 131-base_counter:
-    {
-      less(reg[dest],reg[a],mem[b]);
-      break;
-    };
-    case 132-base_counter:
-    {
-      less(reg[dest],reg[a],raw[b]);
-      break;
-    };
-    case 133-base_counter:
-    {
-      less(reg[dest],mem[a],reg[b]);
-      break;
-    };
-    case 134-base_counter:
-    {
-      less(reg[dest],mem[a],mem[b]);
-      break;
-    };
-    case 135-base_counter:
-    {
-      less(reg[dest],mem[a],raw[b]);
-      break;
-    };
-    case 136-base_counter:
-    {
-      less(mem[dest],reg[a],reg[b]);
-      break;
-    };
-    case 137-base_counter:
-    {
-      less(mem[dest],reg[a],mem[b]);
-      break;
-    };
-    case 138-base_counter:
-    {
-      less(mem[dest],reg[a],raw[b]);
-      break;
-    };
-    case 139-base_counter:
-    {
-      less(mem[dest],mem[a],reg[b]);
-      break;
-    };
-    case 140-base_counter:
-    {
-      less(mem[dest],mem[a],mem[b]);
-      break;
-    };
-    case 141-base_counter:
-    {
-      less(mem[dest],mem[a],raw[b]);
-      break;
-    };
-    case 142-base_counter:
-    {
-      more(reg[dest],reg[a],reg[b]);
-      break;
-    };
-    case 143-base_counter:
-    {
-      more(reg[dest],reg[a],mem[b]);
-      break;
-    };
-    case 144-base_counter:
-    {
-      more(reg[dest],reg[a],raw[b]);
-      break;
-    };
-    case 145-base_counter:
-    {
-      more(reg[dest],mem[a],reg[b]);
-      break;
-    };
-    case 146-base_counter:
-    {
-      more(reg[dest],mem[a],mem[b]);
-      break;
-    };
-    case 147-base_counter:
-    {
-      more(reg[dest],mem[a],raw[b]);
-      break;
-    };
-    case 148-base_counter:
-    {
-      more(mem[dest],reg[a],reg[b]);
-      break;
-    };
-    case 149-base_counter:
-    {
-      more(mem[dest],reg[a],mem[b]);
-      break;
-    };
-    case 150-base_counter:
-    {
-      more(mem[dest],reg[a],raw[b]);
-      break;
-    };
-    case 151-base_counter:
-    {
-      more(mem[dest],mem[a],reg[b]);
-      break;
-    };
-    case 152-base_counter:
-    {
-      more(mem[dest],mem[a],mem[b]);
-      break;
-    };
-    case 153-base_counter:
-    {
-      more(mem[dest],mem[a],raw[b]);
-      break;
-    };
-    case 154-base_counter:
-    {
-      or_sukagcc(reg[dest],reg[a],reg[b]);
-      break;
-    };
-    case 155-base_counter:
-    {
-      or_sukagcc(reg[dest],reg[a],mem[b]);
-      break;
-    };
-    case 156-base_counter:
-    {
-      or_sukagcc(reg[dest],reg[a],raw[b]);
-      break;
-    };
-    case 157-base_counter:
-    {
-      or_sukagcc(reg[dest],mem[a],reg[b]);
-      break;
-    };
-    case 158-base_counter:
-    {
-      or_sukagcc(reg[dest],mem[a],mem[b]);
-      break;
-    };
-    case 159-base_counter:
-    {
-      or_sukagcc(reg[dest],mem[a],raw[b]);
-      break;
-    };
-    case 160-base_counter:
-    {
-      or_sukagcc(mem[dest],reg[a],reg[b]);
-      break;
-    };
-    case 161-base_counter:
-    {
-      or_sukagcc(mem[dest],reg[a],mem[b]);
-      break;
-    };
-    case 162-base_counter:
-    {
-      or_sukagcc(mem[dest],reg[a],raw[b]);
-      break;
-    };
-    case 163-base_counter:
-    {
-      or_sukagcc(mem[dest],mem[a],reg[b]);
-      break;
-    };
-    case 164-base_counter:
-    {
-      or_sukagcc(mem[dest],mem[a],mem[b]);
-      break;
-    };
-    case 165-base_counter:
-    {
-      or_sukagcc(mem[dest],mem[a],raw[b]);
-      break;
-    };
-    case 166-base_counter:
-    {
-      and_sukagcc(reg[dest],reg[a],reg[b]);
-      break;
-    };
-    case 167-base_counter:
-    {
-      and_sukagcc(reg[dest],reg[a],mem[b]);
-      break;
-    };
-    case 168-base_counter:
-    {
-      and_sukagcc(reg[dest],reg[a],raw[b]);
-      break;
-    };
-    case 169-base_counter:
-    {
-      and_sukagcc(reg[dest],mem[a],reg[b]);
-      break;
-    };
-    case 170-base_counter:
-    {
-      and_sukagcc(reg[dest],mem[a],mem[b]);
-      break;
-    };
-    case 171-base_counter:
-    {
-      and_sukagcc(reg[dest],mem[a],raw[b]);
-      break;
-    };
-    case 172-base_counter:
-    {
-      and_sukagcc(mem[dest],reg[a],reg[b]);
-      break;
-    };
-    case 173-base_counter:
-    {
-      and_sukagcc(mem[dest],reg[a],mem[b]);
-      break;
-    };
-    case 174-base_counter:
-    {
-      and_sukagcc(mem[dest],reg[a],raw[b]);
-      break;
-    };
-    case 175-base_counter:
-    {
-      and_sukagcc(mem[dest],mem[a],reg[b]);
-      break;
-    };
-    case 176-base_counter:
-    {
-      and_sukagcc(mem[dest],mem[a],mem[b]);
-      break;
-    };
-    case 177-base_counter:
-    {
-      and_sukagcc(mem[dest],mem[a],raw[b]);
-      break;
-    };
-    case 178-base_counter:
-    {
-      shr(reg[dest],reg[a],reg[b]);
-      break;
-    };
-    case 179-base_counter:
-    {
-      shr(reg[dest],reg[a],mem[b]);
-      break;
-    };
-    case 180-base_counter:
-    {
-      shr(reg[dest],reg[a],raw[b]);
-      break;
-    };
-    case 181-base_counter:
-    {
-      shr(reg[dest],mem[a],reg[b]);
-      break;
-    };
-    case 182-base_counter:
-    {
-      shr(reg[dest],mem[a],mem[b]);
-      break;
-    };
-    case 183-base_counter:
-    {
-      shr(reg[dest],mem[a],raw[b]);
-      break;
-    };
-    case 184-base_counter:
-    {
-      shr(mem[dest],reg[a],reg[b]);
-      break;
-    };
-    case 185-base_counter:
-    {
-      shr(mem[dest],reg[a],mem[b]);
-      break;
-    };
-    case 186-base_counter:
-    {
-      shr(mem[dest],reg[a],raw[b]);
-      break;
-    };
-    case 187-base_counter:
-    {
-      shr(mem[dest],mem[a],reg[b]);
-      break;
-    };
-    case 188-base_counter:
-    {
-      shr(mem[dest],mem[a],mem[b]);
-      break;
-    };
-    case 189-base_counter:
-    {
-      shr(mem[dest],mem[a],raw[b]);
-      break;
-    };
-    case 190-base_counter:
-    {
-      shl(reg[dest],reg[a],reg[b]);
-      break;
-    };
-    case 191-base_counter:
-    {
-      shl(reg[dest],reg[a],mem[b]);
-      break;
-    };
-    case 192-base_counter:
-    {
-      shl(reg[dest],reg[a],raw[b]);
-      break;
-    };
-    case 193-base_counter:
-    {
-      shl(reg[dest],mem[a],reg[b]);
-      break;
-    };
-    case 194-base_counter:
-    {
-      shl(reg[dest],mem[a],mem[b]);
-      break;
-    };
-    case 195-base_counter:
-    {
-      shl(reg[dest],mem[a],raw[b]);
-      break;
-    };
-    case 196-base_counter:
-    {
-      shl(mem[dest],reg[a],reg[b]);
-      break;
-    };
-    case 197-base_counter:
-    {
-      shl(mem[dest],reg[a],mem[b]);
-      break;
-    };
-    case 198-base_counter:
-    {
-      shl(mem[dest],reg[a],raw[b]);
-      break;
-    };
-    case 199-base_counter:
-    {
-      shl(mem[dest],mem[a],reg[b]);
-      break;
-    };
-    case 200-base_counter:
-    {
-      shl(mem[dest],mem[a],mem[b]);
-      break;
-    };
-    case 201-base_counter:
-    {
-      shl(mem[dest],mem[a],raw[b]);
-      break;
-    };
-    case 202-base_counter:
-    {
-      jmp(reg[dest]);
-      break;
-    };
-    case 203-base_counter:
-    {
-      jmp(mem[dest]);
-      break;
-    };
-    case 204-base_counter:
-    {
-      jmp(raw[dest]);
-      break;
-    };
-    case 205-base_counter:
-    {
-      call(reg[dest]);
-      break;
-    };
-    case 206-base_counter:
-    {
-      call(mem[dest]);
-      break;
-    };
-    case 207-base_counter:
-    {
-      call(raw[dest]);
-      break;
-    };
-    case 208-base_counter:
-    {
-      push(reg[dest]);
-      break;
-    };
-    case 209-base_counter:
-    {
-      push(mem[dest]);
-      break;
-    };
-    case 210-base_counter:
-    {
-      push(raw[dest]);
-      break;
-    };
-    case 211-base_counter:
-    {
-      pop(reg[dest]);
-      break;
-    };
-    case 212-base_counter:
-    {
-      pop(mem[dest]);
-      break;
-    };
-    case 213-base_counter:
-    {
-      inc(reg[dest]);
-      break;
-    };
-    case 214-base_counter:
-    {
-      inc(mem[dest]);
-      break;
-    };
-    case 215-base_counter:
-    {
-      dec(reg[dest]);
-      break;
-    };
-    case 216-base_counter:
-    {
-      dec(mem[dest]);
-      break;
-    };
-    case 217-base_counter:
-    {
-      ret();
-      break;
-    };
-    case 218-base_counter:
-    {
-      nop();
-      break;
-    };
-    case 219-base_counter:
-    {
-      label();
-      break;
-    };
-    case 220-base_counter:
-    {
-      mov(mem[reg[dest]],reg[src]);
-      break;
-    };
-    case 221-base_counter:
-    {
-      mov(mem[reg[dest]],mem[src]);
-      break;
-    };
-    case 222-base_counter:
-    {
-      mov(mem[reg[dest]],raw[src]);
-      break;
-    };
-    case 223-base_counter:
-    {
-      mov(reg[dest],mem[reg[src]]);
-      break;
-    };
-    case 224-base_counter:
-    {
-      mov(mem[dest],mem[reg[src]]);
-      break;
-    };
+
+    #define C(ID,CODE)case ID-base_counter:{CODE;break;}
+    #define not$ not_sukagcc
+    #define or$ or_sukagcc
+    #define and$ and_sukagcc
+    #define D dest
+    #define S src
+    #define R reg
+    #define M mem
+    #define W raw
+    switch (cmd.id){
+      C(1,jz(R[D],R[S]))
+      C(2,jz(R[D],M[S]))
+      C(3,jz(R[D],W[S]))
+      C(4,jz(M[D],R[S]))
+      C(5,jz(M[D],M[S]))
+      C(6,jz(M[D],W[S]))
+      C(7,jz(W[D],R[S]))
+      C(8,jz(W[D],M[S]))
+      C(9,jz(W[D],W[S]))
+      C(10,jnz(R[D],R[S]))
+      C(11,jnz(R[D],M[S]))
+      C(12,jnz(R[D],W[S]))
+      C(13,jnz(M[D],R[S]))
+      C(14,jnz(M[D],M[S]))
+      C(15,jnz(M[D],W[S]))
+      C(16,jnz(W[D],R[S]))
+      C(17,jnz(W[D],M[S]))
+      C(18,jnz(W[D],W[S]))
+      C(19,mov(R[D],R[S]))
+      C(20,mov(R[D],M[S]))
+      C(21,mov(R[D],W[S]))
+      C(22,mov(M[D],R[S]))
+      C(23,mov(M[D],M[S]))
+      C(24,mov(M[D],W[S]))
+      C(25,mov(W[D],R[S]))
+      C(26,mov(W[D],M[S]))
+      C(27,mov(W[D],W[S]))
+      C(28,not$(R[D],R[S]))
+      C(29,not$(R[D],M[S]))
+      C(30,not$(R[D],W[S]))
+      C(31,not$(M[D],R[S]))
+      C(32,not$(M[D],M[S]))
+      C(33,not$(M[D],W[S]))
+      C(34,not$(W[D],R[S]))
+      C(35,not$(W[D],M[S]))
+      C(36,not$(W[D],W[S]))
+      C(37,inv(R[D],R[S]))
+      C(38,inv(R[D],M[S]))
+      C(39,inv(R[D],W[S]))
+      C(40,inv(M[D],R[S]))
+      C(41,inv(M[D],M[S]))
+      C(42,inv(M[D],W[S]))
+      C(43,inv(W[D],R[S]))
+      C(44,inv(W[D],M[S]))
+      C(45,inv(W[D],W[S]))
+      C(46,add(R[D],R[a],R[b]))
+      C(47,add(R[D],R[a],M[b]))
+      C(48,add(R[D],R[a],W[b]))
+      C(49,add(R[D],M[a],R[b]))
+      C(50,add(R[D],M[a],M[b]))
+      C(51,add(R[D],M[a],W[b]))
+      C(52,add(M[D],R[a],R[b]))
+      C(53,add(M[D],R[a],M[b]))
+      C(54,add(M[D],R[a],W[b]))
+      C(55,add(M[D],M[a],R[b]))
+      C(56,add(M[D],M[a],M[b]))
+      C(57,add(M[D],M[a],W[b]))
+      C(58,sub(R[D],R[a],R[b]))
+      C(59,sub(R[D],R[a],M[b]))
+      C(60,sub(R[D],R[a],W[b]))
+      C(61,sub(R[D],M[a],R[b]))
+      C(62,sub(R[D],M[a],M[b]))
+      C(63,sub(R[D],M[a],W[b]))
+      C(64,sub(M[D],R[a],R[b]))
+      C(65,sub(M[D],R[a],M[b]))
+      C(66,sub(M[D],R[a],W[b]))
+      C(67,sub(M[D],M[a],R[b]))
+      C(68,sub(M[D],M[a],M[b]))
+      C(69,sub(M[D],M[a],W[b]))
+      C(70,mul(R[D],R[a],R[b]))
+      C(71,mul(R[D],R[a],M[b]))
+      C(72,mul(R[D],R[a],W[b]))
+      C(73,mul(R[D],M[a],R[b]))
+      C(74,mul(R[D],M[a],M[b]))
+      C(75,mul(R[D],M[a],W[b]))
+      C(76,mul(M[D],R[a],R[b]))
+      C(77,mul(M[D],R[a],M[b]))
+      C(78,mul(M[D],R[a],W[b]))
+      C(79,mul(M[D],M[a],R[b]))
+      C(80,mul(M[D],M[a],M[b]))
+      C(81,mul(M[D],M[a],W[b]))
+      C(82,div(R[D],R[a],R[b]))
+      C(83,div(R[D],R[a],M[b]))
+      C(84,div(R[D],R[a],W[b]))
+      C(85,div(R[D],M[a],R[b]))
+      C(86,div(R[D],M[a],M[b]))
+      C(87,div(R[D],M[a],W[b]))
+      C(88,div(M[D],R[a],R[b]))
+      C(89,div(M[D],R[a],M[b]))
+      C(90,div(M[D],R[a],W[b]))
+      C(91,div(M[D],M[a],R[b]))
+      C(92,div(M[D],M[a],M[b]))
+      C(93,div(M[D],M[a],W[b]))
+      C(94,mod(R[D],R[a],R[b]))
+      C(95,mod(R[D],R[a],M[b]))
+      C(96,mod(R[D],R[a],W[b]))
+      C(97,mod(R[D],M[a],R[b]))
+      C(98,mod(R[D],M[a],M[b]))
+      C(99,mod(R[D],M[a],W[b]))
+      C(100,mod(M[D],R[a],R[b]))
+      C(101,mod(M[D],R[a],M[b]))
+      C(102,mod(M[D],R[a],W[b]))
+      C(103,mod(M[D],M[a],R[b]))
+      C(104,mod(M[D],M[a],M[b]))
+      C(105,mod(M[D],M[a],W[b]))
+      C(106,eq(R[D],R[a],R[b]))
+      C(107,eq(R[D],R[a],M[b]))
+      C(108,eq(R[D],R[a],W[b]))
+      C(109,eq(R[D],M[a],R[b]))
+      C(110,eq(R[D],M[a],M[b]))
+      C(111,eq(R[D],M[a],W[b]))
+      C(112,eq(M[D],R[a],R[b]))
+      C(113,eq(M[D],R[a],M[b]))
+      C(114,eq(M[D],R[a],W[b]))
+      C(115,eq(M[D],M[a],R[b]))
+      C(116,eq(M[D],M[a],M[b]))
+      C(117,eq(M[D],M[a],W[b]))
+      C(118,neq(R[D],R[a],R[b]))
+      C(119,neq(R[D],R[a],M[b]))
+      C(120,neq(R[D],R[a],W[b]))
+      C(121,neq(R[D],M[a],R[b]))
+      C(122,neq(R[D],M[a],M[b]))
+      C(123,neq(R[D],M[a],W[b]))
+      C(124,neq(M[D],R[a],R[b]))
+      C(125,neq(M[D],R[a],M[b]))
+      C(126,neq(M[D],R[a],W[b]))
+      C(127,neq(M[D],M[a],R[b]))
+      C(128,neq(M[D],M[a],M[b]))
+      C(129,neq(M[D],M[a],W[b]))
+      C(130,less(R[D],R[a],R[b]))
+      C(131,less(R[D],R[a],M[b]))
+      C(132,less(R[D],R[a],W[b]))
+      C(133,less(R[D],M[a],R[b]))
+      C(134,less(R[D],M[a],M[b]))
+      C(135,less(R[D],M[a],W[b]))
+      C(136,less(M[D],R[a],R[b]))
+      C(137,less(M[D],R[a],M[b]))
+      C(138,less(M[D],R[a],W[b]))
+      C(139,less(M[D],M[a],R[b]))
+      C(140,less(M[D],M[a],M[b]))
+      C(141,less(M[D],M[a],W[b]))
+      C(142,more(R[D],R[a],R[b]))
+      C(143,more(R[D],R[a],M[b]))
+      C(144,more(R[D],R[a],W[b]))
+      C(145,more(R[D],M[a],R[b]))
+      C(146,more(R[D],M[a],M[b]))
+      C(147,more(R[D],M[a],W[b]))
+      C(148,more(M[D],R[a],R[b]))
+      C(149,more(M[D],R[a],M[b]))
+      C(150,more(M[D],R[a],W[b]))
+      C(151,more(M[D],M[a],R[b]))
+      C(152,more(M[D],M[a],M[b]))
+      C(153,more(M[D],M[a],W[b]))
+      C(154,or$(R[D],R[a],R[b]))
+      C(155,or$(R[D],R[a],M[b]))
+      C(156,or$(R[D],R[a],W[b]))
+      C(157,or$(R[D],M[a],R[b]))
+      C(158,or$(R[D],M[a],M[b]))
+      C(159,or$(R[D],M[a],W[b]))
+      C(160,or$(M[D],R[a],R[b]))
+      C(161,or$(M[D],R[a],M[b]))
+      C(162,or$(M[D],R[a],W[b]))
+      C(163,or$(M[D],M[a],R[b]))
+      C(164,or$(M[D],M[a],M[b]))
+      C(165,or$(M[D],M[a],W[b]))
+      C(166,and$(R[D],R[a],R[b]))
+      C(167,and$(R[D],R[a],M[b]))
+      C(168,and$(R[D],R[a],W[b]))
+      C(169,and$(R[D],M[a],R[b]))
+      C(170,and$(R[D],M[a],M[b]))
+      C(171,and$(R[D],M[a],W[b]))
+      C(172,and$(M[D],R[a],R[b]))
+      C(173,and$(M[D],R[a],M[b]))
+      C(174,and$(M[D],R[a],W[b]))
+      C(175,and$(M[D],M[a],R[b]))
+      C(176,and$(M[D],M[a],M[b]))
+      C(177,and$(M[D],M[a],W[b]))
+      C(178,shr(R[D],R[a],R[b]))
+      C(179,shr(R[D],R[a],M[b]))
+      C(180,shr(R[D],R[a],W[b]))
+      C(181,shr(R[D],M[a],R[b]))
+      C(182,shr(R[D],M[a],M[b]))
+      C(183,shr(R[D],M[a],W[b]))
+      C(184,shr(M[D],R[a],R[b]))
+      C(185,shr(M[D],R[a],M[b]))
+      C(186,shr(M[D],R[a],W[b]))
+      C(187,shr(M[D],M[a],R[b]))
+      C(188,shr(M[D],M[a],M[b]))
+      C(189,shr(M[D],M[a],W[b]))
+      C(190,shl(R[D],R[a],R[b]))
+      C(191,shl(R[D],R[a],M[b]))
+      C(192,shl(R[D],R[a],W[b]))
+      C(193,shl(R[D],M[a],R[b]))
+      C(194,shl(R[D],M[a],M[b]))
+      C(195,shl(R[D],M[a],W[b]))
+      C(196,shl(M[D],R[a],R[b]))
+      C(197,shl(M[D],R[a],M[b]))
+      C(198,shl(M[D],R[a],W[b]))
+      C(199,shl(M[D],M[a],R[b]))
+      C(200,shl(M[D],M[a],M[b]))
+      C(201,shl(M[D],M[a],W[b]))
+      C(202,jmp(R[D]))
+      C(203,jmp(M[D]))
+      C(204,jmp(W[D]))
+      C(205,call(R[D]))
+      C(206,call(M[D]))
+      C(207,call(W[D]))
+      C(208,push(R[D]))
+      C(209,push(M[D]))
+      C(210,push(W[D]))
+      C(211,pop(R[D]))
+      C(212,pop(M[D]))
+      C(213,inc(R[D]))
+      C(214,inc(M[D]))
+      C(215,dec(R[D]))
+      C(216,dec(M[D]))
+      C(217,ret())
+      C(218,nop())
+      C(219,label())
+      C(220,mov(M[R[D]],R[S]))
+      C(221,mov(M[R[D]],M[S]))
+      C(222,mov(M[R[D]],W[S]))
+      C(223,mov(R[D],M[R[S]]))
+      C(224,mov(M[D],M[R[S]]))
     }
+    #undef C
+    #undef D
+    #undef W
+    #undef M
+    #undef R
+    #undef S
   }
   void sim_n(int n)
   {
