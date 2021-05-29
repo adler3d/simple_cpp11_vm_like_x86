@@ -114,21 +114,25 @@ double getCPUTime( )
 
 
 //  Windows
-#ifdef _WIN32
+#if(defined(_WIN32)||defined(_WIN64))
 
-#include <intrin.h>
-uint64_t rdtsc(){
-    return __rdtsc();
-}
+  #include <intrin.h>
+  uint64_t rdtsc(){
+      return __rdtsc();
+  }
+
+  #define intrin_nop()__nop();
 
 //  Linux/GCC
 #else
+  
+  #define intrin_nop()asm("nop");
 
-uint64_t rdtsc(){
-    unsigned int lo,hi;
-    __asm__ __volatile__ ("rdtsc" : "=a" (lo), "=d" (hi));
-    return ((uint64_t)hi << 32) | lo;
-}
+  uint64_t rdtsc(){
+      unsigned int lo,hi;
+      __asm__ __volatile__ ("rdtsc" : "=a" (lo), "=d" (hi));
+      return ((uint64_t)hi << 32) | lo;
+  }
 
 #endif
 
@@ -138,11 +142,7 @@ static double get_cpu_speed_once()
   auto hpetBefore=getCPUTime();
   for(int i=0;i<1024*1024*256;i++)
   {
-    #ifdef _WIN32
-    __asm{nop};
-    #else
-    asm("nop");
-    #endif
+    intrin_nop();
   }
   auto tscAfter=rdtsc();
   auto hpetAfter=getCPUTime();
@@ -158,12 +158,16 @@ static double get_cpu_speed()
   return arr[n/2];
 }
 
+typedef long long int int64;
+static_assert(sizeof(int64)==8,"sizeof(int64)==8");
+//typedef int64 t_val;
+typedef int t_val;
 struct t_cmd
 {
-  int id;
-  int dest;
-  int a;
-  int b;
+  t_val id;
+  t_val dest;
+  t_val a;
+  t_val b;
   void DoReset()
   {
     this->id=0;
@@ -191,8 +195,8 @@ struct t_cmd
   {
     DoReset();
   }
-  void set(int id,int dest=0,int a=0,int b=0){this->id=id;this->dest=dest;this->a=a;this->b=b;}
-  t_cmd(int id,int dest=0,int a=0,int b=0){this->id=id;this->dest=dest;this->a=a;this->b=b;}
+  void set(t_val id,t_val dest=0,t_val a=0,t_val b=0){this->id=id;this->dest=dest;this->a=a;this->b=b;}
+  t_cmd(t_val id,t_val dest=0,t_val a=0,t_val b=0){this->id=id;this->dest=dest;this->a=a;this->b=b;}
 };
 enum t_register
 {
@@ -201,52 +205,46 @@ enum t_register
 
 struct t_machine;
 
-struct t_raw_const
-{
-  int operator[](int value)const
-  {
-    return value;
-  }
-};
+struct t_raw_const{t_val operator[](t_val value)const{return value;}};
 
 struct t_ssd_mem{
   decltype(fopen(0,0)) f;
-  int f_size;
+  t_val f_size;
   t_ssd_mem(){f=0;f_size=0;}
  ~t_ssd_mem(){fflush(f);fclose(f);}
-  int size(){return f_size;}
-  void resize(int size){
+  t_val size(){return f_size;}
+  void resize(t_val size){
     if(!f)f=fopen("vm_mem.bin","wb+");
     if(size<=0)return;
     f_size=size;
-    fseek(f,size*4-1,SEEK_SET);
+    fseek(f,size*sizeof(t_val)-1,SEEK_SET);
     fputc('\0',f);
     fflush(f);
   }
   struct t_int{
     decltype(fopen(0,0)) f;
-    int addr;
-    int old;
-    int value;
-    operator int&(){return value;}
-    operator const int&()const{return value;}
-    void operator=(int v){value=v;};
+    t_val addr;
+    t_val old;
+    t_val value;
+    operator t_val&(){return value;}
+    operator const t_val&()const{return value;}
+    void operator=(t_val v){value=v;};
    ~t_int(){
       if(old==value)return;
-      fseek(f,addr*4,SEEK_SET);
+      fseek(f,addr*sizeof(t_val),SEEK_SET);
       fwrite(&value,1,sizeof(value),f);
     }
   };
-  const int operator[](int addr)const{
-    int out;
-    fseek(f,addr*4,SEEK_SET);
+  const t_val operator[](t_val addr)const{
+    t_val out;
+    fseek(f,addr*sizeof(t_val),SEEK_SET);
     if(fread(&out,1,sizeof(out),f)!=sizeof(out))out=0;
     return out;
   }
-  t_int operator[](int addr){
+  t_int operator[](t_val addr){
     t_int tmp={f,addr};
-    int&out=tmp.value;
-    fseek(f,addr*4,SEEK_SET);
+    t_val&out=tmp.value;
+    fseek(f,addr*sizeof(t_val),SEEK_SET);
     if(fread(&out,1,sizeof(out),f)!=sizeof(out))out=0;
     tmp.old=out;
     return tmp;
@@ -256,148 +254,140 @@ struct t_ssd_mem{
 //#define USE_SSD_MEM
 
 #ifdef USE_SSD_MEM
-  #define DECLARE_MEM(iter)vector<int> mem;mem.resize(iter+16);
+  #define DECLARE_MEM(iter)vector<t_val> mem;mem.resize(iter+16);
   #define t_ssd_mem t_ssd_mem
 #else
-  #define DECLARE_MEM(iter)vector<int> mem;mem.resize(iter+16);//auto&mem=m.mem;
-  #define t_ssd_mem vector<int>
+  #define DECLARE_MEM(iter)vector<t_val> mem;mem.resize(iter+16);//auto&mem=m.mem;
+  #define t_ssd_mem vector<t_val>
 #endif
 
 struct t_machine
 {
   vector<t_cmd> arr;
   t_ssd_mem mem;
-  vector<int> reg;
-  void DoReset()
-  {
-  }
-  void operator=(t_machine&&ref)
-  {
+  vector<t_val> reg;
+  void DoReset(){}
+  void operator=(t_machine&&ref){
     oper_set(std::move(ref));
   }
-  t_machine(t_machine&&ref)
-  {
+  t_machine(t_machine&&ref){
     DoReset();
     oper_set(std::move(ref));
   }
-  void oper_set(t_machine&&ref)
-  {
+  void oper_set(t_machine&&ref){
     this->arr=std::move(ref.arr);
     this->mem=std::move(ref.mem);
     this->reg=std::move(ref.reg);
   }
-  t_machine()
-  {
-    DoReset();
-  }
+  t_machine(){DoReset();}
 
-  void jz(const int&dest,const int&src)
+  void jz(const t_val&dest,const t_val&src)
   {
     if (!src)jmp(dest);
   }
-  void jnz(const int&dest,const int&src)
+  void jnz(const t_val&dest,const t_val&src)
   {
     if (src)jmp(dest);
   }
-  void mov(const int&,const int&)
+  void mov(const t_val&,const t_val&)
   {
     QapNoWay();
   }
-  void not_sukagcc(const int&,const int&)
+  void not_sukagcc(const t_val&,const t_val&)
   {
     QapNoWay();
   }
-  void inv(const int&,const int&)
+  void inv(const t_val&,const t_val&)
   {
     QapNoWay();
   }
-  void mov(int&dest,const int&src)
+  void mov(t_val&dest,const t_val&src)
   {
     dest=src;
   }
-  void not_sukagcc(int&dest,const int&src)
+  void not_sukagcc(t_val&dest,const t_val&src)
   {
     dest=!bool(src);
   }
-  void inv(int&dest,const int&src)
+  void inv(t_val&dest,const t_val&src)
   {
     dest=-src;
   }
-  void add(int&dest,const int&a,const int&b)
+  void add(t_val&dest,const t_val&a,const t_val&b)
   {
     dest=a+b;
   }
-  void sub(int&dest,const int&a,const int&b)
+  void sub(t_val&dest,const t_val&a,const t_val&b)
   {
     dest=a-b;
   }
-  void mul(int&dest,const int&a,const int&b)
+  void mul(t_val&dest,const t_val&a,const t_val&b)
   {
     dest=a*b;
   }
-  void div(int&dest,const int&a,const int&b)
+  void div(t_val&dest,const t_val&a,const t_val&b)
   {
     dest=a/b;
   }
-  void mod(int&dest,const int&a,const int&b)
+  void mod(t_val&dest,const t_val&a,const t_val&b)
   {
     dest=a%b;
   }
-  void eq(int&dest,const int&a,const int&b)
+  void eq(t_val&dest,const t_val&a,const t_val&b)
   {
     dest=a==b;
   }
-  void neq(int&dest,const int&a,const int&b)
+  void neq(t_val&dest,const t_val&a,const t_val&b)
   {
     dest=a!=b;
   }
-  void less(int&dest,const int&a,const int&b)
+  void less(t_val&dest,const t_val&a,const t_val&b)
   {
     dest=a<b;
   }
-  void more(int&dest,const int&a,const int&b)
+  void more(t_val&dest,const t_val&a,const t_val&b)
   {
     dest=a>b;
   }
-  void or_sukagcc(int&dest,const int&a,const int&b)
+  void or_sukagcc(t_val&dest,const t_val&a,const t_val&b)
   {
     dest=a||b;
   }
-  void and_sukagcc(int&dest,const int&a,const int&b)
+  void and_sukagcc(t_val&dest,const t_val&a,const t_val&b)
   {
     dest=a&&b;
   }
-  void shr(int&dest,const int&a,const int&b)
+  void shr(t_val&dest,const t_val&a,const t_val&b)
   {
     dest=a>>b;
   }
-  void shl(int&dest,const int&a,const int&b)
+  void shl(t_val&dest,const t_val&a,const t_val&b)
   {
     dest=a<<b;
   }
-  void jmp(const int&dest)
+  void jmp(const t_val&dest)
   {
     reg[eip]=dest;
   }
-  void inc(int&inout)
+  void inc(t_val&inout)
   {
     inout++;
   }
-  void dec(int&inout)
+  void dec(t_val&inout)
   {
     inout--;
   }
-  void push(const int&inp)
+  void push(const t_val&inp)
   {
     reg[esp]--;
     mem[reg[esp]]=inp;
   }
-  void pop(int&dest)
+  void pop(t_val&dest)
   {
     dest=mem[reg[esp]];
     reg[esp]++;
   }
-  void call(const int&addr)
+  void call(const t_val&addr)
   {
     push(reg[eip]);
     jmp(addr);
@@ -416,7 +406,6 @@ struct t_machine
     auto&src=cmd.a;
     auto&a=cmd.a;
     auto&b=cmd.b;
-    int cur_id=0;
     const int base_counter=0+1;
 
     #define C(ID,CODE)case ID-base_counter:{CODE;break;}
@@ -675,7 +664,7 @@ struct t_machine
     for (;!reg[err];)sim_n(1);
     int gg=1;
   }
-  void def_app(int iter)
+  void def_app(t_val iter)
   {
     arr.push_back(t_cmd(20,2,iter,0));
     arr.push_back(t_cmd(20,3,0,0));
@@ -683,7 +672,7 @@ struct t_machine
     arr.push_back(t_cmd(218,0,0,0));
     arr.push_back(t_cmd(212,3,0,0));
     arr.push_back(t_cmd(218,0,0,0));
-    arr.push_back(t_cmd(95,5,3,4));
+    arr.push_back(t_cmd(47,5,3,4));
     arr.push_back(t_cmd(212,5,0,0));
     arr.push_back(t_cmd(219,3,5,0));
     arr.push_back(t_cmd(129,4,3,2));
@@ -692,21 +681,22 @@ struct t_machine
   }
 };
 
-inline void mod(int&dest,int a,int b){dest=a%b;}
-inline void less(int&dest,int a,int b){dest=a<b;}
-inline void mov(int&dest,int src){dest=src;}
-inline void inc(int&inout){inout++;}
+inline void mod(t_val&dest,t_val a,t_val b){dest=a%b;}
+inline void less(t_val&dest,t_val a,t_val b){dest=a<b;}
+inline void mov(t_val&dest,t_val src){dest=src;}
+inline void inc(t_val&inout){inout++;}
 
 // like sequential fill: for(int i=0;i<iter;i++)ptr[i]=(i%4)+1;
-int native_func(int*ptr,int iter){
-  int eax,ebx,ecx,edx;
+int native_func(t_val*ptr,t_val iter){
+  t_val eax,ebx,ecx,edx;
   mov(eax,iter);
   mov(ebx,0);
   goto body;
   loop:
   inc(ebx);
   body:
-  mod(edx,ebx,4);
+  //mod(edx,ebx,4);
+  edx=ebx&2;
   inc(edx);
   mov(ptr[ebx],edx);
   less(ecx,ebx,eax);
@@ -735,7 +725,7 @@ int main(int argc,char**argv)
 {
   FREQ_INIT();
   auto getCPUTime=[](){{std::atomic<int> i;}return get_time_in_sec();};
-  bool no_ssd=std::is_same<t_ssd_mem,vector<int>>::value;
+  bool no_ssd=std::is_same<t_ssd_mem,vector<t_val>>::value;
   int iter=!no_ssd?1024*160:1024*1024*32;
   t_machine m;
   m.mem.resize(iter+16);
@@ -757,7 +747,9 @@ int main(int argc,char**argv)
     static real cpu_cycles_per_cmd_n=tn*cpu_speed/real(m.reg[cmd_counter]*k);
     real cmd=real(m.reg[cmd_counter]);
     printf("{\n");
-    printf("%s\n",(jq("version(k==cmd_n/cmd)")+":"+jq("1.0.2")).c_str());
+    auto ver_ext="t_val("+std::to_string(sizeof(t_val)*8)+"bit)";
+    ver_ext+=" size_t("+std::to_string(sizeof(size_t)*8)+"bit)";
+    printf("%s\n",(jq("version(k==cmd_n/cmd)")+":"+jq("1.0.3    "+ver_ext)).c_str());
     #define F(A,B,C)printf((","+jq(#A)+":"+jq(B)+"\n").c_str(),C);
     F(cpu_speed,"%.2f GHz",cpu_speed_ghz);
     F(cmd,"%i",int(cmd));
