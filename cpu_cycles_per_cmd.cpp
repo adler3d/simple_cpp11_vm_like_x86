@@ -672,7 +672,7 @@ struct t_machine
     arr.push_back(t_cmd(218,0,0,0));
     arr.push_back(t_cmd(212,3,0,0));
     arr.push_back(t_cmd(218,0,0,0));
-    arr.push_back(t_cmd(47,5,3,4));
+    arr.push_back(t_cmd(47,5,3,3));
     arr.push_back(t_cmd(212,5,0,0));
     arr.push_back(t_cmd(219,3,5,0));
     arr.push_back(t_cmd(129,4,3,2));
@@ -696,7 +696,7 @@ int native_func(t_val*ptr,t_val iter){
   inc(ebx);
   body:
   //mod(edx,ebx,4);
-  edx=ebx&2;
+  edx=ebx&3;
   inc(edx);
   mov(ptr[ebx],edx);
   less(ecx,ebx,eax);
