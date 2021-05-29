@@ -46,7 +46,7 @@ jobs:
       - name: Compile and run some C code
         shell: cmd
         run: |
-          cl.exe /O2 cpu_cycles_per_cmd.cpp
+          cl.exe /O2 /EHsc cpu_cycles_per_cmd.cpp
           cpu_cycles_per_cmd.exe
           powershell Get-WmiObject win32_physicalmemory
           powershell Get-WmiObject win32_processor
